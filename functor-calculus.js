@@ -1300,7 +1300,7 @@
             '<th style="padding:6px 10px;text-align:left">KnotLab sub-tab</th>' +
           '</tr></thead>' +
           '<tbody>' +
-            '<tr><td style="padding:4px 10px">1&ndash;2</td><td style="padding:4px 10px">homotopy (co)limits, cubes, total (co)fibers</td><td style="padding:4px 10px">Munson&ndash;Voli&cacute; ch. 3, 5</td><td style="padding:4px 10px">Cubes &amp; Excision &sect;1</td></tr>' +
+            '<tr><td style="padding:4px 10px">1&ndash;2</td><td style="padding:4px 10px">homotopy (co)limits, cubes, total (co)fibers</td><td style="padding:4px 10px">Munson&ndash;Voli&cacute; ch. 3, 5</td><td style="padding:4px 10px">Cubes &amp; Excision &sect;1 (tfib terminology: Derivatives &amp; Layers &sect;1)</td></tr>' +
             '<tr><td style="padding:4px 10px">3</td><td style="padding:4px 10px">Blakers&ndash;Massey; Freudenthal</td><td style="padding:4px 10px">Munson&ndash;Voli&cacute; ch. 4, 6</td><td style="padding:4px 10px">Cubes &amp; Excision &sect;4</td></tr>' +
             '<tr><td style="padding:4px 10px">4&ndash;5</td><td style="padding:4px 10px">\\(n\\)-excision; \\(T_n\\), \\(P_n\\), the tower; Rezk&rsquo;s proof</td><td style="padding:4px 10px">Calc III &sect;1; Rezk 2013; Arone&ndash;Ching 2020, &sect;&sect;1&ndash;3</td><td style="padding:4px 10px">Taylor Tower</td></tr>' +
             '<tr><td style="padding:4px 10px">6</td><td style="padding:4px 10px">localization view; manifold calculus as sheafification</td><td style="padding:4px 10px">Boavida de Brito&ndash;Weiss 2013; Lurie HA &sect;6.1.1</td><td style="padding:4px 10px">Sheafification</td></tr>' +
