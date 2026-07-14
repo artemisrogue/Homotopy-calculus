@@ -120,7 +120,7 @@
             '<tr><td style="padding:4px 10px">radius of convergence</td><td style="padding:4px 10px">\\(\\rho\\)-analyticity: tower converges on \\(\\rho\\)-connected spaces</td></tr>' +
             '<tr><td style="padding:4px 10px">\\(f(0)\\)</td><td style="padding:4px 10px">\\(P_0 F = F(*)\\), the constant approximation</td></tr>' +
             '<tr><td style="padding:4px 10px">difference quotient / finite differences</td><td style="padding:4px 10px">cross effects \\(\\operatorname{cr}_n F\\)</td></tr>' +
-            '<tr><td style="padding:4px 10px">chain rule \\((f \\circ g)&prime;\\)</td><td style="padding:4px 10px">Arone&ndash;Ching chain rule (\\(F,G\\) reduced): \\(\\partial_*(F \\circ G) \\simeq \\partial_* F \\circ_{\\partial_*\\mathrm{Id}} \\partial_* G\\)</td></tr>' +
+            '<tr><td style="padding:4px 10px">chain rule \\((f \\circ g)&prime;\\)</td><td style="padding:4px 10px">Arone&ndash;Ching chain rule (\\(F,G\\) reduced, finitary): \\(\\partial_*(F \\circ G) \\simeq \\partial_* F \\circ_{\\partial_*\\mathrm{Id}} \\partial_* G\\)</td></tr>' +
             '<tr><td style="padding:4px 10px">truncation \\(P_n f \\to P_{n-1} f\\)</td><td style="padding:4px 10px">tower maps \\(P_n F \\to P_{n-1} F\\)</td></tr>' +
           '</tbody>' +
         '</table>' +
