@@ -241,16 +241,15 @@ header p { font-size: 0.9rem; opacity: 0.85; }
 }
 
 /* ── Secondary tab bar (modules) ── */
-.fk-controls {
-  margin-bottom: 0;
-}
-
 .fk-subtabs {
   display: flex;
   gap: 0;
   background: #1a4a7a;
   padding: 0 2rem;
   flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 20;
 }
 
 .fk-subtab {
@@ -439,6 +438,25 @@ header p { font-size: 0.9rem; opacity: 0.85; }
   .tab-btn { padding: 0.6rem 1rem; font-size: 0.85rem; white-space: nowrap; }
   .home-container { padding: 1rem; }
   .module-cards { grid-template-columns: 1fr; }
+
+  .fk-subtabs {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 0 0.5rem;
+    background:
+      linear-gradient(to right, #1a4a7a 30%, rgba(26,74,122,0)),
+      linear-gradient(to left, #1a4a7a 30%, rgba(26,74,122,0)) right,
+      #1a4a7a;
+    background-repeat: no-repeat;
+    background-size: 20px 100%, 20px 100%, 100% 100%;
+    background-attachment: local, local, scroll;
+  }
+  .fk-subtab { padding: 0.65rem 1rem; font-size: 0.85rem; white-space: nowrap; }
+
+  .formula-box { padding: 0.6rem 0.5rem; }
+  .formula-box .katex-display { margin: 0; }
+  .formula-box .katex { font-size: 0.85em; }
 }
 
 /* ── Admin mode ── */
@@ -745,7 +763,12 @@ body.admin-revert-pick * { cursor: crosshair !important; }
 .eq-snip-groupwrap { break-inside: avoid; -webkit-column-break-inside: avoid; }
 .eq-snip-groupbody .eq-snip-item { break-inside: avoid; }
 
-.expo-panel table.dict-table { max-width: 72ch; margin: 0.8rem auto; border-collapse: collapse; width: 100%; }
+.expo-panel table.dict-table {
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  max-width: 72ch; margin: 0.8rem auto; border-collapse: collapse; width: 100%;
+}
 .expo-panel table.dict-table th, .expo-panel table.dict-table td { border: 1px solid #d0d7de; padding: 0.45rem 0.7rem; text-align: left; vertical-align: top; }
 .expo-panel table.dict-table thead th { background: #f4f6f8; font-weight: 600; }
 .expo-panel table.dict-table tbody tr:nth-child(even) { background: #fafbfc; }
