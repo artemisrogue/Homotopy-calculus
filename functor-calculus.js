@@ -1007,7 +1007,7 @@
           '\\(\\pi_0 T_n \\mathcal{K}_3\\) is an abelian group ' +
           '(here \\(n\\) indexes the manifold-calculus stage \\(T_n\\), exactly as \\(k\\) does in &sect;1 above ' +
           '&mdash; unrelated to the join-indexed, homotopy-calculus \\(T_n\\) flagged in &sect;1&rsquo;s notational-trap ' +
-          'remark and defined in the <em>Tower</em> sub-tab), the evaluation map ' +
+          'remark and defined in the <em>Taylor Tower</em> sub-tab), the evaluation map ' +
           '\\(\\mathrm{ev}_n : \\pi_0 \\mathcal{K}_3 \\to \\pi_0 T_n \\mathcal{K}_3\\) is a monoid homomorphism for connected ' +
           'sum, and it is invariant under degree-\\(n\\) <span class="kl-term" title="Clasper / grope surgery: geometric refinements of crossing changes; invariance under degree-n clasper surgery characterizes finite-type invariants of degree ≤ n−1 (Habiro, Goussarov).">clasper surgery</span> ' +
           '&mdash; hence a finite-type invariant of degree \\(\\leq n-1\\).</li>' +
