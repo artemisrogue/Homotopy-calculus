@@ -800,7 +800,7 @@
           'phenomena in \\(\\pi_*(S^{2k+1})\\).</li>' +
           '<li><strong>The operad structure (Ching 2005).</strong> \\(\\partial_* \\mathrm{Id}\\) is an operad in spectra ' +
           '(the spectral Lie operad), Koszul dual to the commutative operad; its algebras behave like ' +
-          'topological Lie algebras. Heuts (2021) used this to build Lie-algebra models for ' +
+          'topological Lie algebras. Heuts (2021b, full citation in <em>Further Reading</em>) used this to build Lie-algebra models for ' +
           '\\(v_n\\)-periodic unstable homotopy theory.</li>' +
           '<li><strong>EHP and Whitehead (Behrens 2012; Kuhn).</strong> The Goodwillie tower of the identity on spheres ' +
           'interacts with the EHP sequence (Behrens, <em>The Goodwillie tower and the EHP sequence</em>, Mem. AMS 218, ' +
@@ -1158,12 +1158,14 @@
           '\\(1\\)-excisive functors (HA &sect;1.4.2 &mdash; the subscript \\(*\\) for reducedness matters: ' +
           'without it one picks up the extra datum \\(F(*)\\)) &mdash; linear algebra as the first chapter of ' +
           'calculus.</li>' +
-          '<li><strong>Heuts, <em>Goodwillie approximations to higher categories</em> (Mem. AMS 272, 2021).</strong> ' +
+          '<li><strong>Heuts, <em>Goodwillie approximations to higher categories</em> (Mem. AMS 272, 2021; cited as ' +
+          '&ldquo;Heuts 2021a&rdquo; below).</strong> ' +
           'Categorifies the tower: the \\(\\infty\\)-category of spaces itself has a Taylor tower of \\(\\infty\\)-categories ' +
           'interpolating from \\(\\mathcal{S}_*\\) to \\(\\mathrm{Sp}\\) &mdash; convergent, as in the classical case, only on ' +
-          'sufficiently connected objects &mdash; with layers controlled by \\(\\partial_* \\mathrm{Id}\\). ' +
-          'Combined with the spectral Lie operad this yields Lie-algebra models for \\(v_n\\)-periodic unstable homotopy ' +
-          'theory.</li>' +
+          'sufficiently connected objects &mdash; with layers controlled by \\(\\partial_* \\mathrm{Id}\\). The companion ' +
+          'book, Heuts, <em>Lie Algebras and \\(v_n\\)-periodic Spaces</em> (Ann. of Math. Studies, 2021; cited as ' +
+          '&ldquo;Heuts 2021b&rdquo; below), combines this with the spectral Lie operad to build Lie-algebra models for ' +
+          '\\(v_n\\)-periodic unstable homotopy theory.</li>' +
           '<li><strong>Tangent \\(\\infty\\)-categories (Bauer&ndash;Burke&ndash;Ching, 2021&ndash;).</strong> ' +
           'Goodwillie calculus is literally differential geometry: there is a tangent structure (in the sense of ' +
           'Rosick&yacute; and Cockett&ndash;Cruttwell) on the \\((\\infty,2)\\)-category of <em>differentiable</em> ' +
@@ -1226,6 +1228,9 @@
           'Ast&eacute;risque 338 (2011) &mdash; the chain-rule reference cited as &ldquo;Arone&ndash;Ching 2011&rdquo; below.</li>' +
           '<li>G. Arone and M. Mahowald, <em>The Goodwillie tower of the identity functor and the unstable periodic ' +
           'homotopy of spheres</em>, Invent. Math. 135 (1999) &mdash; cited as &ldquo;Arone&ndash;Mahowald 1999&rdquo; below.</li>' +
+          '<li>G. Heuts, <em>Goodwillie approximations to higher categories</em>, Mem. Amer. Math. Soc. 272 (2021) ' +
+          '&mdash; cited as &ldquo;Heuts 2021a&rdquo; below; categorifies the Taylor tower itself. Distinct from the ' +
+          'companion book below (&ldquo;Heuts 2021b&rdquo;), which supplies the Lie-algebra-models material.</li>' +
         '</ul>' +
       '</div>' +
 
@@ -1249,7 +1254,8 @@
           'Algebr. Geom. Topol. 13 (2013), 1049&ndash;1051 (arXiv:0812.1324) &mdash; two pages; read after the ' +
           '<em>Taylor Tower</em> sub-tab.</li>' +
           '<li>G. Heuts, <em>Lie Algebras and \\(v_n\\)-periodic Spaces</em>, Ann. of Math. Studies, Princeton ' +
-          'Univ. Press, 2021 &mdash; the tangent-category/Lie-algebra material cited as &ldquo;Heuts 2021&rdquo; below.</li>' +
+          'Univ. Press, 2021 &mdash; the tangent-category/Lie-algebra material cited as &ldquo;Heuts 2021b&rdquo; below; ' +
+          'distinct from the categorification paper above (&ldquo;Heuts 2021a&rdquo;).</li>' +
           '<li>B. Dundas, T. Goodwillie, and R. McCarthy, <em>The Local Structure of Algebraic K-Theory</em>, ' +
           'Springer, 2013 &mdash; cited as &ldquo;DGM&rdquo; below; the full proof that, for a map of connective ring ' +
           'spectra with nilpotent kernel on \\(\\pi_0\\), the cyclotomic trace induces an equivalence \\(K(A,I) \\simeq \\mathrm{TC}(A,I)\\) ' +
@@ -1314,7 +1320,7 @@
             '<tr><td style="padding:4px 10px">10</td><td style="padding:4px 10px">\\(\\Sigma^\\infty\\Omega^\\infty\\); \\(K\\)-theory and \\(\\mathrm{TC}\\)</td><td style="padding:4px 10px">Kuhn overview; DGM book (skim)</td><td style="padding:4px 10px">Worked Examples &sect;&sect;2&ndash;3</td></tr>' +
             '<tr><td style="padding:4px 10px">11&ndash;12</td><td style="padding:4px 10px">manifold calculus; \\(\\operatorname{Emb}\\); convergence</td><td style="padding:4px 10px">Weiss 1999; Munson survey; Goodwillie&ndash;Weiss 1999; Goodwillie&ndash;Klein 2015 (optional)</td><td style="padding:4px 10px">Knots &amp; Embedding Calculus &sect;&sect;1&ndash;3</td></tr>' +
             '<tr><td style="padding:4px 10px">13</td><td style="padding:4px 10px">long knots; finite-type invariants from the tower</td><td style="padding:4px 10px">Sinha 2009; BCSS 2005; BCKS 2017</td><td style="padding:4px 10px">Knots &amp; Embedding Calculus &sect;&sect;4&ndash;6</td></tr>' +
-            '<tr><td style="padding:4px 10px">14</td><td style="padding:4px 10px">outlook: chain rules, orthogonal calculus, tangent categories</td><td style="padding:4px 10px">Arone&ndash;Ching 2011 (statements); Heuts 2021</td><td style="padding:4px 10px">Other Calculi</td></tr>' +
+            '<tr><td style="padding:4px 10px">14</td><td style="padding:4px 10px">outlook: chain rules, orthogonal calculus, tangent categories</td><td style="padding:4px 10px">Arone&ndash;Ching 2011 (statements); Heuts 2021a&ndash;b</td><td style="padding:4px 10px">Other Calculi</td></tr>' +
           '</tbody>' +
         '</table>' +
         '<p style="margin-top:0.9em;font-size:0.95em;color:#555">Assessment suggestion: the practice exercises in each ' +
