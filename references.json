@@ -1,0 +1,652 @@
+{
+  "entries": [
+    {
+      "key": "anel-biedermann-finster-joyal-2018",
+      "authors": "Anel, M.; Biedermann, G.; Finster, E.; Joyal, A.",
+      "title": "Goodwillie's calculus of functors and higher topos theory",
+      "venue": "Journal of Topology 11 (2018) 1100–1132",
+      "year": "2018",
+      "url": "https://arxiv.org/abs/1703.09632",
+      "note": "P_n as a left exact modality on functor ∞-topoi; Blakers–Massey for the Goodwillie tower; the precise boundary of the sheafification analogy (non-topological localizations)."
+    },
+    {
+      "key": "arone-1999-snaith",
+      "authors": "Arone, G.",
+      "title": "A generalization of Snaith-type filtration",
+      "venue": "Trans. Amer. Math. Soc. 351 (1999), no. 3, 1123–1150",
+      "year": "1999",
+      "url": "https://www.ams.org/journals/tran/1999-351-03/S0002-9947-99-02405-8/",
+      "note": "Explicit model for the Taylor tower of Σ^∞Map(K, X); generalizes stable splittings of mapping spaces"
+    },
+    {
+      "key": "arone-2002-weiss-derivatives",
+      "authors": "Arone, G.",
+      "title": "The Weiss derivatives of BO(−) and BU(−)",
+      "venue": "Topology 41 (2002), no. 3, 451–481",
+      "year": "2002",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0040938301000088",
+      "note": "The fundamental worked example of orthogonal calculus: all derivative spectra of BO and BU and the homology of the layers."
+    },
+    {
+      "key": "arone-ching-2011-chainrules",
+      "authors": "Arone, G.; Ching, M.",
+      "title": "Operads and chain rules for the calculus of functors",
+      "venue": "Astérisque 338 (2011), vi+158 pp.",
+      "year": "2011",
+      "url": "https://arxiv.org/abs/0902.0399",
+      "note": "The chain rule: derivatives of a composite via composition product; ∂∗Id as an operad — the homotopical Faà di Bruno formula."
+    },
+    {
+      "key": "arone-ching-2020-handbook",
+      "authors": "Arone, G.; Ching, M.",
+      "title": "Goodwillie calculus",
+      "venue": "Handbook of Homotopy Theory (H. Miller, ed.), Chapman & Hall/CRC, 2020, 1–38",
+      "year": "2020",
+      "url": "https://arxiv.org/abs/1902.00803",
+      "note": "The standard modern survey; precise ∞-categorical statements of all foundational theorems with attributions"
+    },
+    {
+      "key": "arone-dwyer-2001",
+      "authors": "Arone, G. Z.; Dwyer, W. G.",
+      "title": "Partition complexes, Tits buildings and symmetric products",
+      "venue": "Proceedings of the London Mathematical Society 82 (2001), 229–256",
+      "year": "2001",
+      "url": "https://doi.org/10.1112/S0024611500012715",
+      "note": "Identifies the homology of layers via Steinberg idempotents and symmetric powers of spheres — the L(k) description"
+    },
+    {
+      "key": "arone-mahowald-1999",
+      "authors": "Arone, G.; Mahowald, M.",
+      "title": "The Goodwillie tower of the identity functor and the unstable periodic homotopy of spheres",
+      "venue": "Invent. Math. 135 (1999), no. 3, 743–788; doi:10.1007/s002220050300",
+      "year": "1999",
+      "url": "https://link.springer.com/article/10.1007/s002220050300",
+      "note": "Prime-power layers of the identity tower at spheres; v_k-periodic finiteness — flagship application"
+    },
+    {
+      "key": "ayala-francis-2015-fh",
+      "authors": "Ayala, D.; Francis, J.",
+      "title": "Factorization homology of topological manifolds",
+      "venue": "Journal of Topology 8 (2015), no. 4, 1045–1084",
+      "year": "2015",
+      "url": "https://arxiv.org/abs/1206.5522",
+      "note": "⊗-excision / Eilenberg–Steenrod characterization of factorization homology — the covariant (cosheaf) mirror of manifold calculus."
+    },
+    {
+      "key": "ayala-francis-2019-primer",
+      "authors": "Ayala, D.; Francis, J.",
+      "title": "A factorization homology primer",
+      "venue": "Handbook of Homotopy Theory (H. Miller, ed.), CRC Press, 2020",
+      "year": "2019",
+      "url": "https://arxiv.org/abs/1903.10961",
+      "note": "Explicit Weiss-cover and Weiss-cosheaf language: factorization algebras as cosheaves for the Weiss topology."
+    },
+    {
+      "key": "barnes-eldred-2016",
+      "authors": "Barnes, D.; Eldred, R.",
+      "title": "Comparing the orthogonal and homotopy functor calculi",
+      "venue": "J. Pure Appl. Algebra 220 (2016), no. 11, 3650–3675",
+      "year": "2016",
+      "url": "https://arxiv.org/abs/1505.05458",
+      "note": "Precise comparison of the two calculi; the towers agree on analytic functors — good for the unifying-frameworks discussion."
+    },
+    {
+      "key": "barnes-oman-2013",
+      "authors": "Barnes, D.; Oman, P.",
+      "title": "Model categories for orthogonal calculus",
+      "venue": "Algebr. Geom. Topol. 13 (2013), 959–999",
+      "year": "2013",
+      "url": "https://arxiv.org/abs/1101.4099",
+      "note": "Model-categorical foundations; upgrades Weiss's classification to a zig-zag of Quillen equivalences with O(n)-spectra."
+    },
+    {
+      "key": "bauer-burke-ching-2021-tangent",
+      "authors": "Bauer, K.; Burke, M.; Ching, M.",
+      "title": "Tangent ∞-categories and Goodwillie calculus",
+      "venue": "arXiv preprint (v1 January 2021; v5 June 2026); no verified journal publication as of July 2026",
+      "year": "2021",
+      "url": "https://arxiv.org/abs/2101.07819",
+      "note": "The unifying framework: Goodwillie tangent structure on differentiable ∞-categories, extending Rosický/Cockett–Cruttwell tangent categories; n-excisive functors as n-jets."
+    },
+    {
+      "key": "bauer-johnson-mccarthy-2015",
+      "authors": "Bauer, K.; Johnson, B.; McCarthy, R. (appendix by Eldred, R.)",
+      "title": "Cross effects and calculus in an unbased setting",
+      "venue": "Trans. Amer. Math. Soc. 367 (2015), no. 9, 6671–6718",
+      "year": "2015",
+      "url": "https://arxiv.org/abs/1101.1025",
+      "note": "Extends cross effects and the discrete tower to unbased/relative settings (functors on C_f) and compares with the Goodwillie tower."
+    },
+    {
+      "key": "behrens-2011-kuhn",
+      "authors": "Behrens, M.",
+      "title": "The Goodwillie tower for S¹ and Kuhn's theorem",
+      "venue": "Algebraic & Geometric Topology 11 (2011), 2453–2475",
+      "year": "2011",
+      "url": "https://arxiv.org/abs/1012.0810",
+      "note": "Calculus form of the 2-primary Whitehead conjecture: Whitehead sequence contracts the S¹-tower"
+    },
+    {
+      "key": "behrens-2012-ehp",
+      "authors": "Behrens, M.",
+      "title": "The Goodwillie tower and the EHP sequence",
+      "venue": "Memoirs of the American Mathematical Society 218 (2012), no. 1026",
+      "year": "2012",
+      "url": "https://arxiv.org/abs/1009.1125",
+      "note": "Interlocks Goodwillie and EHP spectral sequences at p = 2; recomputes stems through the Toda range"
+    },
+    {
+      "key": "biedermann-chorny-roendigs-2007",
+      "authors": "Biedermann, G.; Chorny, B.; Röndigs, O.",
+      "title": "Calculus of functors and model categories",
+      "venue": "Advances in Mathematics 214 (2007) 92–115",
+      "year": "2007",
+      "url": "https://arxiv.org/abs/math/0601221",
+      "note": "P_n as left Bousfield localization; n-homogeneous model structure Quillen equivalent to Σₙ-spectra on finitary functors."
+    },
+    {
+      "key": "bjort-2018",
+      "authors": "Bauer, K.; Johnson, B.; Osborne, C.; Riehl, E.; Tebbe, A.",
+      "title": "Directional derivatives and higher order chain rules for abelian functor calculus",
+      "venue": "Topology Appl. 235 (2018), 375–427",
+      "year": "2018",
+      "url": "https://arxiv.org/abs/1610.01930",
+      "note": "Abelian functor calculus is a cartesian differential category; Faà di Bruno-style higher chain rule — the bridge to differential categories."
+    },
+    {
+      "key": "boavida-horel-2021",
+      "authors": "Boavida de Brito, P.; Horel, G.",
+      "title": "Galois symmetries of knot spaces",
+      "venue": "Compositio Mathematica 157 (2021), no. 5, 997–1021",
+      "year": "2021",
+      "url": "https://arxiv.org/abs/2002.01470",
+      "note": "p-local vanishing of GW spectral-sequence differentials; T_{n+1} is a p-local universal Vassiliev invariant of degree ≤ n for n ≤ p+1; formality/Galois techniques."
+    },
+    {
+      "key": "boavida-weiss-2013-sheaves",
+      "authors": "Boavida de Brito, P.; Weiss, M.",
+      "title": "Manifold calculus and homotopy sheaves",
+      "venue": "Homology, Homotopy and Applications 15 (2013), no. 2, 361–383",
+      "year": "2013",
+      "url": "https://arxiv.org/abs/1202.1305",
+      "note": "THE reference for polynomial approximation = homotopy J_k-sheafification (Weiss topologies); enriched manifold calculus; tower limit as operad module maps."
+    },
+    {
+      "key": "boavida-weiss-2018-config",
+      "authors": "Boavida de Brito, P.; Weiss, M.",
+      "title": "Spaces of smooth embeddings and configuration categories",
+      "venue": "Journal of Topology 11 (2018), no. 1, 65–143; doi:10.1112/topo.12048",
+      "year": "2018",
+      "url": "https://arxiv.org/abs/1502.01640",
+      "note": "The tower as derived maps of configuration categories; operadic description of immersion-to-embedding obstructions; basis for the Galois-symmetry results."
+    },
+    {
+      "key": "budney-2007-little-cubes",
+      "authors": "Budney, R.",
+      "title": "Little cubes and long knots",
+      "venue": "Topology 46 (2007), no. 1, 1–27",
+      "year": "2007",
+      "url": "https://arxiv.org/abs/math/0309427",
+      "note": "K ≃ C₂(P ⊔ {∗}): the space of long knots is the free little-2-cubes algebra on prime knots; JSJ ↔ cubes action; space-level Schubert theorem."
+    },
+    {
+      "key": "budney-conant-koytcheff-sinha-2017",
+      "authors": "Budney, R.; Conant, J.; Koytcheff, R.; Sinha, D.",
+      "title": "Embedding calculus knot invariants are of finite type",
+      "venue": "Algebraic & Geometric Topology 17 (2017), no. 3, 1701–1742",
+      "year": "2017",
+      "url": "https://arxiv.org/abs/1411.1832",
+      "note": "ev_n is an additive type-(n−1) invariant; E² in total degree 0 = primitive chord diagrams over ℤ; states the integral universality conjecture."
+    },
+    {
+      "key": "budney-conant-scannell-sinha-2005",
+      "authors": "Budney, R.; Conant, J.; Scannell, K. P.; Sinha, D.",
+      "title": "New perspectives on self-linking",
+      "venue": "Advances in Mathematics 191 (2005), no. 1, 78–113",
+      "year": "2005",
+      "url": "https://arxiv.org/abs/math/0303034",
+      "note": "First three mapping space models for classical knots; the third yields c₂ (type-2, second Conway coefficient) via quadrisecant/collinearity counts. NB: title is \"self-linking\", not \"self-intersection\"."
+    },
+    {
+      "key": "ching-2005-bar",
+      "authors": "Ching, M.",
+      "title": "Bar constructions for topological operads and the Goodwillie derivatives of the identity",
+      "venue": "Geometry & Topology 9 (2005), 833–934; doi:10.2140/gt.2005.9.833",
+      "year": "2005",
+      "url": "https://arxiv.org/abs/math/0501429",
+      "note": "Operad structure on ∂∗Id inducing the Lie operad in homology — the structured refinement of the derivatives"
+    },
+    {
+      "key": "ching-2010-chain-rule",
+      "authors": "Ching, M.",
+      "title": "A chain rule for Goodwillie derivatives of functors from spectra to spectra",
+      "venue": "Trans. Amer. Math. Soc. 362 (2010), 399–426",
+      "year": "2010",
+      "url": "https://arxiv.org/abs/0710.5567",
+      "note": "Full chain rule in the stable setting: derivatives of a composite are the composition product of derivatives."
+    },
+    {
+      "key": "dgm-2013",
+      "authors": "Dundas, B. I.; Goodwillie, T. G.; McCarthy, R.",
+      "title": "The Local Structure of Algebraic K-Theory",
+      "venue": "Algebra and Applications 18, Springer, London, 2013",
+      "year": "2013",
+      "url": "https://doi.org/10.1007/978-1-4471-4393-2",
+      "note": "Definitive integral form of the DGM theorem: K/TC square homotopy cartesian for π₀-surjections with nilpotent kernel"
+    },
+    {
+      "key": "dold-puppe-1961",
+      "authors": "Dold, A.; Puppe, D.",
+      "title": "Homologie nicht-additiver Funktoren. Anwendungen",
+      "venue": "Annales de l'Institut Fourier 11 (1961), 201–312",
+      "year": "1961",
+      "url": "https://www.numdam.org/item/AIF_1961__11__201_0/",
+      "note": "Derived functors of non-additive functors (Symⁿ, Λⁿ, …); their stable derived functors are the algebraic model of linearization"
+    },
+    {
+      "key": "dundas-1997",
+      "authors": "Dundas, B. I.",
+      "title": "Relative K-theory and topological cyclic homology",
+      "venue": "Acta Mathematica 179 (1997), 223–242",
+      "year": "1997",
+      "url": "https://doi.org/10.1007/BF02392744",
+      "note": "Extends McCarthy's theorem toward the integral statement for (simplicial) rings and FSPs"
+    },
+    {
+      "key": "dundas-mccarthy-1994",
+      "authors": "Dundas, B. I.; McCarthy, R.",
+      "title": "Stable K-theory and topological Hochschild homology",
+      "venue": "Annals of Mathematics 140 (1994), 685–701",
+      "year": "1994",
+      "url": "https://annals.math.princeton.edu/1994/140-3/p05",
+      "note": "K^S ≃ THH: THH is the derivative of K-theory — the engine of trace methods"
+    },
+    {
+      "key": "eilenberg-maclane-1954",
+      "authors": "Eilenberg, S.; Mac Lane, S.",
+      "title": "On the groups H(Π, n). II: Methods of computation",
+      "venue": "Annals of Mathematics (2) 60 (1954), 49–139",
+      "year": "1954",
+      "url": "https://www.jstor.org/stable/1969702",
+      "note": "Introduces cross-effects and polynomial degree of functors — the algebraic prehistory of excision"
+    },
+    {
+      "key": "goodwillie-1986-relK",
+      "authors": "Goodwillie, T. G.",
+      "title": "Relative algebraic K-theory and cyclic homology",
+      "venue": "Annals of Mathematics 124 (1986), 347–402",
+      "year": "1986",
+      "url": "https://www.sas.rochester.edu/mth/sites/doug-ravenel/otherpapers/goodwillie-cyclic.pdf",
+      "note": "Rational relative K ≅ shifted relative cyclic homology for nilpotent extensions — rational half of DGM"
+    },
+    {
+      "key": "goodwillie-1990-calc1",
+      "authors": "Goodwillie, T. G.",
+      "title": "Calculus I: The first derivative of pseudoisotopy theory",
+      "venue": "K-Theory 4 (1990), no. 1, 1–27",
+      "year": "1990",
+      "url": "http://www.sas.rochester.edu/mth/sites/doug-ravenel/otherpapers/goodwillie-calc1.pdf",
+      "note": "Origin of the derivative of a homotopy functor at a space; computes the derivative of pseudoisotopy/A-theory (∂_Y A ≃ Σ^∞(ΩY)₊)"
+    },
+    {
+      "key": "goodwillie-1991-icm",
+      "authors": "Goodwillie, T. G.",
+      "title": "The differential calculus of homotopy functors",
+      "venue": "Proceedings of the ICM (Kyoto, 1990), Vol. I, 621–630, Math. Soc. Japan, Tokyo",
+      "year": "1991",
+      "url": "https://ncatlab.org/nlab/files/GoodwillieICM1990.pdf",
+      "note": "Ten-page announcement of the whole program — ideal first reading for students"
+    },
+    {
+      "key": "goodwillie-1992-calc2",
+      "authors": "Goodwillie, T. G.",
+      "title": "Calculus II: Analytic functors",
+      "venue": "K-Theory 5 (1991/92), no. 4, 295–332; doi:10.1007/BF00535644",
+      "year": "1992",
+      "url": "https://www.sas.rochester.edu/mth/sites/doug-ravenel/otherpapers/goodwillie-calc2.pdf",
+      "note": "Stable n-excision Eₙ(c,κ), ρ-analyticity, higher Blakers–Massey (Thm 2.3); Id and A are 1-analytic"
+    },
+    {
+      "key": "goodwillie-2003-calc3",
+      "authors": "Goodwillie, T. G.",
+      "title": "Calculus III: Taylor series",
+      "venue": "Geometry & Topology 7 (2003), 645–711; doi:10.2140/gt.2003.7.645",
+      "year": "2003",
+      "url": "https://arxiv.org/abs/math/0310481",
+      "note": "The Tₙ/Pₙ constructions, Taylor tower, classification of homogeneous functors by spectra with Σₙ-action, convergence Thm 1.13; circulated ~a decade before publication"
+    },
+    {
+      "key": "goodwillie-klein-2015-disjunction",
+      "authors": "Goodwillie, T. G.; Klein, J. R.",
+      "title": "Multiple disjunction for spaces of smooth embeddings",
+      "venue": "Journal of Topology 8 (2015), no. 3, 651–674",
+      "year": "2015",
+      "url": "https://arxiv.org/abs/1407.6787",
+      "note": "The analyticity input behind the (k(n−m−2)+1−m)-connectivity estimate — the 'radius of convergence' of embedding calculus."
+    },
+    {
+      "key": "goodwillie-weiss-1999-emb2",
+      "authors": "Goodwillie, T. G.; Weiss, M.",
+      "title": "Embeddings from the point of view of immersion theory: Part II",
+      "venue": "Geometry & Topology 3 (1999) 103–118",
+      "year": "1999",
+      "url": "https://arxiv.org/abs/math/9905203",
+      "note": "Convergence of the embedding tower in codimension ≥ 3, granted the disjunction results of Goodwillie–Klein."
+    },
+    {
+      "key": "heuts-2021",
+      "authors": "Heuts, G.",
+      "title": "Lie algebras and vₙ-periodic spaces",
+      "venue": "Annals of Mathematics 193 (2021), 223–301",
+      "year": "2021",
+      "url": "https://arxiv.org/abs/1803.06325",
+      "note": "vₙ-periodic unstable homotopy ≃ spectral Lie algebras in T(n)-local spectra — the modern culmination of the ∂_*(Id) story"
+    },
+    {
+      "key": "heuts-2021-goodwillie-cats",
+      "authors": "Heuts, G.",
+      "title": "Goodwillie approximations to higher categories",
+      "venue": "Memoirs of the American Mathematical Society 272 (2021), no. 1333",
+      "year": "2021",
+      "url": "https://arxiv.org/abs/1510.03304",
+      "note": "Categorified Taylor tower: a tower of ∞-categories from spaces to spectra; classification by derivatives of the identity."
+    },
+    {
+      "key": "johnson-1995",
+      "authors": "Johnson, B.",
+      "title": "The derivatives of homotopy theory",
+      "venue": "Trans. Amer. Math. Soc. 347 (1995), no. 4, 1295–1321",
+      "year": "1995",
+      "url": "https://www.ams.org/journals/tran/1995-347-04/S0002-9947-1995-1297532-6/S0002-9947-1995-1297532-6.pdf",
+      "note": "First identification of the derivatives of the identity functor via partition-complex models"
+    },
+    {
+      "key": "johnson-mccarthy-1998",
+      "authors": "Johnson, B.; McCarthy, R.",
+      "title": "Linearization, Dold–Puppe stabilization, and Mac Lane's Q-construction",
+      "venue": "Trans. Amer. Math. Soc. 350 (1998), no. 4, 1555–1593",
+      "year": "1998",
+      "url": "https://www.ams.org/journals/tran/1998-350-04/S0002-9947-98-02067-4/",
+      "note": "Shows the three classical linearization procedures agree — the degree-1 bridge between Goodwillie calculus and homological algebra."
+    },
+    {
+      "key": "johnson-mccarthy-2004",
+      "authors": "Johnson, B.; McCarthy, R.",
+      "title": "Deriving calculus with cotriples",
+      "venue": "Transactions of the American Mathematical Society 356 (2004), 757–803",
+      "year": "2004",
+      "url": "https://www.ams.org/journals/tran/2004-356-02/S0002-9947-03-03318-X/",
+      "note": "Cotriple Taylor tower for functors to abelian categories, bridging Dold–Puppe with Goodwillie calculus — ideal for the warm-up section"
+    },
+    {
+      "key": "klein-rognes-2002",
+      "authors": "Klein, J. R.; Rognes, J.",
+      "title": "A chain rule in the calculus of homotopy functors",
+      "venue": "Geom. Topol. 6 (2002), 853–887",
+      "year": "2002",
+      "url": "https://arxiv.org/abs/math/0301079",
+      "note": "First-derivative chain rule for homotopy functors of spaces; the result Arone–Ching later extended to all derivatives."
+    },
+    {
+      "key": "kosanovic-2024-gropes",
+      "authors": "Kosanović, D.",
+      "title": "Embedding calculus and grope cobordism of knots",
+      "venue": "Advances in Mathematics 451 (2024), Paper No. 109779, 118 pp.",
+      "year": "2024",
+      "url": "https://arxiv.org/abs/2010.05120",
+      "note": "Surjectivity of ev_n for long knots in any 3-manifold via grope cobordism; with Boavida–Horel gives rational universality — the surjectivity half of the ℤ conjecture."
+    },
+    {
+      "key": "krannich-randal-williams-2021",
+      "authors": "Krannich, M.; Randal-Williams, O.",
+      "title": "Diffeomorphisms of discs and the second Weiss derivative of BTop(−)",
+      "venue": "arXiv preprint (v2 June 2026); reported to appear in Invent. Math. — verify final details before citing print data",
+      "year": "2021",
+      "url": "https://arxiv.org/abs/2109.03500",
+      "note": "State-of-the-art application: second rational Weiss derivative of BTop(−) computes rational homotopy of diffeomorphism groups of discs."
+    },
+    {
+      "key": "kuhn-2004-tate",
+      "authors": "Kuhn, N. J.",
+      "title": "Tate cohomology and periodic localization of polynomial functors",
+      "venue": "Inventiones mathematicae 157 (2004), 345–370",
+      "year": "2004",
+      "url": "https://arxiv.org/abs/math/0307173",
+      "note": "T(n)-local Tate vanishing ⇒ all Taylor towers of functors Sp → Sp split telescopically (the Kuhn splitting)"
+    },
+    {
+      "key": "kuhn-2006-aq",
+      "authors": "Kuhn, N. J.",
+      "title": "Localization of André–Quillen–Goodwillie towers, and the periodic homology of infinite loopspaces",
+      "venue": "Advances in Mathematics 201 (2006), 318–378",
+      "year": "2006",
+      "url": "https://arxiv.org/abs/math/0306098",
+      "note": "K(n)-homology of Ω^∞X from the split tower — the main computational payoff of the splitting"
+    },
+    {
+      "key": "kuhn-2007-overview",
+      "authors": "Kuhn, N. J.",
+      "title": "Goodwillie towers and chromatic homotopy: an overview",
+      "venue": "Proc. Nishida Fest (Kinosaki 2003), Geom. Topol. Monogr. 10 (2007), 245–279",
+      "year": "2007",
+      "url": "https://arxiv.org/abs/math/0410342",
+      "note": "Survey linking Taylor towers to periodic/chromatic homotopy; readable account of the Σ^∞Ω^∞ tower and Snaith splitting"
+    },
+    {
+      "key": "lambrechts-turchin-volic-2010",
+      "authors": "Lambrechts, P.; Turchin, V.; Volić, I.",
+      "title": "The rational homology of spaces of long knots in codimension > 2",
+      "venue": "Geometry & Topology 14 (2010), no. 4, 2151–2187",
+      "year": "2010",
+      "url": "https://arxiv.org/abs/math/0703649",
+      "note": "For d ≥ 4 the rational Vassiliev/Sinha homology spectral sequence collapses at E¹ via relative formality of little d-disks; H⁎(Emb̄;ℚ) = Hochschild homology of the Poisson operad."
+    },
+    {
+      "key": "lurie-2017-ha",
+      "authors": "Lurie, J.",
+      "title": "Higher Algebra (Chapter 6: The Calculus of Functors)",
+      "venue": "unpublished book, available from the author's webpage",
+      "year": "2017",
+      "url": "https://www.math.ias.edu/~lurie/papers/HA.pdf",
+      "note": "∞-categorical foundations: Pₙ as left adjoint/localization (Thm 6.1.1.10); spectra as excisive functors (§1.4.2)"
+    },
+    {
+      "key": "marino-salvatore-2025-noncollapse",
+      "authors": "Marino, A.; Salvatore, P.",
+      "title": "Non collapse of the Sinha spectral sequence for knots in ℝ³",
+      "venue": "arXiv preprint (2025) — preprint, not yet peer-reviewed",
+      "year": "2025",
+      "url": "https://arxiv.org/abs/2504.16785",
+      "note": "Computer-assisted nonzero d₃ in the mod-2 Sinha spectral sequence for d = 3 — sharp contrast with rational collapse (LTV); flag preprint status if cited."
+    },
+    {
+      "key": "mccarthy-1997",
+      "authors": "McCarthy, R.",
+      "title": "Relative algebraic K-theory and topological cyclic homology",
+      "venue": "Acta Mathematica 179 (1997), 197–222",
+      "year": "1997",
+      "url": "https://doi.org/10.1007/BF02392743",
+      "note": "Relative K ≃ relative TC (profinitely) for nilpotent extensions of simplicial rings, proved with Goodwillie calculus"
+    },
+    {
+      "key": "munson-2010-intro",
+      "authors": "Munson, B. A.",
+      "title": "Introduction to the manifold calculus of Goodwillie–Weiss",
+      "venue": "Morfismos 14 (2010), no. 1, 1–60",
+      "year": "2010",
+      "url": "https://arxiv.org/abs/1005.1698",
+      "note": "Best short survey for students: analogies with ordinary calculus, polynomial functors, layers, convergence — ideal companion reading for a course tab."
+    },
+    {
+      "key": "munson-volic-2015",
+      "authors": "Munson, B. A.; Volić, I.",
+      "title": "Cubical Homotopy Theory",
+      "venue": "New Mathematical Monographs 25, Cambridge University Press",
+      "year": "2015",
+      "url": "https://www.cambridge.org/core/books/cubical-homotopy-theory/FB3B56C8289FEFB400BE095A7AA3B81E",
+      "note": "Textbook treatment of cubes, homotopy (co)limits, Blakers–Massey, and an introduction to both functor calculi — best classroom prerequisite source"
+    },
+    {
+      "key": "rezk-2013-streamlined",
+      "authors": "Rezk, C.",
+      "title": "A streamlined proof of Goodwillie's n-excisive approximation",
+      "venue": "Algebr. Geom. Topol. 13 (2013), no. 2, 1049–1051",
+      "year": "2013",
+      "url": "https://arxiv.org/abs/0812.1324",
+      "note": "Two-page simplification of Calc III Lemma 1.9, the key step in Pₙ being n-excisive — good for a proof-sketch collapsible"
+    },
+    {
+      "key": "sinha-2006-operads",
+      "authors": "Sinha, D. P.",
+      "title": "Operads and knot spaces",
+      "venue": "Journal of the American Mathematical Society 19 (2006), no. 2, 461–486",
+      "year": "2006",
+      "url": "https://arxiv.org/abs/math/0407039",
+      "note": "Kontsevich-operad cosimplicial model: Totⁿ ≃ T_nEmb̄; little-2-cubes action on long knots modulo immersions via McClure–Smith."
+    },
+    {
+      "key": "sinha-2009-cosimplicial",
+      "authors": "Sinha, D. P.",
+      "title": "The topology of spaces of knots: cosimplicial models",
+      "venue": "American Journal of Mathematics 131 (2009), no. 4, 945–980",
+      "year": "2009",
+      "url": "https://arxiv.org/abs/math/0202287",
+      "note": "Punctured-knots and mapping-space models for the tower stages, weakly equivalent to knot spaces in ambient dimension ≥ 4; source of the Sinha spectral sequence."
+    },
+    {
+      "key": "snaith-1974",
+      "authors": "Snaith, V. P.",
+      "title": "A stable decomposition of ΩⁿSⁿX",
+      "venue": "Journal of the London Mathematical Society (2) 7 (1974), 577–583",
+      "year": "1974",
+      "url": "https://doi.org/10.1112/jlms/s2-7.4.577",
+      "note": "The Snaith splitting — the split Taylor tower of Σ^∞Ω^∞ on suspension spectra"
+    },
+    {
+      "key": "volic-2006-finite-type",
+      "authors": "Volić, I.",
+      "title": "Finite type knot invariants and the calculus of functors",
+      "venue": "Compositio Mathematica 142 (2006), 222–250; doi:10.1112/S0010437X05001648",
+      "year": "2006",
+      "url": "https://arxiv.org/abs/math/0401440",
+      "note": "Over ℝ, type-n invariants factor through T_{2n}; the tower is a universal real finite-type invariant (via Bott–Taubes configuration space integrals)."
+    },
+    {
+      "key": "waldhausen-1987",
+      "authors": "Waldhausen, F.",
+      "title": "Algebraic K-theory of spaces, concordance, and stable homotopy theory",
+      "venue": "Algebraic Topology and Algebraic K-theory, Annals of Mathematics Studies 113, Princeton University Press (1987), 392–417",
+      "year": "1987",
+      "url": "https://www.math.uni-bielefeld.de/~fw/",
+      "note": "Stable A-theory ≃ stable homotopy: the linearization of A(X) and the Σ^∞(X₊) × Wh^Diff splitting"
+    },
+    {
+      "key": "weiss-1995-orthogonal",
+      "authors": "Weiss, M.",
+      "title": "Orthogonal calculus",
+      "venue": "Trans. Amer. Math. Soc. 347 (1995), no. 10, 3743–3796",
+      "year": "1995",
+      "url": "https://www.ams.org/journals/tran/1995-347-10/S0002-9947-1995-1321590-3/",
+      "note": "Founding paper of orthogonal calculus: polynomial functors on inner-product spaces, O(n)-derivative spectra, classification of homogeneous functors; see also the 1998 erratum."
+    },
+    {
+      "key": "weiss-1996-calcemb",
+      "authors": "Weiss, M.",
+      "title": "Calculus of embeddings",
+      "venue": "Bull. Amer. Math. Soc. 33 (1996) 177–187",
+      "year": "1996",
+      "url": "https://www.ams.org/bull/1996-33-02/S0273-0979-96-00657-X/",
+      "note": "Gentle survey; the best source for the immersion-theory-as-linearization and jet analogies for teaching."
+    },
+    {
+      "key": "weiss-1998-erratum",
+      "authors": "Weiss, M.",
+      "title": "Erratum: Orthogonal calculus",
+      "venue": "Trans. Amer. Math. Soc. 350 (1998), no. 2, 851–855",
+      "year": "1998",
+      "url": "https://www.ams.org/journals/tran/1998-350-02/",
+      "note": "Corrects an error in the 1995 classification argument — cite alongside the original when teaching the homogeneous classification."
+    },
+    {
+      "key": "weiss-1999-emb1",
+      "authors": "Weiss, M.",
+      "title": "Embeddings from the point of view of immersion theory: Part I",
+      "venue": "Geometry & Topology 3 (1999) 67–101; erratum: Geometry & Topology 15 (2011) 407–409",
+      "year": "1999",
+      "url": "https://arxiv.org/abs/math/9905202",
+      "note": "Foundations of manifold calculus: good functors, polynomial degree ≤ k, T_k via 𝒪_k, linear = sections of a fibration."
+    },
+    {
+      "key": "weiss-2011-erratum",
+      "authors": "Weiss, M.",
+      "title": "Erratum to: Embeddings from the point of view of immersion theory: Part I",
+      "venue": "Geometry & Topology 15 (2011), 407–409",
+      "year": "2011",
+      "url": "https://msp.org/gt/2011/15-1/p11.xhtml",
+      "note": "Corrects the proof that T_kF is polynomial of degree ≤ k; always cite alongside Part I."
+    },
+    {
+      "key": "behrens-rezk-2020-survey",
+      "authors": "Behrens, M.; Rezk, C.",
+      "title": "Spectral algebra models of unstable vₙ-periodic homotopy theory",
+      "venue": "Bousfield Classes and Ohkawa's Theorem, Springer Proceedings in Mathematics & Statistics 309 (2020), 275–323",
+      "year": "2020",
+      "url": "https://arxiv.org/abs/1703.02186",
+      "note": "Survey linking the identity tower, Bousfield–Kuhn functors and spectral Lie algebras — advanced outlook lecture"
+    },
+    {
+      "key": "talbot-2012-notes",
+      "authors": "Arone, G.; Ching, M. (mentors); Talbot participants",
+      "title": "Talbot 2012: Calculus of Functors — workshop notes",
+      "venue": "MIT Talbot Workshop, notes available on the workshop page",
+      "year": "2012",
+      "url": "https://math.mit.edu/events/talbot/index.php?year=2012",
+      "note": "A complete week-long graduate syllabus (foundations → operads → all three calculi → applications) with free notes"
+    },
+    {
+      "key": "debray-2017-seminar",
+      "authors": "Debray, A. (note-taker)",
+      "title": "Goodwillie calculus — UT Austin graduate seminar notes, Fall 2017",
+      "venue": "Lecture notes, adebray.github.io",
+      "year": "2017",
+      "url": "https://adebray.github.io/lecture_notes/f17_Goodwillie_calculus.pdf",
+      "note": "Student-run seminar notes; useful model for pacing a semester of talks"
+    },
+    {
+      "key": "noel-reis-2012-seminar",
+      "authors": "Noel, J.; Reis, R. (organizers)",
+      "title": "Goodwillie calculus — graduate seminar program and notes, Spring 2012",
+      "venue": "Seminar notes, nullplug.org",
+      "year": "2012",
+      "url": "https://www.nullplug.org/AG/calculus.pdf",
+      "note": "Compact seminar plan with talk-by-talk references, including analyticity and radii of convergence"
+    },
+    {
+      "key": "mfo-2004-arbeitsgemeinschaft",
+      "authors": "Goodwillie, T. G.; McCarthy, R. (organizers)",
+      "title": "Arbeitsgemeinschaft mit aktuellem Thema: The Goodwillie Calculus of Functors",
+      "venue": "Oberwolfach Reports 17/2004, Mathematisches Forschungsinstitut Oberwolfach (meeting 0414, March–April 2004)",
+      "year": "2004",
+      "url": "https://publications.mfo.de/handle/mfo/2836",
+      "note": "Verified date correction: the Oberwolfach study group was 2004; its report is a ready-made talk sequence"
+    },
+    {
+      "key": "blans-heuts-2022-seminar",
+      "authors": "Blans, M.; Heuts, G. (organizers)",
+      "title": "Goodwillie calculus seminar (close reading of Calculus III)",
+      "venue": "Utrecht University, fall 2022, schedule and talk summaries online",
+      "year": "2022",
+      "url": "https://sites.google.com/view/maxblans/home/goodwillie-seminar",
+      "note": "Recent Utrecht course page; evidence for the 'read Calc III directly' teaching route"
+    },
+    {
+      "key": "oxford-2025-advanced-class",
+      "authors": "Pavutnitskiy, F. (organizer)",
+      "title": "Goodwillie Calculus — Topology Advanced Class, Hilary Term 2025",
+      "venue": "Mathematical Institute, University of Oxford",
+      "year": "2025",
+      "url": "https://www.maths.ox.ac.uk/system/files/attachments/TAC%20HT25.pdf",
+      "note": "Current course offering with abstract/schedule; confirms the subject is standard advanced-class material"
+    }
+  ]
+}

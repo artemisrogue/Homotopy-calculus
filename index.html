@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Calculus of Homotopy Functors</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<link rel="stylesheet" href="style.css">
+<style>
+  /* Standalone-app shell (this app does not use KnotLab's tab bar). */
+  header .subtitle { max-width: 60ch; }
+  #app-root { flex: 1; }
+  .hfc-intro {
+    max-width: 1200px;
+    margin: 1.25rem auto 0;
+    padding: 0 1.5rem;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+  }
+  footer.hfc-footer {
+    max-width: 1200px;
+    margin: 2rem auto 1.5rem;
+    padding: 1rem 1.5rem 0;
+    border-top: 1px solid var(--border);
+    color: var(--text-muted);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>The Calculus of Homotopy Functors</h1>
+    <p class="subtitle">An interactive graduate course &mdash; Goodwillie calculus, Taylor towers, sheafification, and embedding calculus</p>
+  </div>
+</header>
+
+<div class="hfc-intro">
+  Nine sub-tabs, from cubical diagrams to the Goodwillie&ndash;Weiss tower for spaces of knots.
+  Three interactive demonstrations: a classical Taylor-series comparison, a gallery of (co)cartesian
+  squares, and a cross-effect calculator. Use the sub-tab bar below to navigate.
+</div>
+
+<div id="app-root"></div>
+
+<footer class="hfc-footer">
+  A companion literature review (<code>FUNCTOR_CALCULUS_LIT_REVIEW.md</code>) and bibliography
+  (<code>references.json</code>) ship alongside this app. Mathematics rendered with KaTeX; plots with Plotly.
+</footer>
+
+<!-- Scripts load synchronously and in order so KaTeX auto-render and Plotly
+     are defined before the module bootstraps. -->
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/plotly.js-dist-min@2/plotly.min.js"></script>
+<script src="functor-calculus.js"></script>
+<script>
+  (function () {
+    function boot() {
+      var root = document.getElementById('app-root');
+      if (root && typeof window.renderFunctorCalculus === 'function') {
+        window.renderFunctorCalculus(root);
+      }
+    }
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', boot);
+    } else {
+      boot();
+    }
+  })();
+</script>
+</body>
+</html>
