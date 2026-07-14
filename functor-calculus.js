@@ -869,7 +869,10 @@
         '<p>All the vocabulary &mdash; polynomial functors, cross effects, degree &mdash; predates topology, in the study ' +
         'of functors of abelian groups: Eilenberg&ndash;MacLane (Ann. of Math. 60, 1954) introduced cross effects to ' +
         'analyse \\(H_*(K(A,n))\\); \\(\\operatorname{Sym}^d\\), \\(\\Lambda^d\\), \\(\\Gamma^d\\), tensor powers are polynomial of degree ' +
-        '\\(d\\) (see the calculator in <em>Derivatives &amp; Layers</em>); and Dold&ndash;Puppe (Ann. Inst. Fourier 11, ' +
+        '\\(d\\) (the calculator in <em>Derivatives &amp; Layers</em> covers the tensor, symmetric, and exterior families ' +
+        'directly; over \\(\\mathbb{Q}\\), \\(\\Gamma^d\\) is canonically isomorphic to \\(\\operatorname{Sym}^d\\) ' +
+        '&mdash; invariants and coinvariants of the \\(\\Sigma_d\\)-action agree once \\(d!\\) is invertible &mdash; so ' +
+        'its cross effects read off the \\(\\operatorname{Sym}^d\\) row); and Dold&ndash;Puppe (Ann. Inst. Fourier 11, ' +
         '1961) defined derived functors of non-additive functors by simplicial resolutions. The discrete calculus of ' +
         'Johnson&ndash;McCarthy (<em>Other Calculi</em>) recovers Dold&ndash;Puppe theory as the Taylor tower of a ' +
         'functor of simplicial modules, and the layers reproduce stable derived functors. The classical statement ' +
