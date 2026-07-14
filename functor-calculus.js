@@ -556,8 +556,9 @@
 
       '<div class="expo-panel">' +
         '<h3>3. The theorem: manifold calculus <em>is</em> sheafification</h3>' +
-        '<p>In manifold calculus (Weiss 1999; see the <em>Knots &amp; Embedding Calculus</em> sub-tab for the setup) the ' +
-        'metaphor becomes exact. Let \\(M\\) be a smooth \\(m\\)-manifold and \\(\\mathcal{O}(M)\\) its poset of open ' +
+        '<p>In manifold calculus (Weiss 1999) the metaphor becomes exact &mdash; the recap immediately below is ' +
+        'self-contained; see the <em>Knots &amp; Embedding Calculus</em> sub-tab &sect;1 for the same setup developed ' +
+        'further, in the knot-theory application. Let \\(M\\) be a smooth \\(m\\)-manifold and \\(\\mathcal{O}(M)\\) its poset of open ' +
         'subsets, and consider presheaves \\(F : \\mathcal{O}(M)^{\\mathrm{op}} \\to \\mathcal{S}\\) taking isotopy ' +
         'equivalences to equivalences (e.g. \\(V \\mapsto \\operatorname{Emb}(V, N)\\)). Define the ' +
         '<strong>Weiss topology</strong> \\(\\mathcal{J}_k\\): a family \\(\\{U_i \\subseteq V\\}\\) is a ' +
