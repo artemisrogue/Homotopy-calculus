@@ -346,7 +346,7 @@
         'that \\(Q \\circ Q\\) is reduced but not \\(1\\)-excisive, even though \\(Q\\) is \\(1\\)-excisive. ' +
         '(Equivalently: \\(\\Sigma^\\infty\\Omega^\\infty\\) on spectra is a ' +
         'composite of two \\(1\\)-excisive functors whose Taylor tower has nonvanishing layers in every degree, by ' +
-        'the Snaith splitting.) The correct chain rule lives at the level of derivatives &mdash; see ' +
+        'the Snaith splitting &mdash; see <em>Worked Examples</em> &sect;2 for the statement.) The correct chain rule lives at the level of derivatives &mdash; see ' +
         '<em>Derivatives &amp; Layers</em>.</p>' +
         '</details>' +
       '</div>';
