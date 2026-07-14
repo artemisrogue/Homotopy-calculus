@@ -942,10 +942,13 @@
 
       '<div class="expo-panel">' +
         '<h3>2. The linear stage is immersion theory; convergence needs codimension \\(3\\)</h3>' +
-        '<p>The degree-\\(1\\) stage is classical: by Smale&ndash;Hirsch theory, when \\(\\dim M < \\dim N\\) the immersion ' +
-        'functor is linear, and</p>' +
-        '<div class="formula-box">$$T_1 \\operatorname{Emb}(-, N) \\;\\simeq\\; \\operatorname{Imm}(-, N).$$</div>' +
-        '<p>Weiss&rsquo;s slogan &mdash; <em>embeddings from the point of view of immersion theory</em> &mdash; is that the ' +
+        '<p>The degree-\\(1\\) stage:</p>' +
+        '<div class="formula-box">$$T_1 \\operatorname{Emb}(-, N) \\;\\simeq\\; \\operatorname{Imm}(-, N)$$</div>' +
+        '<p>is unconditionally a theorem of manifold calculus itself (Weiss 1999; see <em>Sheafification</em> ' +
+        '&sect;3) &mdash; no dimension hypothesis needed for the identification itself. Smale&ndash;Hirsch theory is the ' +
+        'separate, classical fact that further identifies \\(\\operatorname{Imm}(M,N)\\) with formal immersions when the ' +
+        'handle dimension of \\(M\\) is less than \\(\\dim N\\), which is what makes the composite functor genuinely ' +
+        'linear (i.e. computable by ordinary linear algebra) in that range. Weiss&rsquo;s slogan &mdash; <em>embeddings from the point of view of immersion theory</em> &mdash; is that the ' +
         'tower extends the \\(h\\)-principle one configuration size at a time. The deep theorem is convergence, ' +
         'announced by Goodwillie&ndash;Weiss (Geom. Topol. 3, 1999) but only completed once Goodwillie&ndash;Klein ' +
         '(J. Topol. 8, 2015) established the needed multiple-disjunction estimates:</p>' +
