@@ -1200,6 +1200,33 @@
             '<tr><td style="padding:4px 10px"><strong>signature application</strong></td><td style="padding:4px 10px">\\(K \\simeq \\mathrm{TC}\\) locally; \\(v_n\\)-periodicity</td><td style="padding:4px 10px">knot spaces; \\(\\operatorname{Emb}\\)</td><td style="padding:4px 10px">\\(B\\mathrm{Top}(n)\\), \\(B\\mathrm{Diff}\\)</td><td style="padding:4px 10px">Dold&ndash;Puppe, Andr&eacute;&ndash;Quillen</td></tr>' +
           '</tbody>' +
         '</table>' +
+      '</div>' +
+
+      '<div class="expo-panel">' +
+        '<h3>5. Practice</h3>' +
+        '<details class="kl-practice"><summary>Exercise 1: which group acts?</summary>' +
+        '<p>Homotopy-calculus layers carry a \\(\\Sigma_n\\)-action; orthogonal-calculus layers (&sect;1) carry an ' +
+        '\\(O(n)\\)-action instead. Trace this back to what is being permuted versus rotated: in ' +
+        '\\(D_nF(X) \\simeq \\Omega^\\infty\\bigl((\\partial_nF \\wedge X^{\\wedge n})_{h\\Sigma_n}\\bigr)\\), \\(\\Sigma_n\\) acts by ' +
+        'permuting the \\(n\\) smash factors of \\(X\\); in the orthogonal analogue, the layer is built from ' +
+        '\\(S^{nV}\\) for \\(V\\) an \\(n\\)-dimensional summand, and \\(O(n)\\) acts by rotating that summand. Explain why ' +
+        'this difference in what varies (a based space raised to a power, vs. a vector space of growing dimension) ' +
+        'forces the different group.</p>' +
+        '</details>' +
+        '<details class="kl-practice"><summary>Exercise 2: a cotriple cross effect by hand</summary>' +
+        '<p>For \\(F(A) = A^{\\otimes 2}\\) on modules, use &sect;2&rsquo;s identification with Eilenberg&ndash;MacLane ' +
+        'polynomial functors to check \\(\\operatorname{cr}_3 F = 0\\) directly (compute \\(F\\) on a sum of three ' +
+        'objects and see that no genuinely trilinear term survives), and compare against the \\(d = 2\\) tensor-power ' +
+        'row of the calculator in <em>Derivatives &amp; Layers</em> &sect;2. The two computations should agree, since ' +
+        'the abelian-categories cross effect specializes to the same construction there.</p>' +
+        '</details>' +
+        '<details class="kl-practice"><summary>Exercise 3: where the two towers can part ways</summary>' +
+        '<p>&sect;2 warns that the discrete/abelian tower and the Goodwillie tower &ldquo;can agree after passing to a ' +
+        'linearization such as \\(H_*(-;k)\\), but need not agree in general.&rdquo; The two towers are universal ' +
+        'approximations for different universal properties (cotriple-resolution degree vs. cross-effect-vanishing ' +
+        'degree on the linearized functor). Give an informal reason a functor could look \\(n\\)-excisive to one ' +
+        'construction&rsquo;s test objects but not the other&rsquo;s.</p>' +
+        '</details>' +
       '</div>';
   }
 
