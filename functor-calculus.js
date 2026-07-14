@@ -83,16 +83,16 @@
         '<em>Calculus II: Analytic functors</em> (<em>K</em>-Theory, 1992), and ' +
         '<em>Calculus III: Taylor series</em> (Geometry &amp; Topology, 2003) &mdash; imports the central idea of ' +
         'differential calculus into homotopy theory. Where classical calculus approximates a smooth function ' +
-        '\\(f\\) near a point by polynomials \\(T_n f\\), functor calculus approximates a ' +
+        '\\(f\\) near a point by polynomials \\(P_n f\\), functor calculus approximates a ' +
         '<span class="kl-term" title="Homotopy functor: a functor between categories of spaces (or spectra) that sends weak homotopy equivalences to weak homotopy equivalences.">homotopy functor</span> ' +
         '\\(F\\) &mdash; such as the identity \\(X \\mapsto X\\), stable homotopy \\(X \\mapsto \\Omega^\\infty\\Sigma^\\infty X\\), ' +
-        'Waldhausen \\(K\\)-theory \\(X \\mapsto A(X)\\), or an embedding functor \\(V \\mapsto \\operatorname{Emb}(V,N)\\) &mdash; ' +
-        'by <span class="kl-term" title="n-excisive functor: one that sends every strongly cocartesian (n+1)-cube of spaces to a cartesian cube. The functor-calculus analogue of a polynomial of degree at most n.">\\(n\\)-excisive functors</span>, ' +
+        'or Waldhausen&rsquo;s \\(A\\)-theory \\(X \\mapsto A(X)\\) &mdash; ' +
+        'by <span class="kl-term" title="n-excisive functor: one that sends every strongly homotopy-cocartesian (n+1)-cube of spaces to a homotopy-cartesian cube. The functor-calculus analogue of a polynomial of degree at most n.">\\(n\\)-excisive functors</span>, ' +
         'assembled into a <strong>Taylor tower</strong></p>' +
         '<div class="formula-box">$$F \\;\\longrightarrow\\; \\cdots \\;\\longrightarrow\\; P_3 F \\;\\longrightarrow\\; P_2 F \\;\\longrightarrow\\; P_1 F \\;\\longrightarrow\\; P_0 F \\simeq F(*).$$</div>' +
         '<p>Each stage \\(P_n F\\) is the universal degree-\\(n\\) approximation to \\(F\\); the difference between ' +
-        'consecutive stages is a <strong>homogeneous layer</strong> \\(D_n F\\), and each layer is classified by a ' +
-        'single <span class="kl-term" title="Spectrum: a sequence of pointed spaces Eₙ with structure maps ΣEₙ → Eₙ₊₁; the objects representing generalized (co)homology theories. Stable homotopy theory is the study of spectra.">spectrum</span> ' +
+        'consecutive stages is a <strong>homogeneous layer</strong> \\(D_n F\\), and for finitary \\(F\\) each layer is classified by a ' +
+        'single <span class="kl-term" title="Spectrum: a sequence of pointed spaces Eₙ with structure maps ΣEₙ → Eₙ₊₁; the objects representing generalized (co)homology theories; equivalently (modern definition) an excisive functor from finite pointed spaces to spaces.">spectrum</span> ' +
         '\\(\\partial_n F\\) with an action of the symmetric group \\(\\Sigma_n\\) &mdash; the ' +
         '<strong>\\(n\\)-th derivative</strong> of \\(F\\). Under an analyticity hypothesis the tower converges, ' +
         'and one recovers \\(F\\) from its derivatives exactly as an analytic function is recovered from its ' +
@@ -101,8 +101,8 @@
 
       '<div class="expo-panel">' +
         '<h3>The dictionary</h3>' +
-        '<p>The analogy is precise enough to organise the whole theory. Keep this table in mind throughout the ' +
-        'module; the <em>Taylor Tower</em> sub-tab has an interactive demonstration of the left column.</p>' +
+        '<p>The analogy is precise enough to organise the whole theory; the <em>Taylor Tower</em> sub-tab has an ' +
+        'interactive demonstration of the left column.</p>' +
         '<table class="dict-table" style="width:100%;border-collapse:collapse">' +
           '<thead><tr style="border-bottom:1.5px solid #333">' +
             '<th style="padding:6px 10px;text-align:left;color:#2171b5">Differential calculus</th>' +
@@ -110,18 +110,18 @@
           '</tr></thead>' +
           '<tbody>' +
             '<tr><td style="padding:4px 10px">smooth function \\(f : \\mathbb{R} \\to \\mathbb{R}\\)</td><td style="padding:4px 10px">homotopy functor \\(F : \\mathcal{S} \\to \\mathcal{S}\\) (or to spectra)</td></tr>' +
-            '<tr><td style="padding:4px 10px">continuity</td><td style="padding:4px 10px">preservation of weak equivalences (+ filtered colimits)</td></tr>' +
+            '<tr><td style="padding:4px 10px">continuity</td><td style="padding:4px 10px">preservation of weak equivalences; finitary functors also preserve filtered colimits</td></tr>' +
             '<tr><td style="padding:4px 10px">polynomial of degree \\(\\leq n\\)</td><td style="padding:4px 10px">\\(n\\)-excisive functor</td></tr>' +
-            '<tr><td style="padding:4px 10px">linear function</td><td style="padding:4px 10px">reduced 1-excisive functor \\(X \\mapsto \\Omega^\\infty(E \\wedge X)\\)</td></tr>' +
-            '<tr><td style="padding:4px 10px">Taylor polynomial \\(T_n f\\)</td><td style="padding:4px 10px">\\(n\\)-excisive approximation \\(P_n F\\)</td></tr>' +
+            '<tr><td style="padding:4px 10px">linear function</td><td style="padding:4px 10px">reduced, finitary 1-excisive functor \\(X \\mapsto \\Omega^\\infty(E \\wedge X)\\)</td></tr>' +
+            '<tr><td style="padding:4px 10px">Taylor polynomial \\(P_n f\\)</td><td style="padding:4px 10px">\\(n\\)-excisive approximation \\(P_n F\\)</td></tr>' +
             '<tr><td style="padding:4px 10px">monomial \\(a_n x^n / n!\\)</td><td style="padding:4px 10px">homogeneous layer \\(D_n F(X) \\simeq \\Omega^\\infty\\bigl((\\partial_n F \\wedge X^{\\wedge n})_{h\\Sigma_n}\\bigr)\\)</td></tr>' +
             '<tr><td style="padding:4px 10px">\\(n\\)-th derivative \\(f^{(n)}(0)\\)</td><td style="padding:4px 10px">derivative spectrum \\(\\partial_n F\\) with \\(\\Sigma_n\\)-action</td></tr>' +
             '<tr><td style="padding:4px 10px">Taylor series</td><td style="padding:4px 10px">Taylor tower \\(\\{P_n F\\}\\)</td></tr>' +
             '<tr><td style="padding:4px 10px">radius of convergence</td><td style="padding:4px 10px">\\(\\rho\\)-analyticity: tower converges on \\(\\rho\\)-connected spaces</td></tr>' +
             '<tr><td style="padding:4px 10px">\\(f(0)\\)</td><td style="padding:4px 10px">\\(P_0 F = F(*)\\), the constant approximation</td></tr>' +
             '<tr><td style="padding:4px 10px">difference quotient / finite differences</td><td style="padding:4px 10px">cross effects \\(\\operatorname{cr}_n F\\)</td></tr>' +
-            '<tr><td style="padding:4px 10px">chain rule \\((f \\circ g)&prime;\\)</td><td style="padding:4px 10px">Arone&ndash;Ching chain rule: \\(\\partial_*(F \\circ G)\\) from \\(\\partial_* F \\circ \\partial_* G\\)</td></tr>' +
-            '<tr><td style="padding:4px 10px">truncation \\(T_n \\to T_{n-1}\\)</td><td style="padding:4px 10px">tower maps \\(P_n F \\to P_{n-1} F\\)</td></tr>' +
+            '<tr><td style="padding:4px 10px">chain rule \\((f \\circ g)&prime;\\)</td><td style="padding:4px 10px">Arone&ndash;Ching chain rule (\\(F,G\\) reduced): \\(\\partial_*(F \\circ G) \\simeq \\partial_* F \\circ_{\\partial_*\\mathrm{Id}} \\partial_* G\\)</td></tr>' +
+            '<tr><td style="padding:4px 10px">truncation \\(P_n f \\to P_{n-1} f\\)</td><td style="padding:4px 10px">tower maps \\(P_n F \\to P_{n-1} F\\)</td></tr>' +
           '</tbody>' +
         '</table>' +
         '<p style="margin-top:0.9em;font-size:0.95em;color:#555">A second, independent analogy runs through the ' +
@@ -143,7 +143,7 @@
           '<tbody>' +
             '<tr><td style="padding:4px 10px"><strong>Homotopy calculus</strong></td><td style="padding:4px 10px">\\(F : \\mathcal{S} \\to \\mathcal{S}\\) or \\(\\mathrm{Sp}\\)</td><td style="padding:4px 10px">\\(n\\)-excisive</td><td style="padding:4px 10px">Goodwillie, <em>Calculus I&ndash;III</em> (1990&ndash;2003)</td></tr>' +
             '<tr><td style="padding:4px 10px"><strong>Manifold (embedding) calculus</strong></td><td style="padding:4px 10px">presheaves \\(F : \\mathcal{O}(M)^{\\mathrm{op}} \\to \\mathcal{S}\\)</td><td style="padding:4px 10px">degree \\(\\leq k\\) on disjoint unions of balls</td><td style="padding:4px 10px">Weiss; Goodwillie&ndash;Weiss (Geom. Topol., 1999)</td></tr>' +
-            '<tr><td style="padding:4px 10px"><strong>Orthogonal calculus</strong></td><td style="padding:4px 10px">continuous \\(F : \\mathcal{J} \\to \\mathcal{S}\\) on inner-product spaces</td><td style="padding:4px 10px">polynomial in the vector-space variable</td><td style="padding:4px 10px">Weiss (Trans. AMS, 1995)</td></tr>' +
+            '<tr><td style="padding:4px 10px"><strong>Orthogonal calculus</strong></td><td style="padding:4px 10px"><span class="kl-term" title="continuous here means continuous on morphism (mapping) spaces of J = f.d. real inner-product spaces and linear isometries, a stronger condition than merely preserving weak equivalences.">continuous</span> \\(F : \\mathcal{J} \\to \\mathcal{S}\\) on inner-product spaces</td><td style="padding:4px 10px">polynomial in the vector-space variable</td><td style="padding:4px 10px">Weiss (Trans. AMS, 1995)</td></tr>' +
           '</tbody>' +
         '</table>' +
         '<p style="margin-top:0.9em">The three interact: manifold calculus studies \\(\\operatorname{Emb}(M,N)\\) as \\(M\\) varies through ' +
@@ -155,27 +155,27 @@
         '<h3>Why this module lives in KnotLab</h3>' +
         '<p>Applying manifold calculus to the embedding functor of the interval yields the ' +
         '<strong>Goodwillie&ndash;Weiss tower</strong> for the space of <em>long knots</em> ' +
-        '\\(\\mathcal{K} = \\operatorname{Emb}_c(\\mathbb{R}, \\mathbb{R}^3)\\). Its stages \\(T_k \\mathcal{K}\\) produce knot ' +
-        'invariants that are <strong>finite-type (Vassiliev) invariants</strong> &mdash; the same invariants that appear in the ' +
+        '\\(\\mathcal{K} = \\operatorname{Emb}_c(\\mathbb{R}, \\mathbb{R}^3)\\). Its stages \\(T_k \\mathcal{K}\\) ' +
+        '(Goodwillie&ndash;Weiss&rsquo; notation for \\(P_n\\)) produce ' +
+        '<strong>finite-type (Vassiliev)</strong> knot invariants &mdash; the same invariants that appear in the ' +
         '<em>Polynomial Invariants</em> tab as coefficients of the Conway polynomial and of the expansions of the ' +
         'Jones and HOMFLY-PT polynomials after the substitution \\(q = e^h\\) (Birman&ndash;Lin, 1993). The conjecture ' +
-        'that the tower is a <em>universal</em> finite-type invariant (now a theorem rationally) is one of the deepest ' +
-        'links between knot theory and abstract homotopy theory. The <em>Knots &amp; Embedding Calculus</em> sub-tab ' +
-        'develops this bridge in detail.</p>' +
+        'that the tower is a <em>universal</em> finite-type invariant (now a theorem rationally) is among the deepest ' +
+        'links to abstract homotopy theory. See the <em>Knots &amp; Embedding Calculus</em> sub-tab.</p>' +
       '</div>' +
 
       '<div class="expo-panel">' +
         '<h3>Historical origins</h3>' +
-        '<p>Goodwillie did not invent the calculus to generalise Taylor series for their own sake. The motivating ' +
-        'problem was concrete: compute <span class="kl-term" title="Pseudoisotopy space P(M): the space of diffeomorphisms of M × [0,1] fixing M × {0} and ∂M × [0,1]. Controls the difference between isotopy and concordance of diffeomorphisms.">pseudoisotopy spaces</span> ' +
+        '<p>The motivating problem was concrete: compute <span class="kl-term" title="Pseudoisotopy space P(M): the space of diffeomorphisms of M × [0,1] fixing M × {0} and ∂M × [0,1]. Controls the difference between isotopy and concordance of diffeomorphisms.">pseudoisotopy spaces</span> ' +
         'and, through them, <span class="kl-term" title="Waldhausen A-theory A(X): the algebraic K-theory of the category of finite retractive spaces over X; equivalently K(Σ∞₊ΩX). Splits off Whitehead spectra controlling h-cobordism and pseudoisotopy.">Waldhausen&rsquo;s algebraic ' +
         '\\(K\\)-theory of spaces</span> \\(A(X)\\). <em>Calculus I</em> computes the first derivative of the ' +
         'pseudoisotopy functor; the technology of analytic functors in <em>Calculus II</em> was built to prove ' +
         'theorems of the form &ldquo;this map of functors is an equivalence because both sides have the same ' +
         'derivatives.&rdquo; That strategy culminated in the <strong>Dundas&ndash;Goodwillie&ndash;McCarthy theorem</strong> ' +
-        'identifying relative algebraic \\(K\\)-theory with relative topological cyclic homology &mdash; see ' +
-        '<em>Worked Examples</em>. Only in <em>Calculus III</em> (2003) did the tower itself, with its universal ' +
-        'property and homogeneous classification, receive its definitive treatment. The modern, ' +
+        'identifying relative algebraic \\(K\\)-theory of rings and ring spectra in general &mdash; distinct from, ' +
+        'but related to, the \\(A(X)\\) example above &mdash; with relative topological cyclic homology along nilpotent ' +
+        'extensions &mdash; see <em>Worked Examples</em>. Only in <em>Calculus III</em> (2003) did the tower itself ' +
+        'receive its definitive treatment. The modern, ' +
         '\\(\\infty\\)-categorical formulation is Chapter 6 of Lurie&rsquo;s <em>Higher Algebra</em>; the standard ' +
         'contemporary survey is Arone&ndash;Ching, <em>Goodwillie calculus</em> (Handbook of Homotopy Theory, 2020).</p>' +
       '</div>' +
@@ -199,7 +199,7 @@
       '<div class="expo-panel">' +
         '<h3>How to read this module</h3>' +
         '<ul>' +
-          '<li><strong>Cubes &amp; Excision</strong> &mdash; the language: cubical diagrams, cartesian and cocartesian squares, ' +
+          '<li><strong>Cubes &amp; Excision</strong> &mdash; cubical diagrams, cartesian and cocartesian squares, ' +
           'the definition of \\(n\\)-excision, Blakers&ndash;Massey. Interactive gallery of squares.</li>' +
           '<li><strong>Taylor Tower</strong> &mdash; the \\(T_n\\) and \\(P_n\\) constructions, universal property, convergence ' +
           'and analyticity. Interactive classical-Taylor-series comparison.</li>' +
@@ -225,47 +225,48 @@
     return '' +
       '<div class="expo-panel">' +
         '<h3>1. Cubical diagrams</h3>' +
-        '<p>Fix a finite set \\(S\\) with \\(|S| = n\\). An <strong>\\(n\\)-cube of spaces</strong> is a functor</p>' +
-        '<div class="formula-box">$$\\mathcal{X} : \\mathcal{P}(S) \\longrightarrow \\mathcal{S}, \\qquad T \\mapsto \\mathcal{X}(T),$$</div>' +
-        '<p>from the poset of subsets of \\(S\\). A \\(0\\)-cube is a space, a \\(1\\)-cube is a map, a \\(2\\)-cube is a ' +
+        '<p>Fix a finite set \\(U\\) with \\(|U| = n\\). An <strong>\\(n\\)-cube of spaces</strong> is a functor</p>' +
+        '<div class="formula-box">$$\\mathcal{X} : \\mathcal{P}(U) \\longrightarrow \\mathcal{S}, \\qquad T \\mapsto \\mathcal{X}(T),$$</div>' +
+        '<p>from the poset of subsets of \\(U\\). A \\(0\\)-cube is a space, a \\(1\\)-cube is a map, a \\(2\\)-cube is a ' +
         'commutative square, a \\(3\\)-cube is a commutative cube. Two comparison maps measure how close a cube is to ' +
         'being a homotopy (co)limit diagram:</p>' +
-        '<div class="formula-box">$$a(\\mathcal{X}) : \\mathcal{X}(\\varnothing) \\to \\operatorname*{holim}_{\\varnothing \\neq T \\subseteq S} \\mathcal{X}(T), \\qquad b(\\mathcal{X}) : \\operatorname*{hocolim}_{T \\subsetneq S} \\mathcal{X}(T) \\to \\mathcal{X}(S).$$</div>' +
+        '<div class="formula-box">$$a(\\mathcal{X}) : \\mathcal{X}(\\varnothing) \\to \\operatorname*{holim}_{\\varnothing \\neq T \\subseteq U} \\mathcal{X}(T), \\qquad b(\\mathcal{X}) : \\operatorname*{hocolim}_{T \\subsetneq U} \\mathcal{X}(T) \\to \\mathcal{X}(U).$$</div>' +
         '<p>The cube is <strong><span class="kl-term" title="Cartesian cube: the initial vertex maps by a weak equivalence to the homotopy limit of the rest of the cube. For squares: a homotopy pullback square.">cartesian</span></strong> if \\(a(\\mathcal{X})\\) is an equivalence, ' +
-        '<strong>\\(k\\)-cartesian</strong> if \\(a(\\mathcal{X})\\) is \\(k\\)-connected, and ' +
+        '<strong>\\(k\\)-cartesian</strong> if \\(a(\\mathcal{X})\\) is \\(k\\)-<span class="kl-term" title="k-connected map: its homotopy fiber is (k-1)-connected; equivalently it induces isomorphisms on pi_i for i < k and a surjection on pi_k. Fixes the indexing convention used throughout this section.">connected</span>, and ' +
         '<strong><span class="kl-term" title="Cocartesian cube: the terminal vertex is the homotopy colimit of the rest of the cube. For squares: a homotopy pushout square.">cocartesian</span></strong> if \\(b(\\mathcal{X})\\) is an equivalence ' +
         '(dually, \\(k\\)-cocartesian). A square is cartesian exactly when it is a homotopy pullback and cocartesian ' +
         'exactly when it is a homotopy pushout.</p>' +
         '<p>An \\(n\\)-cube with \\(n \\geq 2\\) is <strong>strongly cocartesian</strong> if every \\(2\\)-dimensional face is ' +
-        'cocartesian (this forces the whole cube and all higher faces to be cocartesian). Strongly cocartesian cubes ' +
+        'cocartesian (this forces the whole cube and all higher faces to be cocartesian); by convention every ' +
+        '\\(0\\)-cube and \\(1\\)-cube is vacuously strongly cocartesian, since neither has a \\(2\\)-dimensional face to ' +
+        'check &mdash; so \\(n\\)-excisive below is defined for every \\(n \\geq 0\\). Strongly cocartesian cubes ' +
         'are the functor-calculus stand-in for the affine grids on which one takes finite differences of a function: ' +
-        'they are determined by the \\(n\\) initial maps \\(\\mathcal{X}(\\varnothing) \\to \\mathcal{X}(\\{s\\})\\), just as an ' +
-        'affine lattice in \\(\\mathbb{R}^n\\) is determined by its edges at one corner.</p>' +
+        'they are determined by the \\(n\\) initial maps \\(\\mathcal{X}(\\varnothing) \\to \\mathcal{X}(\\{s\\})\\).</p>' +
       '</div>' +
 
       '<div class="expo-panel">' +
         '<h3>2. Excision and \\(n\\)-excision</h3>' +
-        '<p>Let \\(F\\) be a homotopy functor (of spaces or spectra). Goodwillie defines (<em>Calculus II</em>, 1992; ' +
-        '<em>Calculus III</em>, 2003):</p>' +
+        '<p>Let \\(F\\) be a homotopy functor (of spaces or spectra). Goodwillie defines (<em>Calculus II</em>, 1992):</p>' +
         '<div class="formula-box">$$F \\text{ is } n\\text{-excisive} \\iff F \\text{ sends every strongly cocartesian } (n{+}1)\\text{-cube to a cartesian cube}.$$</div>' +
         '<ul>' +
           '<li>\\(0\\)-excisive = homotopy constant: \\(F(X) \\simeq F(*)\\) for all \\(X\\).</li>' +
           '<li>\\(1\\)-excisive = sends homotopy pushouts to homotopy pullbacks. The name comes from the ' +
           '<span class="kl-term" title="Eilenberg–Steenrod excision axiom: H(X) can be computed from a cover; equivalently the Mayer–Vietoris square of a CW pair maps to a long exact sequence. Homology is the shadow of a 1-excisive functor.">excision axiom</span>: ' +
-          'for a reduced, finitary \\(1\\)-excisive \\(F\\), the sequence \\(\\pi_* F(X)\\) is a generalized homology theory, and in fact ' +
-          '\\(F(X) \\simeq \\Omega^\\infty(E \\wedge X)\\) for a spectrum \\(E\\). Linear functors <em>are</em> homology theories.</li>' +
+          'for a reduced, <span class="kl-term" title="Finitary functor: commutes with filtered/sequential homotopy colimits, i.e. is determined by its values on finite complexes.">finitary</span> \\(1\\)-excisive \\(F\\) valued in spaces, the sequence \\(\\pi_* F(X)\\) is a generalized homology theory, and in fact ' +
+          '\\(F(X) \\simeq \\Omega^\\infty(E \\wedge X)\\) for a spectrum \\(E\\) (spectrum-valued \\(F\\) instead satisfies \\(F(X) \\simeq E \\wedge X\\), with no \\(\\Omega^\\infty\\)).</li>' +
           '<li>\\(n\\)-excisive functors form a category \\(\\operatorname{Exc}_n\\); every \\(n\\)-excisive functor is ' +
           '\\((n{+}1)\\)-excisive, mirroring \\(\\deg \\leq n \\Rightarrow \\deg \\leq n{+}1\\).</li>' +
         '</ul>' +
-        '<p><strong>The identity is not \\(1\\)-excisive.</strong> The square below (suspension of \\(S^{n-1}\\)) is a homotopy ' +
-        'pushout but not a homotopy pullback; the failure is measured by the Freudenthal suspension theorem and is the ' +
-        'seed of the whole subject: if \\(\\mathrm{Id}\\) were \\(1\\)-excisive, unstable homotopy theory would collapse ' +
+        '<p><strong>The identity is not \\(1\\)-excisive.</strong> The suspension-of-\\(S^{n-1}\\) square in the interactive ' +
+        'gallery of &sect;3 below is a homotopy pushout but not a homotopy pullback; the failure is measured by the ' +
+        'Freudenthal suspension theorem: if \\(\\mathrm{Id}\\) were \\(1\\)-excisive, unstable homotopy theory would collapse ' +
         'into stable homotopy theory.</p>' +
         '<details class="kl-example"><summary>Example: products of excisive functors</summary>' +
         '<p>If \\(F\\) is \\(m\\)-excisive and \\(G\\) is \\(n\\)-excisive (to spectra), then \\(X \\mapsto F(X) \\wedge G(X)\\) is ' +
-        '\\((m{+}n)\\)-excisive &mdash; the analogue of \\(\\deg(fg) = \\deg f + \\deg g\\). Likewise ' +
-        '\\(X \\mapsto \\Omega^\\infty(E \\wedge X^{\\wedge n})\\) is \\(n\\)-excisive for any spectrum \\(E\\); these are the model ' +
-        '\\(n\\)-homogeneous functors classified in <em>Derivatives &amp; Layers</em>.</p>' +
+        '\\((m{+}n)\\)-excisive: split the defining \\((m{+}n{+}1)\\)-cube into a size-\\(m\\) and a size-\\(n\\) block and add the ' +
+        'two connectivity estimates, in the spirit of the generalized Blakers&ndash;Massey theorem below. Likewise ' +
+        '\\(X \\mapsto \\Omega^\\infty(E \\wedge (\\Sigma^\\infty X)^{\\wedge n})\\) is in fact \\(n\\)-homogeneous for any spectrum \\(E\\) ' +
+        '&mdash; an untwisted example of the functors classified in <em>Derivatives &amp; Layers</em>.</p>' +
         '</details>' +
       '</div>' +
 
@@ -289,14 +290,12 @@
 
       '<div class="expo-panel">' +
         '<h3>4. The Blakers&ndash;Massey theorem</h3>' +
-        '<p>The engine converting cocartesian information into cartesian information &mdash; the reason calculus has any ' +
-        'traction in an unstable world:</p>' +
-        '<div class="formula-box">$$\\text{If } \\mathcal{X} \\text{ is a homotopy pushout square whose initial maps are } k_1\\text{- and } k_2\\text{-connected,}$$' +
+        '<div class="formula-box">$$\\text{If } \\mathcal{X} \\text{ is a homotopy pushout square whose initial maps are } k_1\\text{- and } k_2\\text{-connected } (k_1, k_2 \\geq 0),$$' +
         '$$\\text{then } \\mathcal{X} \\text{ is } (k_1 + k_2 - 1)\\text{-cartesian.}$$</div>' +
         '<p>(Blakers&ndash;Massey, 1949&ndash;53, for the pair/triad case; see Munson&ndash;Voli&cacute;, ' +
         '<em>Cubical Homotopy Theory</em>, Chapter 4 for the modern cubical statement and proof.) The ' +
         '<strong>generalized Blakers&ndash;Massey theorem</strong> (Goodwillie, <em>Calculus II</em>, Theorem 2.3) extends this to ' +
-        'cubes: a strongly cocartesian \\(n\\)-cube whose \\(n\\) initial maps are \\(k_s\\)-connected is ' +
+        'cubes: a strongly cocartesian \\(n\\)-cube whose \\(n\\) initial maps are \\(k_s\\)-connected (\\(k_s \\geq 0\\)) is ' +
         '\\(\\bigl(1 - n + \\sum_s k_s\\bigr)\\)-cartesian. This estimate is exactly what makes the identity functor ' +
         '<em>analytic</em> (see <em>Taylor Tower</em>): excision fails, but only in a range that improves linearly with ' +
         'connectivity.</p>' +
@@ -320,8 +319,8 @@
         '\\(X * Y \\simeq \\Sigma(X \\wedge Y)\\) is contractible. Deduce that it is cocartesian whenever \\(X\\) or ' +
         '\\(Y\\) is contractible, and check that it fails for \\(X = Y = S^0\\). Harder: the converse is false &mdash; ' +
         'find non-contractible \\(X, Y\\) with \\(X * Y \\simeq *\\). <em>Hint: the pushout of ' +
-        '\\(X \\leftarrow X \\times Y \\to Y\\) is the join \\(X * Y\\), and \\(X * Y \\simeq \\Sigma(X \\wedge Y)\\) for ' +
-        'well-pointed spaces; for the last part try the Moore spaces \\(M(\\mathbb{Z}/2, 1) = \\mathbb{R}P^2\\) and ' +
+        '\\(X \\leftarrow X \\times Y \\to Y\\) is the join \\(X * Y\\) (the identification above needs ' +
+        'well-pointedness); for the last part try the Moore spaces \\(M(\\mathbb{Z}/2, 1) = \\mathbb{R}P^2\\) and ' +
         '\\(M(\\mathbb{Z}/3, 1)\\) and apply the K&uuml;nneth theorem to the smash.</em></p>' +
         '</details>' +
         '<details class="kl-practice"><summary>Exercise 2: strong cocartesian-ness is a 2-face condition</summary>' +
@@ -344,8 +343,8 @@
         '(c) In general, however, a composite of excisive functors need <em>not</em> be excisive of <em>any</em> ' +
         'degree &mdash; unlike \\(\\deg(f \\circ g) = \\deg f \\cdot \\deg g\\) for polynomials. Using the stable ' +
         'splitting \\(Q(A \\times B) \\simeq QA \\times QB \\times Q(A \\wedge B)\\) together with Exercise 3(b), show ' +
-        'that \\(Q \\circ Q\\) is reduced but not \\(1\\)-excisive, even though \\(Q = \\Omega^\\infty\\Sigma^\\infty = ' +
-        'P_1(\\mathrm{Id})\\) is \\(1\\)-excisive. (Equivalently: \\(\\Sigma^\\infty\\Omega^\\infty\\) on spectra is a ' +
+        'that \\(Q \\circ Q\\) is reduced but not \\(1\\)-excisive, even though \\(Q\\) is \\(1\\)-excisive. ' +
+        '(Equivalently: \\(\\Sigma^\\infty\\Omega^\\infty\\) on spectra is a ' +
         'composite of two \\(1\\)-excisive functors whose Taylor tower has nonvanishing layers in every degree, by ' +
         'the Snaith splitting.) The correct chain rule lives at the level of derivatives &mdash; see ' +
         '<em>Derivatives &amp; Layers</em>.</p>' +
@@ -361,34 +360,36 @@
         'attaching \\(|U|\\) cone points to \\(X\\): \\(X * \\{u\\} = CX\\) is the cone, and \\(X * \\{u, v\\}\\) is the ' +
         'unreduced suspension of \\(X\\). Goodwillie (<em>Calculus III</em>, 2003) defines</p>' +
         '<div class="formula-box">$$T_n F(X) \\;=\\; \\operatorname*{holim}_{\\varnothing \\neq U \\subseteq \\{0,1,\\dots,n\\}} F(X * U),$$</div>' +
-        '<p>with its natural map \\(t_n : F(X) \\to T_n F(X)\\) induced by \\(X \\to X * U\\). The \\((n{+}1)\\)-cube ' +
+        '<p>with its natural map \\(t_n : F(X) \\to T_n F(X)\\) assembled from the canonical maps \\(X \\to X * U\\) ' +
+        'into the holim cone. The \\((n{+}1)\\)-cube ' +
         '\\(U \\mapsto X * U\\) is strongly cocartesian, so if \\(F\\) were already \\(n\\)-excisive, \\(t_n\\) would be an ' +
         'equivalence. In general \\(T_n F\\) is a &ldquo;partial correction&rdquo;: it repairs the failure of excision on ' +
         'these particular canonical cubes. Iterating repairs everything:</p>' +
         '<div class="formula-box">$$P_n F(X) \\;=\\; \\operatorname*{hocolim}\\Bigl( F(X) \\xrightarrow{\\;t_n\\;} T_n F(X) \\xrightarrow{T_n t_n} T_n^2 F(X) \\longrightarrow \\cdots \\Bigr).$$</div>' +
-        '<p><strong>Theorem (Goodwillie, <em>Calculus III</em>, Theorem 1.8).</strong> \\(P_n F\\) is \\(n\\)-excisive, and ' +
-        '\\(p_n : F \\to P_n F\\) is the universal approximation: any natural transformation \\(F \\to G\\) with \\(G\\) ' +
-        '\\(n\\)-excisive factors through \\(p_n\\), uniquely up to homotopy. Categorically, \\(P_n\\) is a ' +
+        '<p><strong>Theorem (Goodwillie, <em>Calculus III</em>, Theorem 1.8).</strong> Let \\(F\\) be a homotopy functor of ' +
+        'pointed spaces (or spectra). Then \\(P_n F\\) is \\(n\\)-excisive, and ' +
+        '\\(p_n : F \\to P_n F\\) is the universal approximation: it induces an equivalence of mapping spaces ' +
+        '\\(\\operatorname{Map}(P_n F, G) \\xrightarrow{\\ \\simeq\\ } \\operatorname{Map}(F, G)\\) for every \\(n\\)-excisive ' +
+        '\\(G\\). Taking \\(G = P_n F\\) and, separately, \\(G = F\\) when \\(F\\) is already \\(n\\)-excisive shows \\(P_n\\) is ' +
+        'idempotent and fixes \\(\\operatorname{Exc}_n\\) pointwise &mdash; exactly what makes it a ' +
         '<span class="kl-term" title="Localization: a reflection onto a full subcategory; an idempotent construction L with a natural map X → LX that is an equivalence iff X already lies in the subcategory. Sheafification is the standard example.">localization</span> ' +
         'onto the subcategory \\(\\operatorname{Exc}_n\\) of \\(n\\)-excisive functors &mdash; the theme of the ' +
         '<em>Sheafification</em> sub-tab.</p>' +
         '<details class="kl-proof"><summary>Proof idea: why iterating \\(T_n\\) works</summary>' +
         '<p>Given a strongly cocartesian \\((n{+}1)\\)-cube \\(\\mathcal{X}\\), one compares \\(F(\\mathcal{X})\\) with the ' +
-        'cubes obtained by joining each vertex with subsets of \\(\\{0,\\dots,n\\}\\). The key geometric input: the ' +
-        'joined cubes interpolate between \\(F(\\mathcal{X})\\) and cubes of higher-connectivity maps, and each ' +
-        'application of \\(T_n\\) improves by a definite amount the extent to which \\(F(\\mathcal{X})\\) fails to be ' +
-        'cartesian. In the colimit the failure vanishes. The mechanism is the &ldquo;join trick&rdquo; of ' +
-        '<em>Calculus III</em>, &sect;1: a strongly cocartesian cube built from \\(X\\) maps into the corresponding ' +
-        'cubes built from the joins \\(X * U\\), and those joined cubes are cartesian <em>after applying any</em> ' +
-        '\\(F\\) &mdash; they are assembled from equivalences &mdash; so each application of \\(T_n\\) absorbs one layer ' +
-        'of the discrepancy, enabling an induction.</p>' +
+        'cubes obtained by joining each vertex with subsets of \\(\\{0,\\dots,n\\}\\). The key geometric input, the ' +
+        '&ldquo;join trick&rdquo; of <em>Calculus III</em>, &sect;1: the comparison maps between \\(F(\\mathcal{X})\\) and ' +
+        'these joined cubes grow more highly connected with each application of \\(T_n\\) &mdash; a connectivity estimate ' +
+        'in the spirit of the generalized Blakers&ndash;Massey theorem of <em>Calculus II</em> &mdash; so the failure of ' +
+        '\\(F(\\mathcal{X})\\) to be cartesian is pushed to infinity, and vanishes, in the colimit.</p>' +
         '</details>' +
       '</div>' +
 
       '<div class="expo-panel">' +
         '<h3>2. The tower</h3>' +
-        '<p>The inclusion \\(\\operatorname{Exc}_{n-1} \\subset \\operatorname{Exc}_n\\) induces natural maps ' +
-        '\\(q_n : P_n F \\to P_{n-1} F\\) commuting with the \\(p_n\\), assembling the <strong>Taylor tower</strong>. Its ' +
+        '<p>Since \\(\\operatorname{Exc}_{n-1} \\subset \\operatorname{Exc}_n\\), \\(P_{n-1}F\\) is itself \\(n\\)-excisive, so ' +
+        'the universal property above, applied to \\(p_{n-1} : F \\to P_{n-1}F\\), yields a unique ' +
+        '\\(q_n : P_n F \\to P_{n-1} F\\) with \\(q_n \\circ p_n = p_{n-1}\\); these assemble into the <strong>Taylor tower</strong>. Its ' +
         '<span class="kl-term" title="Homogeneous layer DₙF = hofib(PₙF → Pₙ₋₁F): the n-homogeneous part of F; for finitary F it is classified by the derivative spectrum ∂ₙF with its Σₙ-action.">layers</span> ' +
         '\\(D_n F = \\operatorname{hofib}(q_n)\\) are the homogeneous pieces:</p>' +
         '<div class="formula-box">' +
@@ -404,12 +405,10 @@
         ' & & P_0 F(X) \\simeq F(*)' +
         '\\end{array}$$' +
         '</div>' +
-        '<p>and \\(F(X)\\) maps compatibly to the whole column via \\(p_n\\). Each \\(D_n F\\) is ' +
+        '<p>Each \\(D_n F\\) is ' +
         '<strong>\\(n\\)-homogeneous</strong> (\\(n\\)-excisive with vanishing \\(P_{n-1}\\)) and &mdash; for finitary ' +
         '\\(F\\) &mdash; is classified by a single ' +
-        'spectrum with \\(\\Sigma_n\\)-action; see <em>Derivatives &amp; Layers</em>. This is the precise sense in ' +
-        'which the tower is a Taylor series: stage \\(n\\) differs from stage \\(n{-}1\\) by a single ' +
-        '&ldquo;monomial of degree \\(n\\).&rdquo;</p>' +
+        'spectrum with \\(\\Sigma_n\\)-action; see <em>Derivatives &amp; Layers</em>.</p>' +
       '</div>' +
 
       '<div class="expo-panel">' +
@@ -440,24 +439,26 @@
         '<p>When does \\(F(X) \\to \\operatorname*{holim}_n P_n F(X)\\) recover \\(F\\)? Goodwillie&rsquo;s answer ' +
         '(<em>Calculus II</em>, 1992) mirrors the theory of analytic functions. \\(F\\) is <strong>stably ' +
         '\\(n\\)-excisive</strong> with constants \\((c, \\kappa)\\) if it sends strongly cocartesian \\((n{+}1)\\)-cubes ' +
-        'with \\(k_s\\)-connected initial maps (\\(k_s \\geq \\kappa\\)) to \\(\\bigl(-c + \\sum k_s\\bigr)\\)-cartesian cubes; ' +
-        'and \\(F\\) is <strong>\\(\\rho\\)-analytic</strong> if it is stably \\(n\\)-excisive with constants ' +
-        '\\((n\\rho - q, \\rho + 1)\\) for all \\(n\\) and some fixed \\(q\\). The number \\(\\rho\\) plays the role of ' +
+        'with \\(k_s\\)-connected initial maps (\\(k_s \\geq \\kappa\\)) to \\(\\bigl(-c + \\sum k_s\\bigr)\\)-cartesian cubes ' +
+        '(&ldquo;\\(k\\)-cartesian&rdquo; is defined in <em>Cubes &amp; Excision</em> &sect;1); ' +
+        'and \\(F\\) is <strong>\\(\\rho\\)-analytic</strong> if there is a fixed \\(q\\) such that, for every \\(n\\), ' +
+        '\\(F\\) is stably \\(n\\)-excisive with constants \\((n\\rho - q, \\rho + 1)\\). The number \\(\\rho\\) plays the role of ' +
         '(the reciprocal of) a radius of convergence:</p>' +
         '<div class="formula-box">$$F \\ \\rho\\text{-analytic and } X \\ \\rho\\text{-connected} \\;\\Longrightarrow\\; F(X) \\xrightarrow{\\ \\simeq\\ } \\operatorname*{holim}_n P_n F(X).$$</div>' +
         '<ul>' +
           '<li>The <strong>identity functor is \\(1\\)-analytic</strong>: this is a repackaging of the generalized ' +
           'Blakers&ndash;Massey theorem. Hence the tower of \\(\\mathrm{Id}\\) converges on simply connected spaces ' +
-          '(indeed on nilpotent spaces, by later work).</li>' +
-          '<li>Waldhausen&rsquo;s \\(A\\)-theory is \\(1\\)-analytic; stable homotopy ' +
-          '\\(\\Sigma^\\infty \\Omega^\\infty\\) is \\(0\\)-analytic.</li>' +
+          '(the extension to nilpotent spaces is expected, but needs an argument beyond \\(\\rho\\)-analyticity alone).</li>' +
+          '<li>Waldhausen&rsquo;s \\(A\\)-theory is \\(1\\)-analytic (Goodwillie, <em>Calculus II</em>, &sect;4); the ' +
+          'spectrum-level functor \\(\\Sigma^\\infty \\Omega^\\infty\\) (on spectra) is \\(0\\)-analytic &mdash; see Kuhn&rsquo;s ' +
+          'survey (<em>Further Reading</em>) for both.</li>' +
           '<li>Convergence can fail dramatically outside the radius: for \\(X\\) not nilpotent the tower of the ' +
-          'identity can converge to the wrong thing (its limit computes a localization/completion of \\(X\\), not ' +
-          '\\(X\\) itself) &mdash; exactly like \\(\\sum x^n\\) diverging for \\(|x| \\geq 1\\).</li>' +
+          'identity need not converge to \\(X\\) at all, and identifying what (if anything) its limit computes is subtle ' +
+          '&mdash; exactly like \\(\\sum x^n\\) diverging for \\(|x| \\geq 1\\).</li>' +
         '</ul>' +
         '<p style="font-size:0.95em;color:#555">Warning on conventions: some authors index analyticity so that ' +
-        '&ldquo;\\(\\rho\\)-analytic&rdquo; functors converge on \\(\\rho\\)-connected spaces (as here), others shift by one. ' +
-        'When citing a convergence range, always check which convention the source uses.</p>' +
+        '&ldquo;\\(\\rho\\)-analytic&rdquo; functors converge on \\(\\rho\\)-connected spaces (as here); others shift by ' +
+        'one &mdash; check the source&rsquo;s convention before citing a range.</p>' +
       '</div>' +
 
       '<div class="expo-panel">' +
@@ -468,8 +469,9 @@
         'i.e. \\(f(0)\\).</p>' +
         '</details>' +
         '<details class="kl-practice"><summary>Exercise 2: \\(P_1\\) as stabilization</summary>' +
-        '<p>Let \\(F\\) be reduced (\\(F(*) \\simeq *\\)). Show \\(T_1 F(X) \\simeq \\Omega F(\\Sigma X)\\) ' +
-        '(the punctured square has two contractible corners), and conclude</p>' +
+        '<p>Let \\(F\\) be reduced (\\(F(*) \\simeq *\\)). Show \\(T_1 F(X) \\simeq \\Omega F(\\Sigma X)\\), where \\(\\Sigma X\\) ' +
+        'is the reduced suspension, identified for well-pointed \\(X\\) (e.g. a CW complex) with the join model ' +
+        '\\(X * \\{0,1\\}\\) of &sect;1 (the punctured square has two contractible corners), and conclude</p>' +
         '<div class="formula-box">$$P_1 F(X) \\;\\simeq\\; \\operatorname*{hocolim}_n \\Omega^n F(\\Sigma^n X).$$</div>' +
         '<p>For \\(F = \\mathrm{Id}\\) this is \\(Q = \\Omega^\\infty \\Sigma^\\infty\\): the linearization of the identity ' +
         'is stable homotopy theory. This exercise is the single most important computation in the subject.</p>' +
@@ -494,13 +496,15 @@
         '<p>Alongside the Taylor-series analogy runs a second, more categorical one. The \\(n\\)-excisive functors form a ' +
         'full subcategory \\(\\operatorname{Exc}_n \\subset \\operatorname{Fun}(\\mathcal{S}, \\mathcal{S})\\), and ' +
         'Goodwillie&rsquo;s theorem says that \\(P_n\\) is a <strong>reflection</strong> onto it: \\(P_n\\) is idempotent ' +
-        '(\\(P_n P_n \\simeq P_n\\)), comes with a unit \\(F \\to P_n F\\), and is universal. In Lurie&rsquo;s ' +
+        '(\\(P_n P_n \\simeq P_n\\)), comes with a unit \\(F \\to P_n F\\), and is universal in the sense made precise in ' +
+        '<em>Taylor Tower</em> &sect;1: \\(\\operatorname{Map}(P_nF,G) \\simeq \\operatorname{Map}(F,G)\\) naturally for every ' +
+        '\\(n\\)-excisive \\(G\\). In Lurie&rsquo;s ' +
         '\\(\\infty\\)-categorical treatment (<em>Higher Algebra</em>, &sect;6.1) this is made precise: for functors ' +
         'out of a small \\(\\infty\\)-category &mdash; e.g. finite pointed spaces, equivalently finitary functors on ' +
         'all spaces &mdash; the functor category is presentable and \\(\\operatorname{Exc}_n\\) is an accessible ' +
         'localization of it. Homotopy theorists have a ' +
         'canonical mental model for such reflections: <strong>sheafification</strong>, the reflection of presheaves onto ' +
-        'sheaves. The parallel is remarkably tight:</p>' +
+        'sheaves:</p>' +
         '<table class="dict-table" style="width:100%;border-collapse:collapse">' +
           '<thead><tr style="border-bottom:1.5px solid #333">' +
             '<th style="padding:6px 10px;text-align:left;color:#2171b5">Sheaf theory</th>' +
@@ -517,14 +521,15 @@
             '<tr><td style="padding:4px 10px">sheafification is left exact</td><td style="padding:4px 10px">\\(P_n\\) is left exact too (Lurie, HA 6.1.1.10) &mdash; but <strong>not topological</strong></td></tr>' +
           '</tbody>' +
         '</table>' +
-        '<p style="margin-top:0.9em">Both constructions repair a gluing failure by a colimit of corrections; both are ' +
-        'idempotent reflections; one iteration of the correction is not enough in general; and both reflections even ' +
-        'preserve finite homotopy limits. Anel&ndash;Biedermann&ndash;Finster&ndash;Joyal ' +
+        '<p style="margin-top:0.9em">Both constructions repair a gluing failure by a colimit of corrections, and one ' +
+        'iteration of the correction is not enough in general. Anel&ndash;Biedermann&ndash;Finster&ndash;Joyal ' +
         '(<em>Goodwillie&rsquo;s calculus of functors and higher topos theory</em>, J. Topology 11, 2018) pushed the ' +
-        'parallel to its limit: for suitable source and target, the \\(n\\)-excisive functors form an ' +
+        'parallel to its limit, generalizing beyond \\(\\operatorname{Fun}(\\mathcal{S},\\mathcal{S})\\) to functors between ' +
+        'arbitrary presentable \\(\\infty\\)-categories subject to hypotheses on source and target that they isolate ' +
+        'precisely: the \\(n\\)-excisive functors form an ' +
         '\\(\\infty\\)-<span class="kl-term" title="∞-topos: an ∞-category equivalent to an accessible left exact localization of presheaves of spaces; the homotopy-theoretic generalization of a category of sheaves.">topos</span>, ' +
         'and topos-theoretic technology yields a new proof and generalization of the Blakers&ndash;Massey theorem. ' +
-        'The true <em>dis</em>analogy is subtler: the localization \\(P_n\\) is accessible and left exact but ' +
+        'The true <em>dis</em>analogy is subtler: \\(P_n\\) is ' +
         '<strong>not topological</strong> &mdash; it is not generated by monomorphisms, so \\(n\\)-excisiveness is not the ' +
         'descent condition of any Grothendieck topology on the source. &ldquo;Excisive sheaf theory&rdquo; on spaces is ' +
         'a structural analogy at the level of localization theory. On manifolds, it becomes a literal theorem.</p>' +
@@ -533,14 +538,15 @@
       '<div class="expo-panel">' +
         '<h3>2. \\(T_n\\) as a plus construction</h3>' +
         '<p>Recall Grothendieck&rsquo;s <span class="kl-term" title="Plus construction F⁺(V) = colim over covers of V of the Čech descent object. For a presheaf of sets, applying it twice yields the sheafification; in homotopy theory transfinitely many iterations may be needed.">plus construction</span>: ' +
-        '\\(F^+(V)\\) replaces \\(F(V)\\) by the (co)limit over covers of \\(V\\) of the &Ccaron;ech descent data of ' +
-        '\\(F\\) on the cover. For presheaves of <em>sets</em>, \\(F^{++}\\) is already a sheaf; for presheaves of ' +
+        '\\(F^+(V)\\) replaces \\(F(V)\\) by the colimit, over covers of \\(V\\), of the equalizer of the &Ccaron;ech ' +
+        'descent data of \\(F\\) on each cover. For presheaves of <em>sets</em>, \\(F^{++}\\) is already a sheaf; for presheaves of ' +
         'spaces, one iterates transfinitely. Now compare: \\(T_n F(X) = \\operatorname{holim}_{U \\neq \\varnothing} F(X * U)\\) ' +
         'replaces \\(F(X)\\) by a homotopy limit of the values of \\(F\\) on a canonical cubical family of enlargements ' +
         'of \\(X\\), indexed by the poset of nonempty subsets of \\(\\{0, \\dots, n\\}\\) &mdash; the same indexing shape ' +
         'as a &Ccaron;ech nerve on an \\((n{+}1)\\)-element cover. And \\(P_n = \\operatorname{hocolim}_k T_n^k\\) ' +
-        'iterates until the correction stabilises &mdash; countably many steps suffice here because homotopy groups are ' +
-        'finitary. The formal shape of the two constructions &mdash; an idempotent-when-iterated correction given by a ' +
+        'iterates until the correction stabilises &mdash; countably many steps suffice because \\(\\pi_i\\) of a ' +
+        'sequential homotopy colimit of spaces is the colimit of the \\(\\pi_i\\)&rsquo;s (spheres are compact), with no ' +
+        'finitariness hypothesis on \\(F\\) needed. The formal shape of the two constructions &mdash; an idempotent-when-iterated correction given by a ' +
         'homotopy limit over a canonical diagram &mdash; is identical. (To be scrupulous: the joined cubes are not ' +
         'literally the &Ccaron;ech complex of a cover &mdash; the intersections come out wrong &mdash; so at this level ' +
         'the parallel is one of architecture, not a dictionary. The honest dictionary is the theorem below.)</p>' +
@@ -558,15 +564,18 @@
         'condition for all finite subsets.)</p>' +
         '<div class="formula-box">$$\\textbf{Theorem (Boavida de Brito&ndash;Weiss, 2013).}\\quad F \\text{ is polynomial of degree} \\leq k \\iff F \\text{ satisfies homotopy descent for } \\mathcal{J}_k,$$' +
         '$$\\text{and } T_k F \\text{ is the homotopy sheafification of } F \\text{ with respect to } \\mathcal{J}_k.$$</div>' +
-        '<p>(<em>Manifold calculus and homotopy sheaves</em>, Homology Homotopy Appl. 15 (2013), arXiv:1202.1305.) ' +
+        '<p>(<em>Manifold calculus and homotopy sheaves</em>, Homology Homotopy Appl. 15 (2013), arXiv:1202.1305.) Here ' +
+        '\\(T_k\\) is Weiss&rsquo;s original manifold-calculus limit \\(\\operatorname{holim}_{U \\in \\mathcal{O}_k(V)} F(U)\\) ' +
+        '(see <em>Knots &amp; Embedding Calculus</em> &sect;1) &mdash; a single, already-idempotent homotopy limit, and a ' +
+        'genuinely different construction from the join-indexed \\(T_n\\) of &sect;2 above, whose iterated colimit \\(P_n\\) ' +
+        'is what supplies polynomiality in homotopy calculus. ' +
         'Moreover \\(T_\\infty F\\) is the homotopy sheafification for \\(\\mathcal{J}_\\infty\\), and a ' +
         '\\(\\mathcal{J}_\\infty\\)-sheaf is determined by its restriction to the full sub-site of opens ' +
         'diffeomorphic to finite disjoint unions of balls &mdash; the <em>site of disks</em>. So in manifold calculus:</p>' +
         '<ul>' +
           '<li><strong>degree \\(\\leq 1\\) = ordinary homotopy sheaf.</strong> Linearity is literally the classical ' +
           'gluing condition (Mayer&ndash;Vietoris-style descent for honest open covers).</li>' +
-          '<li><strong>degree \\(\\leq k\\) = sheaf for \\(k\\)-fold configurations.</strong> The functor is determined by ' +
-          'what it does near every constellation of \\(k\\) points at a time.</li>' +
+          '<li><strong>degree \\(\\leq k\\) = sheaf for \\(k\\)-fold configurations.</strong></li>' +
           '<li><strong>the Taylor tower = the tower of sheafifications</strong> along the filtration ' +
           '\\(\\mathcal{J}_1 \\supseteq \\mathcal{J}_2 \\supseteq \\cdots\\) of Grothendieck topologies.</li>' +
         '</ul>' +
@@ -576,20 +585,20 @@
         '\\(V \\to \\mathbb{R}^3\\) that is locally an embedding &mdash; an immersion &mdash; but global injectivity can fail: the two ' +
         'pieces may pass through each other. Injectivity is a condition on <em>pairs</em> of points, i.e. ' +
         '\\(\\mathcal{J}_2\\)-local data. This is precisely why knotting exists: \\(\\operatorname{Emb}\\) satisfies ' +
-        '\\(\\mathcal{J}_1\\)-descent only after weakening to \\(\\operatorname{Imm}\\), and indeed by Smale&ndash;Hirsch ' +
-        'immersion theory the linear stage of the embedding tower is the immersion space (when the handle dimension ' +
-        'of \\(M\\) is less than \\(\\dim N\\)). Knot theory begins at degree \\(2\\).</p>' +
+        '\\(\\mathcal{J}_1\\)-descent only after weakening to \\(\\operatorname{Imm}\\). The identification ' +
+        '\\(T_1\\operatorname{Emb}(-,N) \\simeq \\operatorname{Imm}(-,N)\\) is unconditionally a theorem of manifold ' +
+        'calculus itself (Weiss 1999); Smale&ndash;Hirsch immersion theory is the separate, classical fact that further ' +
+        'identifies \\(\\operatorname{Imm}(M,N)\\) with formal immersions when the handle dimension of \\(M\\) is less ' +
+        'than \\(\\dim N\\). Knot theory begins at degree \\(2\\).</p>' +
         '</details>' +
       '</div>' +
 
       '<div class="expo-panel">' +
         '<h3>4. What the sheaf picture buys you</h3>' +
         '<ul>' +
-          '<li><strong>Descent formulas.</strong> Sheafification comes with a formula: \\(T_k F(V)\\) is the homotopy ' +
-          'limit of \\(F\\) over the poset \\(\\mathcal{O}_k(V)\\) of opens diffeomorphic to \\(\\leq k\\) disjoint balls ' +
-          '&mdash; a canonical cofinal system of \\(\\mathcal{J}_k\\)-local data &mdash; and once a functor <em>is</em> a ' +
-          '\\(\\mathcal{J}_k\\)-sheaf, its value on \\(V\\) satisfies descent for every \\(\\mathcal{J}_k\\)-cover of ' +
-          '\\(V\\). Values on disjoint balls are configuration-space data &mdash; this is how the knot-tower ' +
+          '<li><strong>Descent formulas.</strong> \\(T_k F(V)\\) (&sect;3) is a canonical cofinal system of ' +
+          '\\(\\mathcal{J}_k\\)-local data. Values on disjoint balls are ' +
+          'configuration-space data &mdash; this is how the knot-tower ' +
           'computations in the <em>Knots &amp; Embedding Calculus</em> sub-tab get off the ground.</li>' +
           '<li><strong>Context invariance.</strong> A sheaf-theoretic statement is manifestly independent of the ' +
           'auxiliary choices in the \\(T_k\\) construction, and makes functoriality in \\(M\\) transparent.</li>' +
@@ -597,14 +606,9 @@
           '<em>co</em>sheaves on the site of disks &mdash; is the setting of factorization homology ' +
           '(Ayala&ndash;Francis, 2015), tying manifold calculus to topological field theory.</li>' +
         '</ul>' +
-        '<p style="font-size:0.95em;color:#555"><strong>Caveat for the homotopy calculus.</strong> No Grothendieck ' +
-        'topology on a site of spaces has \\(n\\)-excisive functors as its sheaves: Goodwillie&rsquo;s \\(P_n\\) is an ' +
-        'accessible <em>left exact</em> localization (Lurie, <em>Higher Algebra</em>, Theorem 6.1.1.10) that is not ' +
-        '<em>topological</em>, so &ldquo;\\(P_n =\\) sheafification&rdquo; must never be quoted as a theorem in the ' +
-        'homotopy-calculus setting &mdash; only in manifold calculus, where Boavida de Brito&ndash;Weiss prove it. ' +
-        'The general framework for such non-topological left exact localizations is the ' +
-        'Anel&ndash;Biedermann&ndash;Finster&ndash;Joyal series on left exact localizations of \\(\\infty\\)-topoi ' +
-        '(2018&ndash;2024).</p>' +
+        '<p style="font-size:0.95em;color:#555"><strong>Caveat for the homotopy calculus.</strong> ' +
+        '&ldquo;\\(P_n =\\) sheafification&rdquo; must never be quoted as a theorem in the ' +
+        'homotopy-calculus setting &mdash; only in manifold calculus, where Boavida de Brito&ndash;Weiss prove it.</p>' +
       '</div>' +
 
       '<div class="expo-panel">' +
@@ -645,8 +649,8 @@
         'exactly as \\(f(x + y) - f(x) - f(y) + f(0)\\) measures the failure of a function to be affine.</p>' +
         '<p>In the classical algebraic setting the analogy is a definition: a functor of abelian categories is ' +
         '<em>polynomial of degree \\(\\leq n\\)</em> (Eilenberg&ndash;MacLane) iff \\(\\operatorname{cr}_{n+1} F = 0\\). In ' +
-        'homotopy calculus, \\(n\\)-excision implies that \\(\\operatorname{cr}_{n+1} F\\) vanishes, and cross effects ' +
-        'compute the layers of the tower.</p>' +
+        'homotopy calculus, for reduced \\(F\\), \\(F\\) is \\(n\\)-excisive iff \\(\\operatorname{cr}_{n+1} F \\simeq *\\) ' +
+        '(Goodwillie, <em>Calculus II</em>, &sect;3), and cross effects compute the layers of the tower.</p>' +
       '</div>' +
 
       '<div class="expo-panel">' +
@@ -679,20 +683,23 @@
         '<div class="formula-box">$$\\textbf{Theorem (Goodwillie).}\\quad \\text{Every finitary } n\\text{-homogeneous } F \\text{ (to spaces) has the form } \\; F(X) \\simeq \\Omega^\\infty\\bigl( (\\partial_n F \\wedge X^{\\wedge n})_{h\\Sigma_n} \\bigr)$$' +
         '$$\\text{for a spectrum } \\partial_n F \\text{ with } \\Sigma_n\\text{-action, uniquely determined up to equivalence.}$$</div>' +
         '<p>Here \\((-)_{h\\Sigma_n}\\) is the <span class="kl-term" title="Homotopy orbit spectrum E_hG = (EG₊ ∧ E)/G: the derived (freed-up) quotient by the group action.">homotopy orbit</span> construction, ' +
-        'and <em>finitary</em> means \\(F\\) preserves filtered homotopy colimits (is determined by finite complexes) ' +
-        '&mdash; without it, homogeneous functors need not come from spectra at all. ' +
-        'The proof runs through three steps, each a theorem of independent use: (i) homogeneous functors to spaces ' +
-        'are infinite loop objects: \\(D_n F = \\Omega^\\infty \\mathbf{D}_n F\\) for a spectrum-valued functor; ' +
-        '(ii) spectrum-valued \\(n\\)-homogeneous functors are classified by symmetric multilinear functors via the ' +
+        'and <em>finitary</em> means \\(F\\) preserves filtered homotopy colimits ' +
+        '&mdash; without it, step (i) below can fail, since the infinite-loop-space identification is proved by a ' +
+        'stabilization argument that itself uses filtered colimits. ' +
+        'The proof runs through three steps, each a theorem of independent use: (i) any \\(n\\)-homogeneous functor ' +
+        '\\(G\\) (to spaces) is an infinite loop object: \\(G \\simeq \\Omega^\\infty \\mathbf{G}\\) for a spectrum-valued ' +
+        'functor \\(\\mathbf{G}\\) &mdash; applied to the layer \\(G = D_n F\\) this gives the spectrum-valued lift ' +
+        '\\(\\mathbf{D}_n F\\) with \\(D_nF(X) \\simeq \\Omega^\\infty \\mathbf{D}_nF(X)\\), underlying the (space-valued) ' +
+        'entries of the table below; (ii) spectrum-valued \\(n\\)-homogeneous functors are classified by symmetric multilinear functors via the ' +
         '\\(n\\)-th cross effect; (iii) multilinear functors are, up to equivalence, of the form ' +
         '\\((X_1, \\dots, X_n) \\mapsto E \\wedge X_1 \\wedge \\cdots \\wedge X_n\\). The spectrum \\(\\partial_n F\\) &mdash; ' +
-        'the <strong>\\(n\\)-th derivative of \\(F\\) at the one-point space</strong> &mdash; is obtained from ' +
-        '\\(\\operatorname{cr}_n F\\) by multilinearization:</p>' +
-        '<div class="formula-box">$$\\partial_n F \\;=\\; \\text{(coefficient of)} \\; P_{(1,\\dots,1)} \\operatorname{cr}_n F, \\qquad \\text{with its natural } \\Sigma_n\\text{-action permuting the variables.}$$</div>' +
-        '<p>The factor \\(1/n!\\) of classical calculus has become the homotopy quotient by \\(\\Sigma_n\\): dividing by ' +
-        '\\(n!\\) is replaced by taking (co)invariants, and much of the fine structure of the subject &mdash; Tate ' +
-        'spectra, norm maps, the difference between \\((-)_{h\\Sigma_n}\\) and \\((-)^{h\\Sigma_n}\\) &mdash; lives in the ' +
-        'gap between the two.</p>' +
+        'the <strong>\\(n\\)-th derivative of \\(F\\) at the one-point space</strong> &mdash; results from ' +
+        'applying (ii)&ndash;(iii) to the coordinatewise linearization \\(P_{(1,\\dots,1)}\\operatorname{cr}_n F\\), which is ' +
+        'already \\(\\operatorname{cr}_n F\\) itself once \\(F\\) is \\(n\\)-excisive (Exercise 2 below):</p>' +
+        '<div class="formula-box">$$P_{(1,\\dots,1)} \\operatorname{cr}_n F \\;\\simeq\\; \\bigl( (X_1,\\dots,X_n) \\mapsto \\partial_n F \\wedge X_1 \\wedge \\cdots \\wedge X_n \\bigr), \\qquad \\Sigma_n \\text{ permuting the variables.}$$</div>' +
+        '<p>The factor \\(1/n!\\) of classical calculus has become the homotopy quotient by \\(\\Sigma_n\\), and much of ' +
+        'the fine structure of the subject &mdash; Tate spectra, norm maps, the difference between ' +
+        '\\((-)_{h\\Sigma_n}\\) and \\((-)^{h\\Sigma_n}\\) &mdash; lives in the gap between the two.</p>' +
       '</div>' +
 
       '<div class="expo-panel">' +
@@ -710,20 +717,23 @@
             '<tr><td style="padding:4px 10px">\\(X \\mapsto \\Omega^\\infty(E \\wedge X^{\\wedge k})\\)</td><td style="padding:4px 10px">\\(\\partial_k = \\Sigma_k{}_+ \\wedge E\\) (induced action), rest trivial</td><td style="padding:4px 10px">pure \\(k\\)-homogeneous</td></tr>' +
           '</tbody>' +
         '</table>' +
-        '<p style="margin-top:0.9em">For reduced finitary \\(F\\), the first derivative has the concrete stabilization ' +
-        'formula \\(\\partial_1 F = \\operatorname{hocolim}_k \\Omega^k F(S^k)\\) (a spectrum with structure maps from the ' +
+        '<p style="margin-top:0.9em">For functors already valued in spectra &mdash; e.g. the \\(\\Sigma^\\infty\\Omega^\\infty\\) ' +
+        'row above &mdash; the same classification holds with \\(\\Omega^\\infty\\) omitted. For reduced finitary ' +
+        '\\(F\\) (to spaces), the first derivative has the concrete stabilization ' +
+        'formula \\(\\Omega^\\infty \\partial_1 F \\simeq \\operatorname{hocolim}_k \\Omega^k F(S^k)\\) (the spectrum ' +
+        '\\(\\partial_1 F\\) itself has structure maps from the ' +
         'suspension comparison), and \\(P_1 F(X) = \\Omega^\\infty(\\partial_1 F \\wedge X)\\). Derivatives can also be taken ' +
-        '<em>at an arbitrary base object</em> \\(Y\\) (derivatives of \\(Z \\mapsto F(Y \\amalg Z)\\)-type constructions); the ' +
-        'resulting &ldquo;jets&rdquo; assemble into the tangent-category picture sketched in <em>Other Calculi</em>.</p>' +
+        'at an arbitrary base object \\(Y\\); the resulting &ldquo;jets&rdquo; assemble into the tangent-category picture in ' +
+        '<em>Other Calculi</em>.</p>' +
       '</div>' +
 
       '<div class="expo-panel">' +
         '<h3>5. The chain rule</h3>' +
-        '<p>Classical calculus without the chain rule would be a curiosity; the same is true here. For composable ' +
-        'reduced finitary functors there is first a one-derivative statement (Klein&ndash;Rognes, 2002): ' +
-        '\\(\\partial_1(F \\circ G) \\simeq \\partial_1 F \\wedge \\partial_1 G\\) in the appropriate module sense. The full ' +
+        '<p>For composable ' +
+        'reduced finitary functors, the one-derivative case is due to Klein&ndash;Rognes (2002): ' +
+        '\\(\\partial_1(F \\circ G) \\simeq \\partial_1 F \\wedge \\partial_1 G\\), an equivalence of spectra. The full ' +
         'higher chain rule is due to Arone&ndash;Ching (<em>Operads and chain rules for the calculus of functors</em>, ' +
-        'Ast&eacute;risque 338, 2011), and its formulation is one of the deepest structural facts in the subject:</p>' +
+        'Ast&eacute;risque 338, 2011):</p>' +
         '<ul>' +
           '<li>Ching (2005): the symmetric sequence \\(\\partial_* \\mathrm{Id}\\) of derivatives of the identity is an ' +
           '<span class="kl-term" title="Operad: a collection O(n) of objects with Σₙ-actions and composition maps encoding n-ary operations; algebras over it realize the encoded algebraic structure.">operad</span> in spectra ' +
@@ -733,8 +743,7 @@
         '</ul>' +
         '<div class="formula-box">$$\\partial_*(F \\circ G) \\;\\simeq\\; \\partial_* F \\circ_{\\partial_* \\mathrm{Id}} \\partial_* G,$$</div>' +
         '<p>a derived composition product over the spectral Lie operad &mdash; the homotopy-theoretic ' +
-        '<span class="kl-term" title="Faà di Bruno formula: the classical expression for the n-th derivative of a composite f∘g as a sum over partitions of {1,…,n}. Its combinatorics is exactly the composition product of symmetric sequences.">Fa&agrave; di Bruno formula</span>. ' +
-        'The classical sum over set partitions is visible in the composition product of symmetric sequences.</p>' +
+        '<span class="kl-term" title="Faà di Bruno formula: the classical expression for the n-th derivative of a composite f∘g as a sum over partitions of {1,…,n}. Its combinatorics is exactly the composition product of symmetric sequences.">Fa&agrave; di Bruno formula</span>.</p>' +
       '</div>' +
 
       '<div class="expo-panel">' +
@@ -761,9 +770,9 @@
         '<details class="kl-practice"><summary>Exercise 4: derivatives of a representable-ish functor</summary>' +
         '<p>Let \\(F(X) = \\Omega^\\infty \\Sigma^\\infty \\operatorname{Map}(K, X)\\) for a finite complex \\(K\\). Using ' +
         '\\(\\operatorname{Map}(K, -)\\) and the classification theorem, identify \\(\\partial_n F\\) as the ' +
-        'Spanier&ndash;Whitehead-type dual \\(\\mathbb{D}(K^{\\wedge n} / \\Delta)\\)-style spectrum built from configurations ' +
-        'of \\(n\\) points in \\(K\\) &mdash; a first taste of the configuration-space calculus used for embedding ' +
-        'functors (Arone, Goodwillie&ndash;Weiss).</p>' +
+        'Spanier&ndash;Whitehead dual of a (Fulton&ndash;MacPherson-compactified) configuration space of \\(n\\) points in ' +
+        '\\(K\\), following Arone&rsquo;s computation of the derivatives of \\(\\operatorname{Map}(K,-)\\)-type functors ' +
+        '&mdash; a first taste of the configuration-space calculus used for embedding functors (Goodwillie&ndash;Weiss).</p>' +
         '</details>' +
       '</div>';
   }
@@ -784,9 +793,9 @@
           '<li><strong>The tower on spheres (Arone&ndash;Mahowald, Invent. Math. 135, 1999).</strong> Evaluated on an ' +
           'odd sphere and localized at a prime \\(p\\), the layers \\(D_n \\mathrm{Id}(S^{2k+1})\\) are contractible unless ' +
           '\\(n = p^j\\): the tower collapses to a finite-in-each-degree pro-object whose layers are built from the ' +
-          'Steinberg-summand spectra \\(L(j)\\). This computation connects the tower to ' +
-          '<span class="kl-term" title="vₙ-periodicity: the chromatic filtration of stable homotopy detected by Morava K-theories; vₙ-periodic families are systematic infinite families in the stable stems.">\\(v_j\\)-periodicity</span>: ' +
-          'the \\(p^j\\)-th layer sees exactly the \\(j\\)-th chromatic layer of the sphere.</li>' +
+          'Steinberg-summand spectra \\(L(j)\\). This computation ties the \\(p^j\\)-th layer to ' +
+          '<span class="kl-term" title="vₙ-periodicity: the chromatic filtration of stable homotopy detected by Morava K-theories; vₙ-periodic families are systematic infinite families in the stable stems.">\\(v_j\\)-periodic</span> ' +
+          'phenomena in \\(\\pi_*(S^{2k+1})\\).</li>' +
           '<li><strong>The operad structure (Ching 2005).</strong> \\(\\partial_* \\mathrm{Id}\\) is an operad in spectra ' +
           '(the spectral Lie operad), Koszul dual to the commutative operad; its algebras behave like ' +
           'topological Lie algebras. Heuts (2021) used this to build Lie-algebra models for ' +
@@ -802,8 +811,7 @@
         '<div class="formula-box">$$D_2 \\mathrm{Id}(X) \\;\\simeq\\; \\Omega^\\infty \\bigl( \\Sigma^{-1} (X \\wedge X)_{h\\Sigma_2} \\bigr).$$</div>' +
         '<p>On \\(X = S^n\\), \\(\\pi_*\\) of this layer is the stable homotopy of a stunted projective ' +
         'space &mdash; the same quadratic construction \\(D_2(S^n)\\) that appears in the EHP sequence and in ' +
-        'the James filtration of \\(\\Omega \\Sigma S^n\\). The tower of the identity <em>is</em> the conceptual home of ' +
-        'those classical constructions.</p>' +
+        'the James filtration of \\(\\Omega \\Sigma S^n\\).</p>' +
         '</details>' +
       '</div>' +
 
@@ -814,16 +822,16 @@
         '<span class="kl-term" title="Extended power Dₙ(E) = (EΣₙ)₊ ∧_Σₙ E^∧n: the homotopy-orbit smash power, building block of stable splittings and power operations.">extended powers</span></p>' +
         '<div class="formula-box">$$D_n(\\Sigma^\\infty \\Omega^\\infty)(E) \\;\\simeq\\; (E^{\\wedge n})_{h\\Sigma_n}.$$</div>' +
         '<ul>' +
-          '<li><strong>Snaith splitting.</strong> For \\(E = \\Sigma^\\infty X\\) with \\(X\\) connected, the tower splits: ' +
+          '<li><strong>Snaith splitting.</strong> For \\(E = \\Sigma^\\infty X\\) (any well-pointed \\(X\\)), the tower splits: ' +
           '\\(\\Sigma^\\infty Q X \\simeq \\bigvee_n \\Sigma^\\infty (X^{\\wedge n})_{h\\Sigma_n}\\) &mdash; the classical stable ' +
           'splitting of \\(QX\\) (Snaith 1974, Kahn), recovered as a split Taylor tower (the tower interpretation is ' +
           'worked out in Arone, Trans. AMS 351, 1999). Splitting is the exception, not the rule: in general the ' +
-          'tower has nontrivial \\(k\\)-invariants, and that is precisely what makes it a spectral-sequence-grade ' +
+          'tower has nontrivial \\(k\\)-invariants &mdash; precisely what makes it a spectral-sequence-grade ' +
           'computational tool.</li>' +
           '<li><strong>Kuhn&rsquo;s periodic splitting (Invent. Math. 157, 2004).</strong> After telescopic localization ' +
           '\\(L_{T(j)}\\), the tower of \\(\\Sigma^\\infty \\Omega^\\infty\\) splits for <em>every</em> input spectrum &mdash; ' +
           'one reason chromatic homotopy theory and Goodwillie calculus communicate so well (see Kuhn&rsquo;s survey ' +
-          '<em>Goodwillie towers and chromatic homotopy: an overview</em>, 2007). Note the logic: splitting of the ' +
+          '<em>Goodwillie towers and chromatic homotopy: an overview</em>, 2007). Splitting of the ' +
           'tower and convergence of the tower are independent questions &mdash; identifying the limit with ' +
           '\\(L_{T(j)}\\Sigma^\\infty\\Omega^\\infty X\\) still requires a connectivity hypothesis.</li>' +
           '<li><strong>Power operations.</strong> The extended powers appearing in the layers are precisely the ' +
@@ -834,11 +842,13 @@
       '<div class="expo-panel">' +
         '<h3>3. Algebraic \\(K\\)-theory: the killer application</h3>' +
         '<p>Functor calculus was invented for this example. Waldhausen&rsquo;s ' +
-        '\\(A\\)-theory \\(A(X) = K(\\Sigma^\\infty_+ \\Omega X)\\) splits as ' +
-        '\\(A(X) \\simeq \\Sigma^\\infty_+ X \\times \\mathrm{Wh}^{\\mathrm{Diff}}(X)\\), and the Whitehead spectrum ' +
+        '\\(A\\)-theory \\(A(X) = K(\\Sigma^\\infty_+ \\Omega X)\\) splits (via a stable section of the assembly map) as ' +
+        '\\(A(X) \\simeq \\Sigma^\\infty_+ X \\vee \\mathrm{Wh}^{\\mathrm{Diff}}(X)\\), and the Whitehead spectrum ' +
         '\\(\\mathrm{Wh}^{\\mathrm{Diff}}\\) controls spaces of pseudoisotopies and hence, through smoothing theory, ' +
-        'diffeomorphism groups of high-dimensional manifolds: \\(\\Omega^2 \\mathrm{Wh}^{\\mathrm{Diff}}(M) \\simeq \\mathcal{P}(M)\\) ' +
-        'in the stable range (Waldhausen&ndash;Jahren&ndash;Rognes). <em>Calculus I</em> (1990) computes the first ' +
+        'diffeomorphism groups of high-dimensional manifolds: the pseudoisotopy (concordance) space \\(\\mathcal{P}(M)\\) ' +
+        'satisfies \\(\\mathcal{P}(M) \\simeq \\Omega \\mathrm{Wh}^{\\mathrm{Diff}}(M)\\), one delooping, in Igusa&rsquo;s ' +
+        'stable range (Waldhausen&ndash;Jahren&ndash;Rognes for the ' +
+        'completed proof). <em>Calculus I</em> (1990) computes the first ' +
         'derivative of pseudoisotopy theory and of \\(A\\)-theory &mdash; the differential of \\(A\\) at a space \\(Y\\) is ' +
         'built from the spectrum \\(\\Sigma^\\infty_+ \\Omega Y\\) (note: this is the <em>Calculus I</em> notion of ' +
         'derivative at an arbitrary base \\(Y\\), not the Taylor coefficient \\(\\partial_n\\) at a point); the ' +
@@ -849,9 +859,9 @@
         '<p>(McCarthy 1997 for simplicial rings; Dundas 1997; the book-length treatment is ' +
         'Dundas&ndash;Goodwillie&ndash;McCarthy, <em>The Local Structure of Algebraic K-Theory</em>, Springer 2013.) ' +
         'The slogan: <strong>\\(K\\)-theory and topological cyclic homology have the same derivative everywhere</strong>, ' +
-        'so their difference is &ldquo;locally constant.&rdquo; Virtually every modern computation of \\(K\\)-theory of ' +
-        'ring spectra (via \\(\\mathrm{THH}\\), \\(\\mathrm{TC}\\), prismatic methods) descends from this theorem &mdash; ' +
-        'calculus of functors is silently underneath all of it.</p>' +
+        'so their difference is &ldquo;locally constant.&rdquo; Many of the most powerful modern computations of \\(K\\)-theory of ' +
+        'ring spectra (via \\(\\mathrm{THH}\\), \\(\\mathrm{TC}\\), prismatic methods) use this theorem to reduce a relative ' +
+        '\\(K\\)-theory question to a \\(\\mathrm{TC}\\) computation.</p>' +
       '</div>' +
 
       '<div class="expo-panel">' +
@@ -863,20 +873,24 @@
         '1961) defined derived functors of non-additive functors by simplicial resolutions. The discrete calculus of ' +
         'Johnson&ndash;McCarthy (<em>Other Calculi</em>) recovers Dold&ndash;Puppe theory as the Taylor tower of a ' +
         'functor of simplicial modules, and the layers reproduce stable derived functors. The classical statement ' +
-        '&ldquo;a degree-\\(d\\) polynomial is determined by its values at \\(d{+}1\\) points&rdquo; has an exact ' +
-        'analogue in the abelian setting: a polynomial functor is determined by its cross effects. In the ' +
-        'homotopical setting the slogan needs care &mdash; the derivatives determine the <em>layers</em>, but ' +
-        'reassembling \\(F\\) requires extension data (\\(k\\)-invariants), and two \\(n\\)-excisive functors can agree ' +
-        'on all finite complexes without being equivalent unless finitary-ness is imposed. The healthy version of ' +
+        '&ldquo;a degree-\\(d\\) polynomial is determined by its values at \\(d{+}1\\) points&rdquo; has a close ' +
+        'analogue in the abelian setting: a polynomial functor is reconstructed from its cross effects <em>together with ' +
+        'their gluing maps</em> &mdash; the cross effects alone are not enough. In the ' +
+        'homotopical setting the same care is needed, in less rigid form &mdash; the derivatives determine the <em>layers</em>, but ' +
+        'reassembling \\(F\\) requires extension data (\\(k\\)-invariants); and since a non-finitary functor need not be ' +
+        'determined by its restriction to finite complexes, two \\(n\\)-excisive \\(F\\) can agree there while differing ' +
+        'on filtered colimits &mdash; the obstruction finitary-ness rules out. The healthy version of ' +
         'the principle is the disk-site description in the <em>Sheafification</em> sub-tab.</p>' +
       '</div>' +
 
       '<div class="expo-panel">' +
         '<h3>5. Practice</h3>' +
         '<details class="kl-practice"><summary>Exercise 1: \\(\\pi_*\\) through the tower</summary>' +
-        '<p>Take \\(X = S^1\\). Using \\(P_1\\mathrm{Id}(S^1) = QS^1\\) and the layer formula for \\(D_2\\), compute the ' +
+        '<p>Take \\(X = S^1\\) &mdash; not simply connected, so strictly outside the \\(1\\)-analytic convergence range ' +
+        'above; read this as a low-dimensional illustration of the cancellation mechanism, not an instance of the ' +
+        'general convergence theorem. Using \\(P_1\\mathrm{Id}(S^1) = QS^1\\) and the layer formula for \\(D_2\\), compute the ' +
         'tower approximation to \\(\\pi_3(S^1)\\) (which must die) and watch the cancellation between \\(\\pi_3 QS^1\\) and ' +
-        'the quadratic layer. Every convergence statement is a highly organised cancellation.</p>' +
+        'the quadratic layer.</p>' +
         '</details>' +
         '<details class="kl-practice"><summary>Exercise 2: Snaith splitting degree by degree</summary>' +
         '<p>For \\(E = \\mathbb{S}\\), identify the \\(n\\)-th layer \\((\\mathbb{S}^{\\wedge n})_{h\\Sigma_n} \\simeq ' +
@@ -897,9 +911,11 @@
     return '' +
       '<div class="expo-panel">' +
         '<h3>1. Manifold calculus in one panel</h3>' +
-        '<p>Fix a smooth \\(m\\)-manifold \\(M\\) and study presheaves ' +
+        '<p>Fix a compact smooth \\(m\\)-manifold \\(M\\) (equivalently, by Morse theory, one admitting a finite handle ' +
+        'decomposition &mdash; the hypothesis the handle-induction proof of &sect;2&rsquo;s convergence theorem actually needs) and study presheaves ' +
         '\\(F : \\mathcal{O}(M)^{\\mathrm{op}} \\to \\mathcal{S}\\) on its open subsets &mdash; contravariant in the open ' +
-        'set, as restriction of embeddings demands &mdash; taking isotopy equivalences to ' +
+        'set, as restriction of embeddings demands &mdash; taking ' +
+        '<span class="kl-term" title="Isotopy equivalence: an inclusion U ⊆ V of opens that is a homotopy equivalence, equivalently one admitting an isotopy inverse. F is required to send such inclusions to equivalences of spaces.">isotopy equivalences</span> to ' +
         'equivalences &mdash; the fundamental example is \\(V \\mapsto \\operatorname{Emb}(V, N)\\) for a target ' +
         '\\(n\\)-manifold \\(N\\). Weiss (Geom. Topol. 3, 1999) defines \\(F\\) to be <strong>polynomial of degree ' +
         '\\(\\leq k\\)</strong> if for every \\(V\\) and pairwise disjoint closed subsets \\(A_0, \\dots, A_k \\subseteq V\\), ' +
@@ -912,25 +928,25 @@
         '&mdash; one homotopy limit suffices &mdash; whereas in homotopy calculus \\(P_n = \\operatorname{colim} T_n^j\\). ' +
         'By Boavida de Brito&ndash;Weiss, \\(T_k\\) is homotopy sheafification for the Weiss topology ' +
         '\\(\\mathcal{J}_k\\) &mdash; see <em>Sheafification</em>.) Values on \\(\\mathcal{O}_k\\) are configuration-space ' +
-        'data: \\(\\operatorname{Emb}(\\coprod_j \\mathring{D}^m, N)\\) is equivalent to the space of framed-ish ' +
-        'configurations of \\(j \\leq k\\) points in \\(N\\), so the tower systematically approximates embeddings by ' +
-        'point configurations.</p>' +
+        'data: \\(\\operatorname{Emb}(\\coprod_j \\mathring{D}^m, N)\\) is equivalent to the space of configurations of ' +
+        '\\(j \\leq k\\) points of \\(N\\), each decorated with an injective linear map \\(\\mathbb{R}^m \\hookrightarrow T_xN\\) ' +
+        '(a point of the Stiefel manifold of \\(m\\)-frames).</p>' +
       '</div>' +
 
       '<div class="expo-panel">' +
         '<h3>2. The linear stage is immersion theory; convergence needs codimension \\(3\\)</h3>' +
-        '<p>The degree-\\(1\\) stage is classical: by Smale&ndash;Hirsch theory, when \\(\\dim M < \\dim N\\) (more ' +
-        'generally, positive handle codimension) the immersion functor is linear, and</p>' +
+        '<p>The degree-\\(1\\) stage is classical: by Smale&ndash;Hirsch theory, when \\(\\dim M < \\dim N\\) the immersion ' +
+        'functor is linear, and</p>' +
         '<div class="formula-box">$$T_1 \\operatorname{Emb}(-, N) \\;\\simeq\\; \\operatorname{Imm}(-, N).$$</div>' +
         '<p>Weiss&rsquo;s slogan &mdash; <em>embeddings from the point of view of immersion theory</em> &mdash; is that the ' +
-        'tower extends the \\(h\\)-principle one configuration size at a time. The deep theorem is convergence ' +
-        '(Goodwillie&ndash;Weiss, Geom. Topol. 3, 1999, powered by the multiple-disjunction estimates of ' +
-        'Goodwillie&ndash;Klein, J. Topol. 8, 2015):</p>' +
+        'tower extends the \\(h\\)-principle one configuration size at a time. The deep theorem is convergence, ' +
+        'announced by Goodwillie&ndash;Weiss (Geom. Topol. 3, 1999) but only completed once Goodwillie&ndash;Klein ' +
+        '(J. Topol. 8, 2015) established the needed multiple-disjunction estimates:</p>' +
         '<div class="formula-box">$$\\operatorname{Emb}(M, N) \\longrightarrow T_k \\operatorname{Emb}(M, N) \\quad \\text{is } \\bigl(k(n - m - 2) + 1 - m\\bigr)\\text{-connected},$$</div>' +
         '<p>so the tower converges when the codimension satisfies \\(n - m \\geq 3\\) &mdash; the analyticity radius of ' +
         'embedding functors. For classical knots (\\(m = 1\\), \\(n = 3\\), codimension \\(2\\)) the estimate degenerates: ' +
         '<strong>convergence for the space of classical knots is an open problem</strong>. Everything below lives in ' +
-        'that fascinating gap: the tower still exists, still produces invariants, and conjecturally still sees ' +
+        'that gap: the tower still exists, still produces invariants, and conjecturally still sees ' +
         'everything finite-type.</p>' +
       '</div>' +
 
@@ -938,11 +954,13 @@
         '<h3>3. Long knots and their tower</h3>' +
         '<p>The standard model is the space of <span class="kl-term" title="Long knot: an embedding of ℝ into ℝⁿ agreeing with a fixed straight line outside a compact set. For n = 3, its path components are classical knot types.">long knots</span></p>' +
         '<div class="formula-box">$$\\mathcal{K}_n \\;=\\; \\operatorname{Emb}_c(\\mathbb{R}, \\mathbb{R}^n), \\qquad \\pi_0 \\mathcal{K}_3 = \\{\\text{classical knot types}\\},$$</div>' +
-        '<p>with its Goodwillie&ndash;Weiss tower \\(\\{T_k \\mathcal{K}_n\\}\\). In practice one studies ' +
+        '<p>with its Goodwillie&ndash;Weiss tower \\(\\{T_k \\mathcal{K}_n\\}\\) &mdash; though \\(\\mathbb{R}\\) is not compact, ' +
+        'compactly-supported embeddings agreeing with a fixed line near infinity are identified with embeddings of a ' +
+        'compact interval rel that boundary germ, so &sect;2&rsquo;s convergence theorem still applies. In practice one studies ' +
         '\\(\\overline{\\mathcal{K}}_n = \\operatorname{hofib}(\\operatorname{Emb}_c \\to \\operatorname{Imm}_c)\\), long ' +
         'knots <em>modulo immersions</em>: by Smale&ndash;Hirsch \\(\\operatorname{Imm}_c(\\mathbb{R}, \\mathbb{R}^n) ' +
-        '\\simeq \\Omega S^{n-1}\\), and Sinha showed \\(\\overline{\\mathcal{K}}_n \\simeq \\mathcal{K}_n \\times ' +
-        '\\Omega^2 S^{n-1}\\), so no information is lost &mdash; but be alert to which model a given paper computes. ' +
+        '\\simeq \\Omega S^{n-1}\\), and the fibration splits (Budney 2007; Sinha 2009, both cited in full below): \\(\\mathcal{K}_n \\simeq ' +
+        '\\overline{\\mathcal{K}}_n \\times \\Omega S^{n-1}\\), so no information is lost &mdash; but be alert to which model a given paper computes. ' +
         'Two concrete models make the tower computable:</p>' +
         '<ul>' +
           '<li><strong>Punctured knots.</strong> \\(T_k\\) is assembled from the spaces of embeddings of \\(\\mathbb{R}\\) ' +
@@ -955,13 +973,15 @@
           'knots <em>modulo immersions</em>: \\(T_k \\overline{\\mathcal{K}}_n \\simeq \\operatorname{Tot}^k\\) ' +
           '(established for \\(n \\geq 4\\)). Its second-quadrant spectral sequence is exactly the one ' +
           'Vassiliev found from the other side (see below); Sinha (<em>Operads and knot spaces</em>, J. Amer. Math. ' +
-          'Soc. 19, 2006) upgraded the model to the level of little-disks operad actions.</li>' +
+          'Soc. 19, 2006) upgraded the model to the level of little-disks operad actions &mdash; the cosimplicial model ' +
+          'itself had circulated as a preprint since 2002, well before its 2009 publication, so the 2006 operads paper ' +
+          'could already build on it.</li>' +
         '</ul>' +
       '</div>' +
 
       '<div class="expo-panel">' +
         '<h3>4. The tower computes finite-type invariants</h3>' +
-        '<p>Here is the bridge to the rest of KnotLab. Recall from the <em>Polynomial Invariants</em> tab that a knot ' +
+        '<p>Recall from the <em>Polynomial Invariants</em> tab that a knot ' +
         'invariant is <strong>finite-type (Vassiliev) of degree \\(\\leq d\\)</strong> if its extension to singular knots ' +
         'via \\(v(L_\\times) = v(L_+) - v(L_-)\\) vanishes on knots with \\(d{+}1\\) double points.</p>' +
         '<ul>' +
@@ -976,34 +996,29 @@
           '\\(\\pi_0 T_n \\mathcal{K}_3\\) is an abelian group, the evaluation map ' +
           '\\(\\mathrm{ev}_n : \\pi_0 \\mathcal{K}_3 \\to \\pi_0 T_n \\mathcal{K}_3\\) is a monoid homomorphism for connected ' +
           'sum, and it is invariant under degree-\\(n\\) <span class="kl-term" title="Clasper / grope surgery: geometric refinements of crossing changes; invariance under degree-n clasper surgery characterizes finite-type invariants of degree ≤ n−1 (Habiro, Goussarov).">clasper surgery</span> ' +
-          '&mdash; hence a finite-type invariant of degree \\(\\leq n-1\\). Mind the ubiquitous off-by-one: the ' +
-          '<em>\\(n\\)-th stage</em> gives <em>type \\(n{-}1\\)</em>.</li>' +
+          '&mdash; hence a finite-type invariant of degree \\(\\leq n-1\\).</li>' +
           '<li><strong>Universality: a ladder of theorems and one conjecture.</strong> ' +
           'BCKS conjecture that \\(\\mathrm{ev}_{n+1}\\) is the <em>universal additive</em> type-\\(n\\) invariant over ' +
           '\\(\\mathbb{Z}\\). Current status: over \\(\\mathbb{R}\\), every type-\\(n\\) invariant factors through the ' +
           'stage \\(T_{2n}\\) (Voli&cacute;, Compos. Math. 142, 2006); \\(p\\)-locally, \\(\\mathrm{ev}_{n+1}\\) is universal ' +
           'for degrees \\(n \\leq p + 1\\) via Galois symmetries of profinite little-disks operads ' +
           '(Boavida de Brito&ndash;Horel, Compos. Math. 157, 2021); and \\(\\mathrm{ev}_n\\) is <em>surjective</em>, with ' +
-          'values computed by grope cobordism (Kosanovi&cacute;, Adv. Math. 451, 2024) &mdash; which combined with ' +
-          'Boavida de Brito&ndash;Horel makes \\(\\mathrm{ev}_{n+1}\\) a universal additive Vassiliev invariant over ' +
-          '\\(\\mathbb{Q}\\), dominating the Kontsevich integral rationally. Over \\(\\mathbb{Z}\\) &mdash; where the tower ' +
-          'could see torsion the Kontsevich integral misses &mdash; the conjecture is open; Kosanovi&cacute;&rsquo;s ' +
-          'surjectivity is exactly one half of it.</li>' +
+          'values computed by grope cobordism (Kosanovi&cacute;, Adv. Math. 451, 2024) &mdash; suggestive of, but not by ' +
+          'itself establishing, rational universality of \\(\\mathrm{ev}_{n+1}\\) (a bridging argument beyond surjectivity ' +
+          'and Boavida de Brito&ndash;Horel&rsquo;s \\(p\\)-local range would be needed). Over \\(\\mathbb{Z}\\) &mdash; where the tower ' +
+          'could see torsion the Kontsevich integral misses &mdash; the full conjecture remains open.</li>' +
         '</ul>' +
-        '<p style="font-size:0.95em;color:#555">Status warning for lecture use: &ldquo;tower invariants are ' +
-        'finite-type&rdquo; is a theorem (BCKS 2017); universality is a theorem over \\(\\mathbb{Q}\\) (and ' +
-        '\\(p\\)-locally in a range), a conjecture over \\(\\mathbb{Z}\\). Keep the statements separated, and keep the ' +
-        'indexing convention (stage \\(n\\) &harr; type \\(n{-}1\\)) fixed throughout a lecture.</p>' +
       '</div>' +
 
       '<div class="expo-panel">' +
         '<h3>5. The homotopy type of knot spaces</h3>' +
         '<ul>' +
-          '<li><strong>Codimension \\(\\geq 3\\): complete rational answer.</strong> For \\(n \\geq 4\\) the tower ' +
+          '<li><strong>Codimension \\(\\geq 3\\): a complete algebraic model.</strong> For \\(n \\geq 4\\) the tower ' +
           'converges, and Lambrechts&ndash;Turchin&ndash;Voli&cacute; (<em>The rational homology of spaces of long knots ' +
           'in codimension \\(&gt; 2\\)</em>, Geom. Topol. 14, 2010) proved the Vassiliev spectral sequence collapses ' +
-          'rationally: \\(H_*(\\mathcal{K}_n; \\mathbb{Q})\\) is computed by a graph complex. The key input is ' +
-          'Kontsevich&rsquo;s formality of the little-disks operad.</li>' +
+          'rationally: \\(H_*(\\mathcal{K}_n; \\mathbb{Q})\\) is identified with the homology of an explicit graph complex. ' +
+          'The key input is Kontsevich&rsquo;s formality of the little-disks operad; extracting explicit answers degree ' +
+          'by degree from that graph complex remains a separate, active problem.</li>' +
           '<li><strong>Operad actions.</strong> Budney (<em>Little cubes and long knots</em>, Topology 46, 2007) showed ' +
           '\\(\\mathcal{K}_3\\) is a free algebra over the little \\(2\\)-cubes operad on the space of prime long knots ' +
           '&mdash; the homotopy-theoretic refinement of the prime decomposition of knots (Schubert). Connected sum ' +
@@ -1017,7 +1032,7 @@
 
       '<div class="expo-panel">' +
         '<h3>6. Dimensions of finite-type invariants</h3>' +
-        '<p>For orientation, the dimensions of the graded pieces of the space of rational finite-type invariants ' +
+        '<p>The dimensions of the graded pieces of the space of rational finite-type invariants ' +
         '(Bar-Natan, Topology 34, 1995, computed through degree \\(9\\); Kneissler through \\(12\\)):</p>' +
         '<table class="dict-table" style="border-collapse:collapse">' +
           '<thead><tr style="border-bottom:1.5px solid #333">' +
@@ -1036,7 +1051,7 @@
             '<td style="padding:5px 12px;text-align:center">27</td><td style="padding:5px 12px;text-align:center">44</td>' +
           '</tr></tbody>' +
         '</table>' +
-        '<p style="margin-top:0.9em">Mind what the tower actually tracks: the universality conjecture concerns ' +
+        '<p style="margin-top:0.9em">The universality conjecture concerns ' +
         '<em>additive</em> (primitive) invariants, so under it the successive stages add rank equal to the dimensions ' +
         'of the spaces of degree-\\(d\\) primitives, of which the table above is the polynomial-algebra closure ' +
         '(a general finite-type invariant is a polynomial in additive ones). Compare the ' +
@@ -1047,20 +1062,19 @@
       '<div class="expo-panel">' +
         '<h3>7. Practice</h3>' +
         '<details class="kl-practice"><summary>Exercise 1: the linear stage for long knots</summary>' +
-        '<p>Using Smale&ndash;Hirsch, show \\(\\operatorname{Imm}_c(\\mathbb{R}, \\mathbb{R}^3) \\simeq \\Omega S^2\\) ' +
-        '(compactly supported immersions of the line, i.e. the linear stage of the long-knot tower before reducing ' +
-        'modulo immersions). Conclude that \\(T_1\\) sees only the winding data of the unit tangent vector &mdash; no ' +
+        '<p>Using Smale&ndash;Hirsch, show \\(\\operatorname{Imm}_c(\\mathbb{R}, \\mathbb{R}^3) \\simeq \\Omega S^2\\). ' +
+        'Conclude that \\(T_1\\) sees only the winding data of the unit tangent vector &mdash; no ' +
         'knotting at all, consistent with knotting being a degree-\\(\\geq 2\\) phenomenon.</p>' +
         '</details>' +
         '<details class="kl-practice"><summary>Exercise 2: configurations from punctures</summary>' +
-        '<p>Remove \\(j\\) disjoint closed intervals from \\(\\mathbb{R}\\): what remains is two rays and \\(j - 1\\) ' +
-        'compact arcs. Show that the embedding space of each ray (standard near infinity) is weakly contractible ' +
+        '<p>Remove \\(j\\) disjoint closed intervals from \\(\\mathbb{R}\\): what remains is two open rays and \\(j - 1\\) ' +
+        'open arcs. Show that the embedding space of each ray (standard near infinity) is weakly contractible ' +
         '&mdash; pull it in from infinity &mdash; so that the punctured-knot space, modulo immersions, is equivalent ' +
         'to a configuration space of \\(j - 1\\) framed points in \\(\\mathbb{R}^3\\). Start with \\(j = 3\\) ' +
         '(two middle arcs \\(\\rightsquigarrow\\) \\(2\\) points).</p>' +
         '</details>' +
         '<details class="kl-practice"><summary>Exercise 3: \\(c_2\\) two ways</summary>' +
-        '<p>Compute \\(c_2\\) (the \\(z^2\\)-coefficient of the Conway polynomial) for the trefoil and figure-eight from ' +
+        '<p>Compute \\(c_2\\) for the trefoil and figure-eight from ' +
         'the <em>Polynomial Invariants</em> tab (\\(c_2(3_1) = 1\\), \\(c_2(4_1) = -1\\)), then read the BCSS paper&rsquo;s ' +
         'quadrisecant formula and verify the trefoil count qualitatively on a standard diagram. Two definitions, one ' +
         'invariant &mdash; that coincidence <em>is</em> the content of the tower being finite-type.</p>' +
@@ -1080,56 +1094,63 @@
         '<h3>1. Orthogonal calculus</h3>' +
         '<p>Weiss&rsquo;s <strong>orthogonal calculus</strong> (<em>Orthogonal calculus</em>, Trans. Amer. Math. Soc., 1995) ' +
         'studies continuous functors \\(F : \\mathcal{J} \\to \\mathcal{S}\\) from the category of finite-dimensional real ' +
-        'inner-product spaces and linear isometric embeddings &mdash; functors of the <em>dimension</em> rather than of a ' +
-        'space. Standard examples:</p>' +
+        'inner-product spaces and linear isometric embeddings &mdash; functors of \\(V\\) itself rather than of a ' +
+        'single fixed object. Standard examples:</p>' +
         '<div class="formula-box">$$V \\mapsto BO(V), \\qquad V \\mapsto B\\mathrm{Top}(V), \\qquad V \\mapsto B\\mathrm{Diff}_\\partial(D^V), \\qquad V \\mapsto \\operatorname{Emb}(M, N \\times V).$$</div>' +
         '<p>The theory runs parallel to homotopy calculus: polynomial degree \\(\\leq n\\) in the vector-space variable, ' +
         'approximations \\(T_n F\\), a tower, and \\(n\\)-th derivative <em>spectra</em> \\(\\Theta^{(n)} F\\) now carrying an ' +
         'action of the orthogonal group \\(O(n)\\) rather than \\(\\Sigma_n\\); the layers are ' +
-        '\\(\\Omega^\\infty\\bigl( (\\Theta^{(n)}F \\wedge S^{nV})_{hO(n)} \\bigr)\\)-shaped. Because the inputs are ' +
-        'representations, orthogonal calculus is the natural home for questions about \\(BO\\), block bundles, and ' +
+        '\\(\\Omega^\\infty\\bigl( (\\Theta^{(n)}F \\wedge S^{nV})_{hO(n)} \\bigr)\\)-shaped. ' +
+        'Orthogonal calculus is the natural home for questions about \\(BO\\), block bundles, and ' +
         'spaces of manifolds; it has seen a renaissance in the study of diffeomorphism groups ' +
-        '(e.g. the Weiss fibrations behind exotic phenomena in \\(B\\mathrm{Top}(n)\\), Weiss 2021, and subsequent ' +
-        'work of Kupers, Randal-Williams, and others).</p>' +
+        '(e.g. Krannich&ndash;Randal-Williams (2021), computing the second Weiss derivative of \\(B\\mathrm{Top}(-)\\) and ' +
+        'applying it to detect nontrivial homotopy in \\(B\\mathrm{Diff}_\\partial(D^d)\\), and subsequent work of Kupers and others).</p>' +
         '<p style="font-size:0.95em;color:#555">Relation to the other calculi: for a fixed manifold \\(M\\), ' +
-        '\\(V \\mapsto \\operatorname{Emb}(M, N \\times V)\\) is simultaneously an orthogonal functor in \\(V\\) and, in ' +
-        '\\(M\\), a manifold-calculus presheaf; playing the two towers against each other is a standard technique ' +
-        '(Arone, Arone&ndash;Turchin).</p>' +
+        '\\(V \\mapsto \\operatorname{Emb}(M, N \\times V)\\) is an orthogonal functor in \\(V\\), while ' +
+        '\\(U \\mapsto \\operatorname{Emb}(U, N \\times V)\\) (varying the open \\(U \\subseteq M\\), \\(V\\) fixed) is a ' +
+        'manifold-calculus presheaf; playing the two towers against each other is a recurring technique in this ' +
+        'literature, carried out for \\(\\operatorname{Emb}(M, N \\times V)\\)-type functors by Arone&ndash;Lambrechts&ndash;Voli&cacute; ' +
+        '(<em>Calculus of functors, operad formality, and rational homology of embedding spaces</em>, Acta Math. 199, 2007).</p>' +
       '</div>' +
 
       '<div class="expo-panel">' +
         '<h3>2. Discrete and abelian functor calculus</h3>' +
-        '<p>For functors of <em>abelian</em> or module categories, everything can be done with chain complexes and ' +
+        '<p>For functors of module categories (more generally, abelian categories equipped with a fixed adjunction, e.g. ' +
+        'free&ndash;forgetful, whose comonad supplies enough relative projectives), everything can be done with chain complexes and ' +
         '<span class="kl-term" title="Cotriple (comonad): an endofunctor with counit and comultiplication; iterating it produces a simplicial resolution, whose realization defines derived functors.">cotriple</span> resolutions. ' +
         'Johnson&ndash;McCarthy (<em>Deriving calculus with cotriples</em>, Trans. Amer. Math. Soc. 356, 2004) build a ' +
-        'Taylor tower for functors of abelian (later, via Bauer&ndash;Johnson&ndash;McCarthy, unbased and more general) ' +
+        'Taylor tower for functors of abelian (later, via Bauer&ndash;Johnson&ndash;McCarthy, <em>Cross effects and ' +
+        'calculus in an unbased setting</em>, Trans. Amer. Math. Soc. 367, 2015, unbased and more general) ' +
         'categories out of Eilenberg&ndash;MacLane cross effects: \\(P_n F\\) is the total complex of the cotriple ' +
         'resolution generated by \\(\\operatorname{cr}_{n+1}\\). The theory:</p>' +
         '<ul>' +
-          '<li>recovers Eilenberg&ndash;MacLane&rsquo;s polynomial functors (\\(\\operatorname{cr}_{n+1} = 0\\)) as the ' +
-          '\\(n\\)-excisive objects &mdash; the calculator in <em>Derivatives &amp; Layers</em> lives here;</li>' +
+          '<li>a theorem of Johnson&ndash;McCarthy identifies the resulting \\(n\\)-excisive objects with ' +
+          'Eilenberg&ndash;MacLane&rsquo;s classical polynomial functors (\\(\\operatorname{cr}_{n+1} = 0\\)) &mdash; the ' +
+          'calculator in <em>Derivatives &amp; Layers</em> lives here;</li>' +
           '<li>recovers Dold&ndash;Puppe derived functors of non-additive functors (1961) and stable derived functors ' +
           'as linearizations;</li>' +
-          '<li>agrees with the Goodwillie tower under stability hypotheses, but is genuinely different in general ' +
-          '&mdash; a useful cautionary pair of towers for the same functor.</li>' +
+          '<li>can agree with the Goodwillie tower after passing to a linearization such as \\(H_*(-;k)\\), but the two ' +
+          'are built from different universal properties and need not agree in general.</li>' +
         '</ul>' +
       '</div>' +
 
       '<div class="expo-panel">' +
         '<h3>3. \\(\\infty\\)-categories, tangent categories, and where the subject is going</h3>' +
         '<ul>' +
-          '<li><strong>Lurie, <em>Higher Algebra</em>, Chapter 6.</strong> The modern foundation: \\(n\\)-excisive ' +
-          'functors between \\(\\infty\\)-categories, \\(P_n\\) as a left exact accessible localization, and the beautiful ' +
-          'reformulation of stability itself: the \\(\\infty\\)-category of spectra is <em>defined</em> as ' +
+          '<li><strong>Lurie, <em>Higher Algebra</em>.</strong> The modern foundation: \\(n\\)-excisive ' +
+          'functors between \\(\\infty\\)-categories and \\(P_n\\) as a left exact accessible localization (Chapter 6), and, ' +
+          'already in Chapter 1, the reformulation of stability itself: the \\(\\infty\\)-category of spectra is ' +
+          '<em>defined</em> as ' +
           '\\(\\mathrm{Sp} = \\operatorname{Exc}_*(\\mathcal{S}^{\\mathrm{fin}}_*, \\mathcal{S})\\), <em>reduced</em> ' +
-          '\\(1\\)-excisive functors (HA Definition 1.4.2.8 &mdash; the subscript \\(*\\) for reducedness matters: ' +
+          '\\(1\\)-excisive functors (HA &sect;1.4.2 &mdash; the subscript \\(*\\) for reducedness matters: ' +
           'without it one picks up the extra datum \\(F(*)\\)) &mdash; linear algebra as the first chapter of ' +
           'calculus.</li>' +
           '<li><strong>Heuts, <em>Goodwillie approximations to higher categories</em> (Mem. AMS 272, 2021).</strong> ' +
           'Categorifies the tower: the \\(\\infty\\)-category of spaces itself has a Taylor tower of \\(\\infty\\)-categories ' +
-          'interpolating from \\(\\mathcal{S}_*\\) to \\(\\mathrm{Sp}\\), with layers controlled by \\(\\partial_* \\mathrm{Id}\\). ' +
+          'interpolating from \\(\\mathcal{S}_*\\) to \\(\\mathrm{Sp}\\) &mdash; convergent, as in the classical case, only on ' +
+          'sufficiently connected objects &mdash; with layers controlled by \\(\\partial_* \\mathrm{Id}\\). ' +
           'Combined with the spectral Lie operad this yields Lie-algebra models for \\(v_n\\)-periodic unstable homotopy ' +
-          'theory (Heuts, 2021).</li>' +
+          'theory.</li>' +
           '<li><strong>Tangent \\(\\infty\\)-categories (Bauer&ndash;Burke&ndash;Ching, 2021&ndash;).</strong> ' +
           'Goodwillie calculus is literally differential geometry: there is a tangent structure (in the sense of ' +
           'Rosick&yacute; and Cockett&ndash;Cruttwell) on the \\((\\infty,2)\\)-category of <em>differentiable</em> ' +
@@ -1156,7 +1177,7 @@
           '</tr></thead>' +
           '<tbody>' +
             '<tr><td style="padding:4px 10px"><strong>input</strong></td><td style="padding:4px 10px">spaces / spectra</td><td style="padding:4px 10px">opens of \\(M\\)</td><td style="padding:4px 10px">inner-product spaces</td><td style="padding:4px 10px">modules / abelian cats</td></tr>' +
-            '<tr><td style="padding:4px 10px"><strong>polynomial</strong></td><td style="padding:4px 10px">\\(n\\)-excisive</td><td style="padding:4px 10px">degree \\(\\leq k\\) (Weiss covers)</td><td style="padding:4px 10px">poly degree \\(\\leq n\\) in \\(V\\)</td><td style="padding:4px 10px">\\(\\operatorname{cr}_{n+1} = 0\\)</td></tr>' +
+            '<tr><td style="padding:4px 10px"><strong>polynomial</strong></td><td style="padding:4px 10px">\\(n\\)-excisive</td><td style="padding:4px 10px">degree \\(\\leq n\\) (Weiss covers)</td><td style="padding:4px 10px">poly degree \\(\\leq n\\) in \\(V\\)</td><td style="padding:4px 10px">\\(\\operatorname{cr}_{n+1} = 0\\)</td></tr>' +
             '<tr><td style="padding:4px 10px"><strong>layer coefficients</strong></td><td style="padding:4px 10px">spectra + \\(\\Sigma_n\\)</td><td style="padding:4px 10px">configuration-space data</td><td style="padding:4px 10px">spectra + \\(O(n)\\)</td><td style="padding:4px 10px">chain complexes + \\(\\Sigma_n\\)</td></tr>' +
             '<tr><td style="padding:4px 10px"><strong>approximation is sheafification?</strong></td><td style="padding:4px 10px">analogy (left exact, non-topological)</td><td style="padding:4px 10px"><strong>theorem</strong> (Weiss topology)</td><td style="padding:4px 10px">analogy</td><td style="padding:4px 10px">analogy</td></tr>' +
             '<tr><td style="padding:4px 10px"><strong>signature application</strong></td><td style="padding:4px 10px">\\(K \\simeq \\mathrm{TC}\\) locally; \\(v_n\\)-periodicity</td><td style="padding:4px 10px">knot spaces; \\(\\operatorname{Emb}\\)</td><td style="padding:4px 10px">\\(B\\mathrm{Top}(n)\\), \\(B\\mathrm{Diff}\\)</td><td style="padding:4px 10px">Dold&ndash;Puppe, Andr&eacute;&ndash;Quillen</td></tr>' +
@@ -1188,6 +1209,10 @@
           'J. Topol. 8 (2015), 651&ndash;674 (arXiv:1407.6787) &mdash; the engine behind convergence.</li>' +
           '<li>P. Boavida de Brito and M. Weiss, <em>Manifold calculus and homotopy sheaves</em>, ' +
           'Homology Homotopy Appl. 15 (2013), 361&ndash;383 (arXiv:1202.1305).</li>' +
+          '<li>G. Arone and M. Ching, <em>Operads and chain rules for the calculus of functors</em>, ' +
+          'Ast&eacute;risque 338 (2011) &mdash; the chain-rule reference cited as &ldquo;Arone&ndash;Ching 2011&rdquo; below.</li>' +
+          '<li>G. Arone and M. Mahowald, <em>The Goodwillie tower of the identity functor and the unstable periodic ' +
+          'homotopy of spheres</em>, Invent. Math. 135 (1999) &mdash; cited as &ldquo;Arone&ndash;Mahowald 1999&rdquo; below.</li>' +
         '</ul>' +
       '</div>' +
 
@@ -1195,12 +1220,13 @@
         '<h3>Surveys and textbooks &mdash; where to actually start</h3>' +
         '<ul>' +
           '<li><strong>G. Arone and M. Ching, <em>Goodwillie calculus</em></strong>, in <em>Handbook of Homotopy ' +
-          'Theory</em> (H. Miller, ed.), CRC Press, 2020 (arXiv:1902.00803). The survey of record; start here.</li>' +
+          'Theory</em> (H. Miller, ed.), CRC Press, 2020 (arXiv:1902.00803) &mdash; cited as &ldquo;Arone&ndash;Ching ' +
+          '2020&rdquo; below &mdash; the survey of record; start here.</li>' +
           '<li><strong>B. Munson and I. Voli&cacute;, <em>Cubical Homotopy Theory</em></strong>, Cambridge Univ. Press, ' +
-          '2015. The standard teaching text: Part I is the (co)cartesian-cube technology, with full proofs of ' +
-          'Blakers&ndash;Massey; the final chapter builds the homotopy and manifold calculi, with ' +
-          'embeddings/immersions and spaces of knots as the applications (orthogonal calculus is not covered). ' +
-          'The natural companion volume for this module.</li>' +
+          '2015 &mdash; the standard teaching text and natural companion to this module: Part I is the (co)cartesian-cube ' +
+          'technology, with full proofs of Blakers&ndash;Massey; later parts build the homotopy calculus and then the ' +
+          'manifold calculus, with embeddings/immersions and spaces of knots as the applications (orthogonal calculus ' +
+          'is not covered).</li>' +
           '<li>N. Kuhn, <em>Goodwillie towers and chromatic homotopy: an overview</em>, Geom. Topol. Monogr. 10 ' +
           '(2007), 245&ndash;279 (arXiv:math/0410342).</li>' +
           '<li>B. Munson, <em>Introduction to the manifold calculus of Goodwillie&ndash;Weiss</em>, ' +
@@ -1209,8 +1235,12 @@
           '<li>C. Rezk, <em>A streamlined proof of Goodwillie&rsquo;s \\(n\\)-excisive approximation</em>, ' +
           'Algebr. Geom. Topol. 13 (2013), 1049&ndash;1051 (arXiv:0812.1324) &mdash; two pages; read after the ' +
           '<em>Taylor Tower</em> sub-tab.</li>' +
+          '<li>G. Heuts, <em>Lie Algebras and \\(v_n\\)-periodic Spaces</em>, Ann. of Math. Studies, Princeton ' +
+          'Univ. Press, 2021 &mdash; the tangent-category/Lie-algebra material cited as &ldquo;Heuts 2021&rdquo; below.</li>' +
           '<li>B. Dundas, T. Goodwillie, and R. McCarthy, <em>The Local Structure of Algebraic K-Theory</em>, ' +
-          'Springer, 2013 &mdash; the \\(K \\simeq \\mathrm{TC}\\) story in full.</li>' +
+          'Springer, 2013 &mdash; cited as &ldquo;DGM&rdquo; below; the full proof that, for a map of connective ring ' +
+          'spectra with nilpotent kernel on \\(\\pi_0\\), the cyclotomic trace induces an equivalence \\(K(A,I) \\simeq \\mathrm{TC}(A,I)\\) ' +
+          'on relative terms.</li>' +
         '</ul>' +
       '</div>' +
 
@@ -1222,9 +1252,9 @@
           '<li>R. Budney, F. Cohen, <em>et al.</em> on the homotopy type of knot spaces; R. Budney, ' +
           '<em>Little cubes and long knots</em>, Topology 46 (2007), 1&ndash;27.</li>' +
           '<li>Budney&ndash;Conant&ndash;Scannell&ndash;Sinha, <em>New perspectives on self-linking</em>, ' +
-          'Adv. Math. 191 (2005), 78&ndash;113 &mdash; the type-\\(2\\) invariant from the tower.</li>' +
+          'Adv. Math. 191 (2005), 78&ndash;113 &mdash; the type-\\(2\\) invariant from the tower; cited as &ldquo;BCSS 2005&rdquo; below.</li>' +
           '<li>Budney&ndash;Conant&ndash;Koytcheff&ndash;Sinha, <em>Embedding calculus knot invariants are of finite ' +
-          'type</em>, Algebr. Geom. Topol. 17 (2017), 1701&ndash;1742.</li>' +
+          'type</em>, Algebr. Geom. Topol. 17 (2017), 1701&ndash;1742 &mdash; cited as &ldquo;BCKS 2017&rdquo; below.</li>' +
           '<li>I. Voli&cacute;, <em>Finite type knot invariants and the calculus of functors</em>, ' +
           'Compos. Math. 142 (2006), 222&ndash;250.</li>' +
           '<li>P. Boavida de Brito and G. Horel, <em>Galois symmetries of knot spaces</em>, ' +
@@ -1239,7 +1269,7 @@
       '</div>' +
 
       '<div class="expo-panel">' +
-        '<h3>Lecture notes and courses (verified available, July 2026)</h3>' +
+        '<h3>Lecture notes and courses (a starting list &mdash; confirm availability before assigning)</h3>' +
         '<ul>' +
           '<li>MIT <strong>Talbot Workshop 2012</strong>: <em>Calculus of Functors</em> (mentored by Arone and Ching) ' +
           '&mdash; full workshop notes online.</li>' +
@@ -1264,12 +1294,12 @@
           '<tbody>' +
             '<tr><td style="padding:4px 10px">1&ndash;2</td><td style="padding:4px 10px">homotopy (co)limits, cubes, total (co)fibers</td><td style="padding:4px 10px">Munson&ndash;Voli&cacute; ch. 3, 5</td><td style="padding:4px 10px">Cubes &amp; Excision &sect;1</td></tr>' +
             '<tr><td style="padding:4px 10px">3</td><td style="padding:4px 10px">Blakers&ndash;Massey; Freudenthal</td><td style="padding:4px 10px">Munson&ndash;Voli&cacute; ch. 4, 6</td><td style="padding:4px 10px">Cubes &amp; Excision &sect;4</td></tr>' +
-            '<tr><td style="padding:4px 10px">4&ndash;5</td><td style="padding:4px 10px">\\(n\\)-excision; \\(T_n\\), \\(P_n\\), the tower; Rezk&rsquo;s proof</td><td style="padding:4px 10px">Calc III &sect;1; Rezk 2013; Arone&ndash;Ching &sect;&sect;1&ndash;3</td><td style="padding:4px 10px">Taylor Tower</td></tr>' +
+            '<tr><td style="padding:4px 10px">4&ndash;5</td><td style="padding:4px 10px">\\(n\\)-excision; \\(T_n\\), \\(P_n\\), the tower; Rezk&rsquo;s proof</td><td style="padding:4px 10px">Calc III &sect;1; Rezk 2013; Arone&ndash;Ching 2020, &sect;&sect;1&ndash;3</td><td style="padding:4px 10px">Taylor Tower</td></tr>' +
             '<tr><td style="padding:4px 10px">6</td><td style="padding:4px 10px">localization view; manifold calculus as sheafification</td><td style="padding:4px 10px">Boavida de Brito&ndash;Weiss 2013; Lurie HA &sect;6.1.1</td><td style="padding:4px 10px">Sheafification</td></tr>' +
             '<tr><td style="padding:4px 10px">7&ndash;8</td><td style="padding:4px 10px">cross effects; homogeneous classification; derivatives</td><td style="padding:4px 10px">Calc III &sect;&sect;2&ndash;5</td><td style="padding:4px 10px">Derivatives &amp; Layers</td></tr>' +
-            '<tr><td style="padding:4px 10px">9</td><td style="padding:4px 10px">convergence, analyticity; identity functor</td><td style="padding:4px 10px">Calc II; Arone&ndash;Mahowald 1999 (survey level)</td><td style="padding:4px 10px">Worked Examples &sect;1</td></tr>' +
+            '<tr><td style="padding:4px 10px">9</td><td style="padding:4px 10px">convergence, analyticity; identity functor</td><td style="padding:4px 10px">Calc II; Kuhn overview; Arone&ndash;Mahowald 1999 (advanced/optional)</td><td style="padding:4px 10px">Worked Examples &sect;1</td></tr>' +
             '<tr><td style="padding:4px 10px">10</td><td style="padding:4px 10px">\\(\\Sigma^\\infty\\Omega^\\infty\\); \\(K\\)-theory and \\(\\mathrm{TC}\\)</td><td style="padding:4px 10px">Kuhn overview; DGM book (skim)</td><td style="padding:4px 10px">Worked Examples &sect;&sect;2&ndash;3</td></tr>' +
-            '<tr><td style="padding:4px 10px">11&ndash;12</td><td style="padding:4px 10px">manifold calculus; \\(\\operatorname{Emb}\\); convergence</td><td style="padding:4px 10px">Weiss 1999; Munson survey; Goodwillie&ndash;Weiss 1999</td><td style="padding:4px 10px">Knots &amp; Embedding Calculus &sect;&sect;1&ndash;3</td></tr>' +
+            '<tr><td style="padding:4px 10px">11&ndash;12</td><td style="padding:4px 10px">manifold calculus; \\(\\operatorname{Emb}\\); convergence</td><td style="padding:4px 10px">Weiss 1999; Munson survey; Goodwillie&ndash;Weiss 1999; Goodwillie&ndash;Klein 2015 (optional)</td><td style="padding:4px 10px">Knots &amp; Embedding Calculus &sect;&sect;1&ndash;3</td></tr>' +
             '<tr><td style="padding:4px 10px">13</td><td style="padding:4px 10px">long knots; finite-type invariants from the tower</td><td style="padding:4px 10px">Sinha 2009; BCSS 2005; BCKS 2017</td><td style="padding:4px 10px">Knots &amp; Embedding Calculus &sect;&sect;4&ndash;6</td></tr>' +
             '<tr><td style="padding:4px 10px">14</td><td style="padding:4px 10px">outlook: chain rules, orthogonal calculus, tangent categories</td><td style="padding:4px 10px">Arone&ndash;Ching 2011 (statements); Heuts 2021</td><td style="padding:4px 10px">Other Calculi</td></tr>' +
           '</tbody>' +
@@ -1284,10 +1314,8 @@
         '<ul>' +
           '<li>homotopy limits and colimits, model-categorical or \\(\\infty\\)-categorical, at the level of ' +
           'Munson&ndash;Voli&cacute; chapters 3 and 5 or Riehl&rsquo;s <em>Categorical Homotopy Theory</em>;</li>' +
-          '<li>spectra: smash products, connectivity, homotopy orbits/fixed points (any modern introduction &mdash; ' +
-          'the layer formula is unreadable without them);</li>' +
-          '<li>for the knot applications: configuration spaces and the basics of finite-type invariants ' +
-          '(<em>Polynomial Invariants</em> tab, Vassiliev sub-tab, is exactly the needed background);</li>' +
+          '<li>spectra: smash products, connectivity, homotopy orbits/fixed points (any modern introduction suffices);</li>' +
+          '<li>for the knot applications: configuration spaces and the basics of finite-type invariants;</li>' +
           '<li>optional but enriching: operads (for the chain rule), Grothendieck topologies (for the ' +
           'sheafification sub-tab), and the EHP sequence (for the identity-functor material).</li>' +
         '</ul>' +
@@ -1688,9 +1716,6 @@
     var activeTab = 0;
     containerEl.innerHTML = '';
 
-    var controls = document.createElement('div');
-    controls.className = 'fk-controls';
-
     var subtabs = document.createElement('div');
     subtabs.className = 'fk-subtabs';
 
@@ -1703,8 +1728,9 @@
       subtabs.appendChild(btn);
       tabBtns.push(btn);
     });
-    controls.appendChild(subtabs);
-    containerEl.appendChild(controls);
+    // subtabs is appended directly to containerEl (not a snug wrapper) so its
+    // sticky containing block spans the full tab height, not just its own.
+    containerEl.appendChild(subtabs);
 
     var content = document.createElement('div');
     content.className = 'fk-content';
@@ -1713,7 +1739,9 @@
     function switchTab(idx) {
       activeTab = idx;
       tabBtns.forEach(function (b, i) { b.classList.toggle('active', i === idx); });
+      tabBtns[idx].scrollIntoView({ block: 'nearest', inline: 'center', behavior: 'smooth' });
       renderTab(idx);
+      subtabs.scrollIntoView({ block: 'nearest' });
     }
 
     function renderTab(idx) {
