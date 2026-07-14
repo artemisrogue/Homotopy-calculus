@@ -1129,7 +1129,8 @@
 
       '<div class="expo-panel">' +
         '<h3>2. Discrete and abelian functor calculus</h3>' +
-        '<p>For functors of module categories (more generally, abelian categories equipped with a fixed adjunction, e.g. ' +
+        '<p>A fourth calculus, arriving in 2004 &mdash; just after the &ldquo;three classical members&rdquo; named in ' +
+        '<em>Overview</em> &mdash; built for a different kind of input. For functors of module categories (more generally, abelian categories equipped with a fixed adjunction, e.g. ' +
         'free&ndash;forgetful, whose comonad supplies enough relative projectives), everything can be done with chain complexes and ' +
         '<span class="kl-term" title="Cotriple (comonad): an endofunctor with counit and comultiplication; iterating it produces a simplicial resolution, whose realization defines derived functors.">cotriple</span> resolutions. ' +
         'Johnson&ndash;McCarthy (<em>Deriving calculus with cotriples</em>, Trans. Amer. Math. Soc. 356, 2004) build a ' +
