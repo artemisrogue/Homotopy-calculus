@@ -775,7 +775,8 @@
         '\\(\\operatorname{Map}(K, -)\\) and the classification theorem, identify \\(\\partial_n F\\) as the ' +
         'Spanier&ndash;Whitehead dual of a (Fulton&ndash;MacPherson-compactified) configuration space of \\(n\\) points in ' +
         '\\(K\\), following Arone&rsquo;s computation of the derivatives of \\(\\operatorname{Map}(K,-)\\)-type functors ' +
-        '&mdash; a first taste of the configuration-space calculus used for embedding functors (Goodwillie&ndash;Weiss).</p>' +
+        '&mdash; a first taste of the configuration-space calculus used for embedding functors (Goodwillie&ndash;Weiss; ' +
+        'see <em>Knots &amp; Embedding Calculus</em>).</p>' +
         '</details>' +
       '</div>';
   }
