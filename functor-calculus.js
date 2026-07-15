@@ -1573,10 +1573,10 @@
             '\\(D_{' + n + '}F = \\operatorname{hofib}(P_{' + n + '}F \\to P_{' + (n - 1) + '}F)\\); '
           : 'the constant term corresponds to \\(P_0 F \\simeq F(*)\\), the bottom of the tower; ';
         readout.innerHTML =
-          '<div class="formula-box">$$T_{' + n + '}f(x) = ' + taylorPolyLatex(fn, n) + '$$</div>' +
+          '<div class="formula-box">$$P_{' + n + '}f(x) = ' + taylorPolyLatex(fn, n) + '$$</div>' +
           '<p>' + radiusNote + '</p>' +
           '<p style="color:#555;font-size:0.93em"><strong>Dictionary.</strong> The degree-\\(' + n + '\\) polynomial ' +
-          '\\(T_{' + n + '}f\\) corresponds to the \\(' + n + '\\)-excisive approximation \\(P_{' + n + '}F\\); ' +
+          '\\(P_{' + n + '}f\\) corresponds to the \\(' + n + '\\)-excisive approximation \\(P_{' + n + '}F\\); ' +
           layerClause +
           'the radius of convergence corresponds to \\(\\rho\\)-analyticity: for a \\(\\rho\\)-analytic ' +
           'functor the tower converges on \\(\\rho\\)-connected spaces.</p>';
