@@ -1046,7 +1046,8 @@
           '<li><strong>Spectral Lie / hairy graph descriptions.</strong> Arone&ndash;Turchin identified the layers of ' +
           'the embedding tower with derived spaces of maps between modules over the little-disks operads ' +
           '(&ldquo;infinitesimal bimodules&rdquo;), leading to hairy-graph-complex computations of ' +
-          '\\(\\pi_*(\\mathcal{K}_n)\\) (Arone&ndash;Turchin 2014&ndash;15; Fresse&ndash;Turchin&ndash;Willwacher).</li>' +
+          '\\(\\pi_*(\\mathcal{K}_n)\\) (Arone&ndash;Turchin 2014&ndash;15; Fresse&ndash;Turchin&ndash;Willwacher, ' +
+          'full citations in <em>Further Reading</em>).</li>' +
         '</ul>' +
       '</div>' +
 
@@ -1275,6 +1276,12 @@
           'the Lambrechts&ndash;Turchin&ndash;Voli&cacute; 2010 entry in the knot-theory thread below.</li>' +
           '<li>D. Ayala and J. Francis, <em>Factorization homology of topological manifolds</em>, J. Topol. 8 ' +
           '(2015), 1045&ndash;1084 (arXiv:1206.5522).</li>' +
+          '<li>G. Arone and V. Turchin, <em>On the rational homology of high-dimensional analogues of spaces of ' +
+          'long knots</em>, Geom. Topol. 18 (2014), 1261&ndash;1322.</li>' +
+          '<li>G. Arone and V. Turchin, <em>Graph-complexes computing the rational homotopy of high dimensional ' +
+          'analogues of spaces of long knots</em>, Ann. Inst. Fourier 65 (2015), 1&ndash;62.</li>' +
+          '<li>B. Fresse, V. Turchin, and T. Willwacher, <em>The rational homotopy of mapping spaces of ' +
+          '\\(E_n\\) operads</em>, arXiv:1703.06123.</li>' +
           '<li>M. Krannich and O. Randal-Williams, <em>Diffeomorphisms of discs and the second Weiss derivative ' +
           'of \\(B\\mathrm{Top}(-)\\)</em>, Invent. Math. (arXiv:2109.03500, 2021).</li>' +
         '</ul>' +
