@@ -268,7 +268,8 @@
         '\\((m{+}n)\\)-excisive: split the defining \\((m{+}n{+}1)\\)-cube into a size-\\(m\\) and a size-\\(n\\) block and add the ' +
         'two connectivity estimates, in the spirit of the generalized Blakers&ndash;Massey theorem below. Likewise ' +
         '\\(X \\mapsto \\Omega^\\infty(E \\wedge (\\Sigma^\\infty X)^{\\wedge n})\\) is in fact \\(n\\)-homogeneous for any spectrum \\(E\\) ' +
-        '&mdash; an untwisted example of the functors classified in <em>Derivatives &amp; Layers</em>.</p>' +
+        '&mdash; a basic example of the functors classified in <em>Derivatives &amp; Layers</em> &sect;4, whose derivative ' +
+        '\\(\\partial_n = \\Sigma_n{}_+ \\wedge E\\) carries the induced (free), not trivial, \\(\\Sigma_n\\)-action.</p>' +
         '</details>' +
       '</div>' +
 
