@@ -208,7 +208,7 @@
           '<li><strong>Sheafification</strong> &mdash; \\(P_n\\) as a localization; the theorem that manifold-calculus ' +
           'approximation <em>is</em> homotopy sheafification.</li>' +
           '<li><strong>Derivatives &amp; Layers</strong> &mdash; cross effects, homogeneous functors, the classification ' +
-          'theorem, derivatives as spectra. Interactive cross-effect calculator.</li>' +
+          'theorem, derivatives as spectra, and the Arone&ndash;Ching chain rule. Interactive cross-effect calculator.</li>' +
           '<li><strong>Worked Examples</strong> &mdash; the identity functor, \\(\\Sigma^\\infty\\Omega^\\infty\\), and ' +
           'algebraic \\(K\\)-theory.</li>' +
           '<li><strong>Knots &amp; Embedding Calculus</strong> &mdash; the Goodwillie&ndash;Weiss tower for spaces of knots ' +
