@@ -1262,6 +1262,9 @@
           'Homology Homotopy Appl. 15 (2013), 361&ndash;383 (arXiv:1202.1305).</li>' +
           '<li>G. Arone and M. Ching, <em>Operads and chain rules for the calculus of functors</em>, ' +
           'Ast&eacute;risque 338 (2011) &mdash; the chain-rule reference cited as &ldquo;Arone&ndash;Ching 2011&rdquo; below.</li>' +
+          '<li>B. Johnson, <em>The derivatives of homotopy theory</em>, Trans. Amer. Math. Soc. 347 (1995) &mdash; cited ' +
+          'as &ldquo;Johnson 1995&rdquo; below; with Arone&ndash;Mahowald 1999, the joint foundational reference for ' +
+          '\\(\\partial_n \\mathrm{Id}\\) (see <em>Worked Examples</em> &sect;1).</li>' +
           '<li>G. Arone and M. Mahowald, <em>The Goodwillie tower of the identity functor and the unstable periodic ' +
           'homotopy of spheres</em>, Invent. Math. 135 (1999) &mdash; cited as &ldquo;Arone&ndash;Mahowald 1999&rdquo; below.</li>' +
           '<li>G. Heuts, <em>Goodwillie approximations to higher categories</em>, Mem. Amer. Math. Soc. 272 (2021) ' +
@@ -1352,7 +1355,7 @@
             '<tr><td style="padding:4px 10px">4&ndash;5</td><td style="padding:4px 10px">\\(n\\)-excision; \\(T_n\\), \\(P_n\\), the tower; Rezk&rsquo;s proof</td><td style="padding:4px 10px">Calc III &sect;1; Rezk 2013; Arone&ndash;Ching 2020, &sect;&sect;1&ndash;3</td><td style="padding:4px 10px">Taylor Tower</td></tr>' +
             '<tr><td style="padding:4px 10px">6</td><td style="padding:4px 10px">localization view; manifold calculus as sheafification</td><td style="padding:4px 10px">Boavida de Brito&ndash;Weiss 2013; Lurie HA &sect;6.1.1</td><td style="padding:4px 10px">Sheafification</td></tr>' +
             '<tr><td style="padding:4px 10px">7&ndash;8</td><td style="padding:4px 10px">cross effects; homogeneous classification; derivatives</td><td style="padding:4px 10px">Calc III &sect;&sect;2&ndash;5</td><td style="padding:4px 10px">Derivatives &amp; Layers</td></tr>' +
-            '<tr><td style="padding:4px 10px">9</td><td style="padding:4px 10px">convergence, analyticity; identity functor</td><td style="padding:4px 10px">Calc II; Kuhn overview; Arone&ndash;Mahowald 1999 (advanced/optional)</td><td style="padding:4px 10px">Worked Examples &sect;1</td></tr>' +
+            '<tr><td style="padding:4px 10px">9</td><td style="padding:4px 10px">convergence, analyticity; identity functor</td><td style="padding:4px 10px">Calc II; Kuhn overview; Johnson 1995, Arone&ndash;Mahowald 1999 (advanced/optional)</td><td style="padding:4px 10px">Worked Examples &sect;1</td></tr>' +
             '<tr><td style="padding:4px 10px">10</td><td style="padding:4px 10px">\\(\\Sigma^\\infty\\Omega^\\infty\\); \\(K\\)-theory and \\(\\mathrm{TC}\\)</td><td style="padding:4px 10px">Kuhn overview; DGM book (skim)</td><td style="padding:4px 10px">Worked Examples &sect;&sect;2&ndash;3</td></tr>' +
             '<tr><td style="padding:4px 10px">11&ndash;12</td><td style="padding:4px 10px">manifold calculus; \\(\\operatorname{Emb}\\); convergence</td><td style="padding:4px 10px">Weiss 1999; Munson survey; Goodwillie&ndash;Weiss 1999; Goodwillie&ndash;Klein 2015 (optional)</td><td style="padding:4px 10px">Knots &amp; Embedding Calculus &sect;&sect;1&ndash;3</td></tr>' +
             '<tr><td style="padding:4px 10px">13</td><td style="padding:4px 10px">long knots; finite-type invariants from the tower</td><td style="padding:4px 10px">Sinha 2009; BCSS 2005; BCKS 2017</td><td style="padding:4px 10px">Knots &amp; Embedding Calculus &sect;&sect;4&ndash;6</td></tr>' +
