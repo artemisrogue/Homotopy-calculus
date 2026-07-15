@@ -1265,6 +1265,11 @@
           'Bull. Amer. Math. Soc. 78 (1972), 981&ndash;987.</li>' +
           '<li>J. Klein and J. Rognes, <em>A chain rule in the calculus of homotopy functors</em>, Geom. Topol. ' +
           '6 (2002), 853&ndash;887 &mdash; the one-derivative chain rule, paired with Arone&ndash;Ching 2011 above.</li>' +
+          '<li>R. McCarthy, <em>Relative algebraic K-theory and topological cyclic homology</em>, Acta Math. ' +
+          '179 (1997), 197&ndash;222 &mdash; cited as &ldquo;McCarthy 1997&rdquo; above.</li>' +
+          '<li>B. Dundas, <em>Relative K-theory and topological cyclic homology</em>, Acta Math. 179 (1997), ' +
+          '223&ndash;242 &mdash; cited as &ldquo;Dundas 1997&rdquo; above; the companion paper to McCarthy 1997 in the ' +
+          'same issue.</li>' +
           '<li>G. Arone, P. Lambrechts, and I. Voli&cacute;, <em>Calculus of functors, operad formality, and ' +
           'rational homology of embedding spaces</em>, Acta Math. 199 (2007), 153&ndash;198 &mdash; distinct from ' +
           'the Lambrechts&ndash;Turchin&ndash;Voli&cacute; 2010 entry in the knot-theory thread below.</li>' +
