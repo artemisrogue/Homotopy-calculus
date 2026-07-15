@@ -1260,6 +1260,9 @@
           'J. Topol. 8 (2015), 651&ndash;674 (arXiv:1407.6787) &mdash; the engine behind convergence.</li>' +
           '<li>P. Boavida de Brito and M. Weiss, <em>Manifold calculus and homotopy sheaves</em>, ' +
           'Homology Homotopy Appl. 15 (2013), 361&ndash;383 (arXiv:1202.1305).</li>' +
+          '<li>M. Ching, <em>Bar constructions for topological operads and the Goodwillie derivatives of the ' +
+          'identity</em>, Geom. Topol. 9 (2005), 833&ndash;933 &mdash; the spectral-Lie-operad structure on ' +
+          '\\(\\partial_* \\mathrm{Id}\\), cited as &ldquo;Ching 2005&rdquo; below.</li>' +
           '<li>G. Arone and M. Ching, <em>Operads and chain rules for the calculus of functors</em>, ' +
           'Ast&eacute;risque 338 (2011) &mdash; the chain-rule reference cited as &ldquo;Arone&ndash;Ching 2011&rdquo; below.</li>' +
           '<li>B. Johnson, <em>The derivatives of homotopy theory</em>, Trans. Amer. Math. Soc. 347 (1995) &mdash; cited ' +
