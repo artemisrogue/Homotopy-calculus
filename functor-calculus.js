@@ -1250,6 +1250,8 @@
           '&mdash; cited as &ldquo;Heuts 2021a&rdquo; below; categorifies the Taylor tower itself. Distinct from the ' +
           'companion book below (&ldquo;Heuts 2021b&rdquo;), which supplies the Lie-algebra-models material.</li>' +
           '<li>M. Behrens, <em>The Goodwillie tower and the EHP sequence</em>, Mem. Amer. Math. Soc. 218 (2012).</li>' +
+          '<li>A. Dold and D. Puppe, <em>Homologie nicht-additiver Funktoren. Anwendungen</em>, Ann. Inst. Fourier ' +
+          '11 (1961), 201&ndash;312.</li>' +
         '</ul>' +
       '</div>' +
 
