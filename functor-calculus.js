@@ -639,6 +639,13 @@
         'argument uses that sets have no higher homotopy, and explain why \\(P_n\\) needs ' +
         '\\(\\operatorname{hocolim}_k T_n^k\\) rather than \\(T_n^2\\).</p>' +
         '</details>' +
+        '<details class="kl-practice"><summary>Exercise 4: why &ldquo;not topological&rdquo;</summary>' +
+        '<p>Section 4&rsquo;s warning box observes that \\(P_n\\) on <em>spaces</em> is not itself the sheafification ' +
+        'for a Grothendieck topology&rsquo;s descent condition. Sketch why: identify which axiom (stability under ' +
+        'pullback along monomorphisms, or the covering condition itself) fails to be witnessed by \\(\\mathcal{J}_n\\)-covers ' +
+        'once objects are spaces rather than sets, and explain how this is consistent with Boavida de ' +
+        'Brito&ndash;Weiss still proving \\(P_n \\simeq\\) sheafification in the manifold-calculus setting.</p>' +
+        '</details>' +
       '</div>';
   }
 
