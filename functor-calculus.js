@@ -1261,6 +1261,9 @@
           '1123&ndash;1150 &mdash; the tower-theoretic reinterpretation of the Snaith splitting.</li>' +
           '<li>J. Klein and J. Rognes, <em>A chain rule in the calculus of homotopy functors</em>, Geom. Topol. ' +
           '6 (2002), 853&ndash;887 &mdash; the one-derivative chain rule, paired with Arone&ndash;Ching 2011 above.</li>' +
+          '<li>G. Arone, P. Lambrechts, and I. Voli&cacute;, <em>Calculus of functors, operad formality, and ' +
+          'rational homology of embedding spaces</em>, Acta Math. 199 (2007), 153&ndash;198 &mdash; distinct from ' +
+          'the Lambrechts&ndash;Turchin&ndash;Voli&cacute; 2010 entry in the knot-theory thread below.</li>' +
         '</ul>' +
       '</div>' +
 
