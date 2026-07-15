@@ -1252,6 +1252,7 @@
           '<li>M. Behrens, <em>The Goodwillie tower and the EHP sequence</em>, Mem. Amer. Math. Soc. 218 (2012).</li>' +
           '<li>A. Dold and D. Puppe, <em>Homologie nicht-additiver Funktoren. Anwendungen</em>, Ann. Inst. Fourier ' +
           '11 (1961), 201&ndash;312.</li>' +
+          '<li>S. Eilenberg and S. Mac Lane, <em>On the groups H(&Pi;,n) II</em>, Ann. of Math. 60 (1954), 49&ndash;139.</li>' +
         '</ul>' +
       '</div>' +
 
