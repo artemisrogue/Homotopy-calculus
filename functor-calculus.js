@@ -1120,7 +1120,9 @@
         '<p>Weiss&rsquo;s <strong>orthogonal calculus</strong> (<em>Orthogonal calculus</em>, Trans. Amer. Math. Soc., 1995) ' +
         'studies continuous functors \\(F : \\mathcal{J} \\to \\mathcal{S}\\) from the category of finite-dimensional real ' +
         'inner-product spaces and linear isometric embeddings &mdash; functors of \\(V\\) itself rather than of a ' +
-        'single fixed object. Standard examples:</p>' +
+        'single fixed object. (Here \\(V\\) ranges over inner-product spaces &mdash; a reuse of the letter, not the ' +
+        'object, from the manifold opens \\(V \\subseteq M\\) of <em>Sheafification</em> and ' +
+        '<em>Knots &amp; Embedding Calculus</em>.) Standard examples:</p>' +
         '<div class="formula-box">$$V \\mapsto BO(V), \\qquad V \\mapsto B\\mathrm{Top}(V), \\qquad V \\mapsto B\\mathrm{Diff}_\\partial(D^V), \\qquad V \\mapsto \\operatorname{Emb}(M, N \\times V).$$</div>' +
         '<p>The theory runs parallel to homotopy calculus: polynomial degree \\(\\leq n\\) in the vector-space variable, ' +
         'approximations \\(T_n F\\) &mdash; built the same way as the join-indexed, iterated \\(T_n\\) of ' +
