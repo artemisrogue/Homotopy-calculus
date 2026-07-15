@@ -1016,7 +1016,9 @@
           'sum, and it is invariant under degree-\\(n\\) <span class="kl-term" title="Clasper / grope surgery: geometric refinements of crossing changes; invariance under degree-n clasper surgery characterizes finite-type invariants of degree ≤ n−1 (Habiro, Goussarov).">clasper surgery</span> ' +
           '&mdash; hence a finite-type invariant of degree \\(\\leq n-1\\).</li>' +
           '<li><strong>Universality: a ladder of theorems and one conjecture.</strong> ' +
-          'BCKS conjecture that \\(\\mathrm{ev}_{n+1}\\) is the <em>universal additive</em> type-\\(n\\) invariant over ' +
+          'BCKS conjecture that \\(\\mathrm{ev}_{n+1}\\) is the <em>universal additive</em> type-\\(n\\) invariant ' +
+          '(&ldquo;additive&rdquo; here means a homomorphism for connected sum &mdash; not the \\(1\\)-excisive, ' +
+          '&ldquo;wedge-to-product&rdquo; sense of <em>Cubes &amp; Excision</em> Ex. 3(b)) over ' +
           '\\(\\mathbb{Z}\\). Current status: over \\(\\mathbb{R}\\), every type-\\(n\\) invariant factors through the ' +
           'stage \\(T_{2n}\\) (Voli&cacute;, Compos. Math. 142, 2006); \\(p\\)-locally, \\(\\mathrm{ev}_{n+1}\\) is universal ' +
           'for degrees \\(n \\leq p + 1\\) via Galois symmetries of profinite little-disks operads ' +
