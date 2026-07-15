@@ -160,7 +160,8 @@
         '<strong>finite-type (Vassiliev)</strong> knot invariants &mdash; the same invariants that appear in the ' +
         '<em>Polynomial Invariants</em> tab as coefficients of the Conway polynomial and of the expansions of the ' +
         'Jones and HOMFLY-PT polynomials after the substitution \\(q = e^h\\) (Birman&ndash;Lin, 1993). The conjecture ' +
-        'that the tower is a <em>universal</em> finite-type invariant remains open in general &mdash; surjectivity and ' +
+        'that the tower is a <em>universal additive</em> finite-type invariant (general finite-type invariants are ' +
+        'polynomials in the additive ones) remains open in general &mdash; surjectivity and ' +
         '\\(p\\)-local universality are known, and point that way, but the full statement is not a theorem &mdash; and ' +
         'settling it is among the deepest links to abstract homotopy theory. See <em>Knots &amp; Embedding Calculus</em> ' +
         '&sect;4 for the precise status.</p>' +
@@ -967,7 +968,7 @@
         'embedding functors. For classical knots (\\(m = 1\\), \\(n = 3\\), codimension \\(2\\)) the estimate degenerates: ' +
         '<strong>convergence for the space of classical knots is an open problem</strong>. Everything below lives in ' +
         'that gap: the tower still exists, still produces invariants, and conjecturally still sees ' +
-        'everything finite-type.</p>' +
+        'everything finite-type (in the additive sense made precise in &sect;4 below).</p>' +
       '</div>' +
 
       '<div class="expo-panel">' +
