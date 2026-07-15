@@ -1273,6 +1273,8 @@
           '<li>G. Arone, P. Lambrechts, and I. Voli&cacute;, <em>Calculus of functors, operad formality, and ' +
           'rational homology of embedding spaces</em>, Acta Math. 199 (2007), 153&ndash;198 &mdash; distinct from ' +
           'the Lambrechts&ndash;Turchin&ndash;Voli&cacute; 2010 entry in the knot-theory thread below.</li>' +
+          '<li>D. Ayala and J. Francis, <em>Factorization homology of topological manifolds</em>, J. Topol. 8 ' +
+          '(2015), 1045&ndash;1084 (arXiv:1206.5522).</li>' +
           '<li>M. Krannich and O. Randal-Williams, <em>Diffeomorphisms of discs and the second Weiss derivative ' +
           'of \\(B\\mathrm{Top}(-)\\)</em>, Invent. Math. (arXiv:2109.03500, 2021).</li>' +
         '</ul>' +
