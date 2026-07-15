@@ -890,8 +890,9 @@
         'homotopical setting the same care is needed, in less rigid form &mdash; the derivatives determine the <em>layers</em>, but ' +
         'reassembling \\(F\\) requires extension data (\\(k\\)-invariants); and since a non-finitary functor need not be ' +
         'determined by its restriction to finite complexes, two \\(n\\)-excisive \\(F\\) can agree there while differing ' +
-        'on filtered colimits &mdash; the obstruction finitary-ness rules out. The healthy version of ' +
-        'the principle is the disk-site description in the <em>Sheafification</em> sub-tab.</p>' +
+        'on filtered colimits &mdash; the obstruction finitary-ness rules out. The rigorous replacement for ' +
+        '&ldquo;reconstruct \\(F\\) from its cross effects&rdquo; is the disk-site reconstruction theorem of ' +
+        '<em>Sheafification</em> &sect;3: a homotopy sheaf on a manifold is determined by its restriction to disjoint balls.</p>' +
       '</div>' +
 
       '<div class="expo-panel">' +
