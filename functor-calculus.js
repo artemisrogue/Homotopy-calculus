@@ -561,7 +561,10 @@
         'further, in the knot-theory application. Let \\(M\\) be a smooth \\(m\\)-manifold and \\(\\mathcal{O}(M)\\) its poset of open ' +
         'subsets, and consider presheaves \\(F : \\mathcal{O}(M)^{\\mathrm{op}} \\to \\mathcal{S}\\) taking isotopy ' +
         'equivalences to equivalences (e.g. \\(V \\mapsto \\operatorname{Emb}(V, N)\\)). Define the ' +
-        '<strong>Weiss topology</strong> \\(\\mathcal{J}_k\\): a family \\(\\{U_i \\subseteq V\\}\\) is a ' +
+        '<strong>Weiss topology</strong> \\(\\mathcal{J}_k\\) &mdash; a <em>covering topology</em> on \\(\\mathcal{O}(M)\\), ' +
+        'unrelated to the calligraphic \\(\\mathcal{J}\\) of <em>Other Calculi</em> &sect;1 (Overview &sect;3 table), which ' +
+        'names the <em>input category</em> of finite-dimensional inner-product spaces for orthogonal calculus: a family ' +
+        '\\(\\{U_i \\subseteq V\\}\\) is a ' +
         '<em>\\(\\mathcal{J}_k\\)-cover</em> if every subset of \\(V\\) with at most \\(k\\) points is contained in some ' +
         '\\(U_i\\). (For \\(k = 1\\) this is the ordinary open-cover topology; \\(\\mathcal{J}_\\infty\\) requires the ' +
         'condition for all finite subsets.)</p>' +
