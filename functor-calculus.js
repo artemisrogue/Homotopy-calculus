@@ -1257,6 +1257,8 @@
           '356 (2004).</li>' +
           '<li>K. Bauer, B. Johnson, and R. McCarthy, <em>Cross effects and calculus in an unbased setting</em>, ' +
           'Trans. Amer. Math. Soc. 367 (2015).</li>' +
+          '<li>G. Arone, <em>A generalization of Snaith-type filtration</em>, Trans. Amer. Math. Soc. 351 (1999), ' +
+          '1123&ndash;1150 &mdash; the tower-theoretic reinterpretation of the Snaith splitting.</li>' +
         '</ul>' +
       '</div>' +
 
