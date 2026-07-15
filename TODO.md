@@ -3,24 +3,22 @@
 Recommendations from reviewing this project end-to-end (content quality passes plus general
 maintainability), roughly in order of leverage.
 
+## Done
+
+- ~~**Guard the "no ASCII apostrophe" house rule with automation.**~~ Added
+  `.github/workflows/check.yml`: runs `node --check functor-calculus.js` plus a grep heuristic for
+  bare letter-apostrophe-letter contractions on every push/PR.
+- ~~**Add deep-linking via URL hash routing.**~~ `TAB_SLUGS` + `switchTab()` now read/write
+  `location.hash` (e.g. `#taylor-tower`), with a `hashchange` listener for back/forward navigation.
+  Section-level anchors (`#knots-3`) were judged out of scope for this pass — would need `id`
+  attributes threaded through every numbered section across all 9 functions; tab-level linking
+  captures most of the payoff at a fraction of the risk.
+- ~~**Make cross-references between sub-tabs actually clickable.**~~ The course-plan table and
+  "How to read this module" list now use real `<a href="#slug" class="fk-xref">` links.
+
 ## High priority
 
-- **Guard the "no ASCII apostrophe" house rule with automation.** The whole module depends on
-  never letting an ASCII apostrophe into a concatenated string in `functor-calculus.js` — a single
-  slip silently breaks the JS. Add a pre-commit hook or CI check: grep for the disallowed pattern
-  inside the concatenated string literals, plus a `node -c functor-calculus.js` syntax sanity
-  check. Cheap, currently nonexistent, and would have caught any mistake from heavy editing passes.
-
-- **Add deep-linking via URL hash routing.** This is a citable teaching resource (14-week course
-  plan, full bibliography), but there is no way to link directly to a specific sub-tab (or a
-  section within one) — everything lives in JS-only state. `switchTab()` in `functor-calculus.js`
-  already does the tab switch; wire `location.hash` to it (read on load, update on switch) so URLs
-  like `#taylor-tower` or `#knots-3` work. Small change, outsized payoff for something meant to be
-  shared or assigned.
-
-- **Make cross-references between sub-tabs actually clickable.** The course-plan table and the
-  "How to read this module" list *name* other sub-tabs as plain text instead of linking to them.
-  Wire these to call `switchTab()` directly. Same infrastructure as above, near-zero cost.
+(none remaining)
 
 ## Smaller-ticket
 
