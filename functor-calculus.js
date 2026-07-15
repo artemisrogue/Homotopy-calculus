@@ -720,7 +720,7 @@
           '</tr></thead>' +
           '<tbody>' +
             '<tr><td style="padding:4px 10px">\\(\\Omega^\\infty(E \\wedge -)\\), \\(E\\) a spectrum</td><td style="padding:4px 10px">\\(\\partial_1 = E\\), rest trivial</td><td style="padding:4px 10px">only \\(D_1 = \\Omega^\\infty(E \\wedge X)\\)</td></tr>' +
-            '<tr><td style="padding:4px 10px">\\(\\Sigma^\\infty \\Omega^\\infty\\) (on spectra)</td><td style="padding:4px 10px">\\(\\partial_n = \\mathbb{S}\\), trivial action, all \\(n\\)</td><td style="padding:4px 10px">\\(D_n(E) = (E^{\\wedge n})_{h\\Sigma_n}\\)</td></tr>' +
+            '<tr><td style="padding:4px 10px">\\(\\Sigma^\\infty \\Omega^\\infty\\) (on spectra)</td><td style="padding:4px 10px">\\(\\partial_n = \\mathbb{S}\\), trivial action, all \\(n\\)</td><td style="padding:4px 10px">\\(D_n(E) = (E^{\\wedge n})_{h\\Sigma_n}\\); see <em>Worked Examples</em></td></tr>' +
             '<tr><td style="padding:4px 10px">identity on based spaces</td><td style="padding:4px 10px">\\(\\partial_n \\mathrm{Id} \\simeq\\) dual of the partition complex; \\(\\bigvee_{(n-1)!} S^{1-n}\\) non-equivariantly</td><td style="padding:4px 10px">see <em>Worked Examples</em></td></tr>' +
             '<tr><td style="padding:4px 10px">\\(X \\mapsto \\Omega^\\infty(E \\wedge X^{\\wedge k})\\)</td><td style="padding:4px 10px">\\(\\partial_k = \\Sigma_k{}_+ \\wedge E\\) (induced action), rest trivial</td><td style="padding:4px 10px">pure \\(k\\)-homogeneous</td></tr>' +
           '</tbody>' +
