@@ -1584,7 +1584,7 @@
           '<p style="color:#555;font-size:0.93em"><strong>Dictionary.</strong> The degree-\\(' + n + '\\) polynomial ' +
           '\\(P_{' + n + '}f\\) corresponds to the \\(' + n + '\\)-excisive approximation \\(P_{' + n + '}F\\); ' +
           layerClause +
-          'the radius of convergence corresponds to \\(\\rho\\)-analyticity: for a \\(\\rho\\)-analytic ' +
+          'the radius of convergence corresponds to \\(\\rho\\)-analyticity (&sect;4 below): for a \\(\\rho\\)-analytic ' +
           'functor the tower converges on \\(\\rho\\)-connected spaces.</p>';
         mathRender(readout);
       }
