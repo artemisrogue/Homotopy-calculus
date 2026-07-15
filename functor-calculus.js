@@ -1543,7 +1543,7 @@
         { type: 'scatter', mode: 'lines', x: xs, y: ys,
           line: { color: '#2171b5', width: 2.5 }, name: 'f(x)' },
         { type: 'scatter', mode: 'lines', x: xs, y: ts,
-          line: { color: '#d6604d', width: 2, dash: 'solid' }, name: 'Tₙf(x)' }
+          line: { color: '#d6604d', width: 2, dash: 'solid' }, name: 'Pₙf(x)' }
       ];
 
       var shapes = [];
