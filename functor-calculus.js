@@ -318,18 +318,18 @@
         '<details class="kl-practice"><summary>Exercise 1: pullback squares</summary>' +
         '<p>Show directly from the definition of homotopy pullback that the product square ' +
         '(\\(X \\times Y\\) mapping to \\(X\\) and \\(Y\\), both mapping to a point) is cartesian for all \\(X, Y\\). ' +
-        'Then compute its homotopy pushout and show the square is cocartesian if and only if the join ' +
-        '\\(X * Y \\simeq \\Sigma(X \\wedge Y)\\) is contractible. Deduce that it is cocartesian whenever \\(X\\) or ' +
-        '\\(Y\\) is contractible, and check that it fails for \\(X = Y = S^0\\). Harder: the converse is false &mdash; ' +
-        'find non-contractible \\(X, Y\\) with \\(X * Y \\simeq *\\). <em>Hint: the pushout of ' +
-        '\\(X \\leftarrow X \\times Y \\to Y\\) is the join \\(X * Y\\) (the identification above needs ' +
-        'well-pointedness); for the last part try the Moore spaces \\(M(\\mathbb{Z}/2, 1) = \\mathbb{R}P^2\\) and ' +
-        '\\(M(\\mathbb{Z}/3, 1)\\) and apply the K&uuml;nneth theorem to the smash.</em></p>' +
+        'Then compute its homotopy pushout &mdash; for well-pointed \\(X, Y\\) the pushout of ' +
+        '\\(X \\leftarrow X \\times Y \\to Y\\) is the join \\(X * Y\\) &mdash; and show the square is cocartesian if ' +
+        'and only if the join \\(X * Y \\simeq \\Sigma(X \\wedge Y)\\) is contractible. Deduce that it is cocartesian ' +
+        'whenever \\(X\\) or \\(Y\\) is contractible, and check that it fails for \\(X = Y = S^0\\). Harder: the ' +
+        'converse is false &mdash; find non-contractible \\(X, Y\\) with \\(X * Y \\simeq *\\) (try the Moore spaces ' +
+        '\\(M(\\mathbb{Z}/2, 1) = \\mathbb{R}P^2\\) and \\(M(\\mathbb{Z}/3, 1)\\), and apply the K&uuml;nneth theorem ' +
+        'to the smash).</p>' +
         '</details>' +
         '<details class="kl-practice"><summary>Exercise 2: strong cocartesian-ness is a 2-face condition</summary>' +
-        '<p>Prove that in a strongly cocartesian \\(3\\)-cube, the full cube is cocartesian. ' +
-        '<em>Hint: write the hocolim over the punctured cube as an iterated pushout and use that pushouts of ' +
-        'pushouts are pushouts (the &ldquo;pasting law&rdquo;).</em></p>' +
+        '<p>Prove that in a strongly cocartesian \\(3\\)-cube, the full cube is cocartesian, by writing the hocolim ' +
+        'over the punctured cube as an iterated pushout and using that pushouts of pushouts are pushouts (the ' +
+        '&ldquo;pasting law&rdquo;).</p>' +
         '</details>' +
         '<details class="kl-practice"><summary>Exercise 3: 0-excisive and 1-excisive functors</summary>' +
         '<p>(a) Show that \\(F\\) is \\(0\\)-excisive iff \\(F(X) \\to F(*)\\) is an equivalence for every \\(X\\). ' +
