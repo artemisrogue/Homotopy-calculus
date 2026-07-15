@@ -1123,7 +1123,10 @@
         'single fixed object. Standard examples:</p>' +
         '<div class="formula-box">$$V \\mapsto BO(V), \\qquad V \\mapsto B\\mathrm{Top}(V), \\qquad V \\mapsto B\\mathrm{Diff}_\\partial(D^V), \\qquad V \\mapsto \\operatorname{Emb}(M, N \\times V).$$</div>' +
         '<p>The theory runs parallel to homotopy calculus: polynomial degree \\(\\leq n\\) in the vector-space variable, ' +
-        'approximations \\(T_n F\\), a tower, and \\(n\\)-th derivative <em>spectra</em> \\(\\Theta^{(n)} F\\) now carrying an ' +
+        'approximations \\(T_n F\\) &mdash; built the same way as the join-indexed, iterated \\(T_n\\) of ' +
+        '<em>Taylor Tower</em> &sect;1 (\\(P_n = \\operatorname{hocolim}_k T_n^k\\)), <em>not</em> the single, ' +
+        'already-idempotent holim \\(T_k\\) of manifold calculus (<em>Sheafification</em> &sect;3) &mdash; a tower, ' +
+        'and \\(n\\)-th derivative <em>spectra</em> \\(\\Theta^{(n)} F\\) now carrying an ' +
         'action of the orthogonal group \\(O(n)\\) rather than \\(\\Sigma_n\\); the layers are ' +
         '\\(\\Omega^\\infty\\bigl( (\\Theta^{(n)}F \\wedge S^{nV})_{hO(n)} \\bigr)\\)-shaped. ' +
         'Orthogonal calculus is the natural home for questions about \\(BO\\), block bundles, and ' +
