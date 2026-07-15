@@ -1282,6 +1282,9 @@
           'analogues of spaces of long knots</em>, Ann. Inst. Fourier 65 (2015), 1&ndash;62.</li>' +
           '<li>B. Fresse, V. Turchin, and T. Willwacher, <em>The rational homotopy of mapping spaces of ' +
           '\\(E_n\\) operads</em>, arXiv:1703.06123.</li>' +
+          '<li>K. Bauer, J. Burke, and M. Ching, <em>Tangent \\(\\infty\\)-categories and Goodwillie calculus</em>, ' +
+          'arXiv preprint (2021&ndash;) &mdash; still unpublished as of mid-2026; cite as an arXiv preprint, not a ' +
+          'journal article.</li>' +
           '<li>M. Krannich and O. Randal-Williams, <em>Diffeomorphisms of discs and the second Weiss derivative ' +
           'of \\(B\\mathrm{Top}(-)\\)</em>, Invent. Math. (arXiv:2109.03500, 2021).</li>' +
         '</ul>' +
