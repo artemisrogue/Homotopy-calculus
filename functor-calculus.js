@@ -349,8 +349,11 @@
         'splitting \\(Q(A \\times B) \\simeq QA \\times QB \\times Q(A \\wedge B)\\) together with Exercise 3(b), show ' +
         'that \\(Q \\circ Q\\) is reduced but not \\(1\\)-excisive, even though \\(Q\\) is \\(1\\)-excisive. ' +
         '(Equivalently: \\(\\Sigma^\\infty\\Omega^\\infty\\) on spectra is a ' +
-        'composite of two \\(1\\)-excisive functors whose Taylor tower has nonvanishing layers in every degree, by ' +
-        'the Snaith splitting &mdash; see <em>Worked Examples</em> &sect;2 for the statement.) The correct chain rule lives at the level of derivatives &mdash; see ' +
+        'composite of two \\(1\\)-excisive functors whose Taylor tower has nonvanishing layers in every degree, since ' +
+        '\\(D_n(\\Sigma^\\infty\\Omega^\\infty)(E) \\simeq (E^{\\wedge n})_{h\\Sigma_n}\\) is generically nonzero &mdash; see ' +
+        '<em>Worked Examples</em> &sect;2 for the formula. The Snaith splitting is the separate, narrower fact that ' +
+        'this tower literally splits as a wedge, and only when \\(E = \\Sigma^\\infty X\\) is a suspension spectrum.) ' +
+        'The correct chain rule lives at the level of derivatives &mdash; see ' +
         '<em>Derivatives &amp; Layers</em>.</p>' +
         '</details>' +
       '</div>';
