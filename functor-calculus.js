@@ -1196,7 +1196,7 @@
           'differential objects are stable \\(\\infty\\)-categories; Goodwillie&rsquo;s \\(P_n\\) and \\(\\partial_n\\) ' +
           'become jets and derivatives in the formal sense. (Still an arXiv preprint as of mid-2026; cite it as ' +
           'such.)</li>' +
-          '<li><strong>Topos-theoretic calculus (Anel&ndash;Biedermann&ndash;Finster&ndash;Joyal, 2018&ndash;2024).</strong> ' +
+          '<li><strong>Topos-theoretic calculus (Anel&ndash;Biedermann&ndash;Finster&ndash;Joyal, 2018).</strong> ' +
           'See <em>Sheafification</em>: left exact localizations and a Blakers&ndash;Massey theorem abstract enough to ' +
           'apply to the Goodwillie tower and to reprove the classical statement.</li>' +
         '</ul>' +
