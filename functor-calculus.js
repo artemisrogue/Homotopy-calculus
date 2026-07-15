@@ -1004,37 +1004,29 @@
 
       '<div class="expo-panel">' +
         '<h3>4. The tower computes finite-type invariants</h3>' +
-        '<p>Recall from the <em>Polynomial Invariants</em> tab that a knot ' +
-        'invariant is <strong>finite-type (Vassiliev) of degree \\(\\leq d\\)</strong> if its extension to singular knots ' +
-        'via \\(v(L_\\times) = v(L_+) - v(L_-)\\) vanishes on knots with \\(d{+}1\\) double points.</p>' +
+        '<p>A knot invariant is <strong>finite-type (Vassiliev) of degree \\(\\leq d\\)</strong> if its extension to ' +
+        'singular knots via \\(v(L_\\times) = v(L_+) - v(L_-)\\) vanishes on knots with \\(d{+}1\\) double points ' +
+        '&mdash; the topological analogue of a polynomial of degree \\(\\leq d\\).</p>' +
         '<ul>' +
-          '<li><strong>The first invariant in the tower (Budney&ndash;Conant&ndash;Scannell&ndash;Sinha, ' +
-          '<em>New perspectives on self-linking</em>, Adv. Math. 191, 2005).</strong> The third stage ' +
-          '\\(T_3 \\mathcal{K}_3\\) carries an integer-valued invariant which BCSS identify with the unique type-\\(2\\) ' +
-          'invariant \\(c_2\\) &mdash; the coefficient of \\(z^2\\) in the Conway polynomial &mdash; realized ' +
-          'geometrically by counting <span class="kl-term" title="Quadrisecant: a straight line meeting the knot in four distinct points. BCSS express the Casson knot invariant c₂ via counts of quadrisecants and related configuration-space integrals.">quadrisecants</span>. ' +
-          'The tower <em>discovers</em> \\(c_2\\) from pure homotopy theory, with no diagram combinatorics input.</li>' +
-          '<li><strong>All tower invariants are finite-type (Budney&ndash;Conant&ndash;Koytcheff&ndash;Sinha, ' +
-          '<em>Embedding calculus knot invariants are of finite type</em>, Algebr. Geom. Topol. 17, 2017).</strong> ' +
-          '\\(\\pi_0 T_n \\mathcal{K}_3\\) is an abelian group ' +
-          '(here \\(n\\) indexes the manifold-calculus stage \\(T_n\\), exactly as \\(k\\) does in &sect;1 above ' +
-          '&mdash; unrelated to the join-indexed, homotopy-calculus \\(T_n\\) flagged in &sect;1&rsquo;s notational-trap ' +
-          'remark and defined in the <em>Taylor Tower</em> sub-tab), the evaluation map ' +
-          '\\(\\mathrm{ev}_n : \\pi_0 \\mathcal{K}_3 \\to \\pi_0 T_n \\mathcal{K}_3\\) is a monoid homomorphism for connected ' +
-          'sum, and it is invariant under degree-\\(n\\) <span class="kl-term" title="Clasper / grope surgery: geometric refinements of crossing changes; invariance under degree-n clasper surgery characterizes finite-type invariants of degree ≤ n−1 (Habiro, Goussarov).">clasper surgery</span> ' +
-          '&mdash; hence a finite-type invariant of degree \\(\\leq n-1\\).</li>' +
+          '<li><strong>The tower produces invariants, and they are finite-type ' +
+          '(Budney&ndash;Conant&ndash;Koytcheff&ndash;Sinha, 2017).</strong> The evaluation map ' +
+          '\\(\\mathrm{ev}_n : \\pi_0 \\mathcal{K}_3 \\to \\pi_0 T_n \\mathcal{K}_3\\) (here \\(n\\) indexes the ' +
+          'manifold-calculus stage \\(T_n\\), exactly as \\(k\\) does in &sect;1 above &mdash; unrelated to the ' +
+          'join-indexed, homotopy-calculus \\(T_n\\) of the <em>Taylor Tower</em> sub-tab) is a monoid homomorphism for ' +
+          'connected sum and is invariant under degree-\\(n\\) <span class="kl-term" title="Clasper / grope surgery: geometric refinements of crossing changes; invariance under degree-n clasper surgery characterizes finite-type invariants of degree ≤ n−1 (Habiro, Goussarov).">clasper surgery</span> ' +
+          '&mdash; hence finite-type of degree \\(\\leq n-1\\). The first case, \\(T_3\\mathcal{K}_3\\), recovers the ' +
+          'type-\\(2\\) invariant \\(c_2\\) (the \\(z^2\\)-coefficient of the Conway polynomial) purely from homotopy ' +
+          'theory, by counting <span class="kl-term" title="Quadrisecant: a straight line meeting the knot in four distinct points. BCSS express the Casson knot invariant c₂ via counts of quadrisecants and related configuration-space integrals.">quadrisecants</span>, with no diagram combinatorics input ' +
+          '(Budney&ndash;Conant&ndash;Scannell&ndash;Sinha, 2005).</li>' +
           '<li><strong>Universality: a ladder of theorems and one conjecture.</strong> ' +
-          'BCKS conjecture that \\(\\mathrm{ev}_{n+1}\\) is the <em>universal additive</em> type-\\(n\\) invariant ' +
-          '(&ldquo;additive&rdquo; here means a homomorphism for connected sum &mdash; not the \\(1\\)-excisive, ' +
-          '&ldquo;wedge-to-product&rdquo; sense of <em>Cubes &amp; Excision</em> Ex. 3(b)) over ' +
-          '\\(\\mathbb{Z}\\). Current status: over \\(\\mathbb{R}\\), every type-\\(n\\) invariant factors through the ' +
-          'stage \\(T_{2n}\\) (Voli&cacute;, Compos. Math. 142, 2006); \\(p\\)-locally, \\(\\mathrm{ev}_{n+1}\\) is universal ' +
-          'for degrees \\(n \\leq p + 1\\) via Galois symmetries of profinite little-disks operads ' +
-          '(Boavida de Brito&ndash;Horel, Compos. Math. 157, 2021); and \\(\\mathrm{ev}_n\\) is <em>surjective</em>, with ' +
-          'values computed by grope cobordism (Kosanovi&cacute;, Adv. Math. 451, 2024) &mdash; suggestive of, but not by ' +
-          'itself establishing, rational universality of \\(\\mathrm{ev}_{n+1}\\) (a bridging argument beyond surjectivity ' +
-          'and Boavida de Brito&ndash;Horel&rsquo;s \\(p\\)-local range would be needed). Over \\(\\mathbb{Z}\\) &mdash; where the tower ' +
-          'could see torsion the Kontsevich integral misses &mdash; the full conjecture remains open.</li>' +
+          'Conjecturally \\(\\mathrm{ev}_{n+1}\\) is the <em>universal additive</em> type-\\(n\\) invariant over ' +
+          '\\(\\mathbb{Z}\\) (&ldquo;additive&rdquo; here means a homomorphism for connected sum &mdash; not the ' +
+          '\\(1\\)-excisive, &ldquo;wedge-to-product&rdquo; sense of <em>Cubes &amp; Excision</em> Ex. 3(b)). Known so ' +
+          'far: universal over \\(\\mathbb{R}\\) (Voli&cacute;, 2006), \\(p\\)-locally universal in a range via Galois ' +
+          'symmetries of profinite little-disks operads (Boavida de Brito&ndash;Horel, 2021), and \\(\\mathrm{ev}_n\\) ' +
+          'is surjective, with values computed by grope cobordism (Kosanovi&cacute;, 2024) &mdash; suggestive of, but ' +
+          'not by itself establishing, the full conjecture. Over \\(\\mathbb{Z}\\), where the tower could see torsion ' +
+          'the Kontsevich integral misses, it remains open.</li>' +
         '</ul>' +
       '</div>' +
 
@@ -1059,36 +1051,7 @@
       '</div>' +
 
       '<div class="expo-panel">' +
-        '<h3>6. Dimensions of finite-type invariants</h3>' +
-        '<p>The dimensions of the graded pieces of the space of rational finite-type invariants ' +
-        '(Bar-Natan, Topology 34, 1995, computed through degree \\(9\\); Kneissler through \\(12\\)):</p>' +
-        '<table class="dict-table" style="border-collapse:collapse">' +
-          '<thead><tr style="border-bottom:1.5px solid #333">' +
-            '<th style="padding:5px 12px;text-align:left">degree \\(d\\)</th>' +
-            '<th style="padding:5px 12px">0</th><th style="padding:5px 12px">1</th><th style="padding:5px 12px">2</th>' +
-            '<th style="padding:5px 12px">3</th><th style="padding:5px 12px">4</th><th style="padding:5px 12px">5</th>' +
-            '<th style="padding:5px 12px">6</th><th style="padding:5px 12px">7</th><th style="padding:5px 12px">8</th>' +
-            '<th style="padding:5px 12px">9</th>' +
-          '</tr></thead>' +
-          '<tbody><tr>' +
-            '<td style="padding:5px 12px">\\(\\dim \\mathcal{V}_d / \\mathcal{V}_{d-1}\\)</td>' +
-            '<td style="padding:5px 12px;text-align:center">1</td><td style="padding:5px 12px;text-align:center">0</td>' +
-            '<td style="padding:5px 12px;text-align:center">1</td><td style="padding:5px 12px;text-align:center">1</td>' +
-            '<td style="padding:5px 12px;text-align:center">3</td><td style="padding:5px 12px;text-align:center">4</td>' +
-            '<td style="padding:5px 12px;text-align:center">9</td><td style="padding:5px 12px;text-align:center">14</td>' +
-            '<td style="padding:5px 12px;text-align:center">27</td><td style="padding:5px 12px;text-align:center">44</td>' +
-          '</tr></tbody>' +
-        '</table>' +
-        '<p style="margin-top:0.9em">The universality conjecture concerns ' +
-        '<em>additive</em> (primitive) invariants, so under it the successive stages add rank equal to the dimensions ' +
-        'of the spaces of degree-\\(d\\) primitives, of which the table above is the polynomial-algebra closure ' +
-        '(a general finite-type invariant is a polynomial in additive ones). Compare the ' +
-        '<em>Polynomial Invariants</em> tab (Vassiliev sub-tab), where the same numbers arise from chord diagrams ' +
-        'modulo the 4T relation.</p>' +
-      '</div>' +
-
-      '<div class="expo-panel">' +
-        '<h3>7. Practice</h3>' +
+        '<h3>6. Practice</h3>' +
         '<details class="kl-practice"><summary>Exercise 1: the linear stage for long knots</summary>' +
         '<p>Using Smale&ndash;Hirsch, show \\(\\operatorname{Imm}_c(\\mathbb{R}, \\mathbb{R}^3) \\simeq \\Omega S^2\\). ' +
         'Conclude that \\(T_1\\) sees only the winding data of the unit tangent vector &mdash; no ' +
@@ -1102,10 +1065,11 @@
         '(two middle arcs \\(\\rightsquigarrow\\) \\(2\\) points).</p>' +
         '</details>' +
         '<details class="kl-practice"><summary>Exercise 3: \\(c_2\\) two ways</summary>' +
-        '<p>Compute \\(c_2\\) for the trefoil and figure-eight from ' +
-        'the <em>Polynomial Invariants</em> tab (\\(c_2(3_1) = 1\\), \\(c_2(4_1) = -1\\)), then read the BCSS paper&rsquo;s ' +
-        'quadrisecant formula and verify the trefoil count qualitatively on a standard diagram. Two definitions, one ' +
-        'invariant &mdash; that coincidence <em>is</em> the content of the tower being finite-type.</p>' +
+        '<p>The trefoil and figure-eight knot have \\(c_2(3_1) = 1\\) and \\(c_2(4_1) = -1\\) (the ' +
+        '\\(z^2\\)-coefficient of the Conway polynomial, computed via the skein relation directly from a diagram). ' +
+        'Read the BCSS paper&rsquo;s quadrisecant formula and verify the trefoil count qualitatively on a standard ' +
+        'diagram. Two definitions, one invariant &mdash; that coincidence <em>is</em> the content of the tower being ' +
+        'finite-type.</p>' +
         '</details>' +
         '<details class="kl-practice"><summary>Exercise 4: why codimension 2 is hard</summary>' +
         '<p>Trace through the connectivity estimate \\(\\bigl(k(n-m-2)+1-m\\bigr)\\) for \\(m=1\\): for \\(n = 4\\) the tower ' +
@@ -1339,8 +1303,7 @@
           'Adv. Math. 451 (2024).</li>' +
           '<li>Lambrechts&ndash;Turchin&ndash;Voli&cacute;, <em>The rational homology of spaces of long knots in ' +
           'codimension \\(&gt; 2\\)</em>, Geom. Topol. 14 (2010), 2151&ndash;2187.</li>' +
-          '<li>See the <em>Knots &amp; Embedding Calculus</em> sub-tab for how these fit together, and the ' +
-          '<em>Polynomial Invariants</em> tab for the Vassiliev-invariant background.</li>' +
+          '<li>See the <em>Knots &amp; Embedding Calculus</em> sub-tab for how these fit together.</li>' +
         '</ul>' +
       '</div>' +
 
@@ -1365,7 +1328,7 @@
             '<th style="padding:6px 10px;text-align:left">Weeks</th>' +
             '<th style="padding:6px 10px;text-align:left">Topic</th>' +
             '<th style="padding:6px 10px;text-align:left">Reading</th>' +
-            '<th style="padding:6px 10px;text-align:left">KnotLab sub-tab</th>' +
+            '<th style="padding:6px 10px;text-align:left">Sub-tab</th>' +
           '</tr></thead>' +
           '<tbody>' +
             '<tr><td style="padding:4px 10px">1&ndash;2</td><td style="padding:4px 10px">homotopy (co)limits, cubes, total (co)fibers</td><td style="padding:4px 10px">Munson&ndash;Voli&cacute; ch. 3, 5</td><td style="padding:4px 10px"><a href="#cubes-excision" class="fk-xref">Cubes &amp; Excision</a> &sect;1 (tfib terminology: <a href="#derivatives-layers" class="fk-xref">Derivatives &amp; Layers</a> &sect;1)</td></tr>' +
@@ -1376,7 +1339,7 @@
             '<tr><td style="padding:4px 10px">9</td><td style="padding:4px 10px">convergence, analyticity; identity functor</td><td style="padding:4px 10px">Calc II; Kuhn overview; Johnson 1995, Arone&ndash;Mahowald 1999 (advanced/optional)</td><td style="padding:4px 10px"><a href="#worked-examples" class="fk-xref">Worked Examples</a> &sect;1</td></tr>' +
             '<tr><td style="padding:4px 10px">10</td><td style="padding:4px 10px">\\(\\Sigma^\\infty\\Omega^\\infty\\); \\(K\\)-theory and \\(\\mathrm{TC}\\)</td><td style="padding:4px 10px">Kuhn overview; DGM book (skim)</td><td style="padding:4px 10px"><a href="#worked-examples" class="fk-xref">Worked Examples</a> &sect;&sect;2&ndash;3</td></tr>' +
             '<tr><td style="padding:4px 10px">11&ndash;12</td><td style="padding:4px 10px">manifold calculus; \\(\\operatorname{Emb}\\); convergence</td><td style="padding:4px 10px">Weiss 1999; Munson survey; Goodwillie&ndash;Weiss 1999; Goodwillie&ndash;Klein 2015 (optional)</td><td style="padding:4px 10px"><a href="#knots-embedding-calculus" class="fk-xref">Knots &amp; Embedding Calculus</a> &sect;&sect;1&ndash;3</td></tr>' +
-            '<tr><td style="padding:4px 10px">13</td><td style="padding:4px 10px">long knots; finite-type invariants from the tower</td><td style="padding:4px 10px">Sinha 2009; BCSS 2005; BCKS 2017</td><td style="padding:4px 10px"><a href="#knots-embedding-calculus" class="fk-xref">Knots &amp; Embedding Calculus</a> &sect;&sect;4&ndash;6</td></tr>' +
+            '<tr><td style="padding:4px 10px">13</td><td style="padding:4px 10px">long knots; finite-type invariants from the tower</td><td style="padding:4px 10px">Sinha 2009; BCSS 2005; BCKS 2017</td><td style="padding:4px 10px"><a href="#knots-embedding-calculus" class="fk-xref">Knots &amp; Embedding Calculus</a> &sect;&sect;4&ndash;5</td></tr>' +
             '<tr><td style="padding:4px 10px">14</td><td style="padding:4px 10px">outlook: chain rules, orthogonal calculus, tangent categories</td><td style="padding:4px 10px">Arone&ndash;Ching 2011 (statements); Heuts 2021a&ndash;b</td><td style="padding:4px 10px"><a href="#other-calculi" class="fk-xref">Other Calculi</a></td></tr>' +
           '</tbody>' +
         '</table>' +
