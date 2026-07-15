@@ -823,7 +823,7 @@
         '</ul>' +
         '<details class="kl-example"><summary>Worked warm-up: the first two layers of \\(\\mathrm{Id}\\)</summary>' +
         '<p>\\(D_1 \\mathrm{Id}(X) = QX = \\Omega^\\infty \\Sigma^\\infty X\\), with \\(\\partial_1 \\mathrm{Id} = \\mathbb{S}\\). ' +
-        'For \\(n = 2\\): \\(\\partial_2 \\mathrm{Id} \\simeq S^{-1}\\) with trivial \\(\\Sigma_2\\)-action, so</p>' +
+        'For \\(n = 2\\): \\(\\partial_2 \\mathrm{Id} \\simeq S^{-1}\\) with the sign (nontrivial) \\(\\Sigma_2\\)-action &mdash; the transposition acts by the degree \\(-1\\) map on \\(S^{-1}\\) &mdash; so</p>' +
         '<div class="formula-box">$$D_2 \\mathrm{Id}(X) \\;\\simeq\\; \\Omega^\\infty \\bigl( \\Sigma^{-1} (X \\wedge X)_{h\\Sigma_2} \\bigr).$$</div>' +
         '<p>On \\(X = S^n\\), \\(\\pi_*\\) of this layer is the stable homotopy of a stunted projective ' +
         'space &mdash; the same quadratic construction \\(D_2(S^n)\\) that appears in the EHP sequence and in ' +
