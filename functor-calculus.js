@@ -922,13 +922,15 @@
     return '' +
       '<div class="expo-panel">' +
         '<h3>1. Manifold calculus in one panel</h3>' +
-        '<p>Fix a compact smooth \\(m\\)-manifold \\(M\\) (equivalently, by Morse theory, one admitting a finite handle ' +
-        'decomposition &mdash; the hypothesis the handle-induction proof of &sect;2&rsquo;s convergence theorem actually needs) and study presheaves ' +
-        '\\(F : \\mathcal{O}(M)^{\\mathrm{op}} \\to \\mathcal{S}\\) on its open subsets &mdash; contravariant in the open ' +
-        'set, as restriction of embeddings demands &mdash; taking ' +
+        '<p>Recall the manifold-calculus presheaf setup from <em>Sheafification</em> &sect;3 &mdash; presheaves ' +
+        '\\(F : \\mathcal{O}(M)^{\\mathrm{op}} \\to \\mathcal{S}\\) on the open subsets of a smooth \\(m\\)-manifold ' +
+        '\\(M\\) &mdash; contravariant in the open set, as restriction of embeddings demands &mdash; taking ' +
         '<span class="kl-term" title="Isotopy equivalence: an inclusion U ⊆ V of opens that is a homotopy equivalence, equivalently one admitting an isotopy inverse. F is required to send such inclusions to equivalences of spaces.">isotopy equivalences</span> to ' +
-        'equivalences &mdash; the fundamental example is \\(V \\mapsto \\operatorname{Emb}(V, N)\\) for a target ' +
-        '\\(n\\)-manifold \\(N\\). (Here, following Weiss, \\(m\\) and \\(n\\) denote manifold <em>dimensions</em> &mdash; ' +
+        'equivalences, fundamental example \\(V \\mapsto \\operatorname{Emb}(V, N)\\) for a target \\(n\\)-manifold ' +
+        '\\(N\\) &mdash; and develop it for the knot-theory application. Fix \\(M\\) compact (equivalently, by Morse ' +
+        'theory, one admitting a finite handle decomposition &mdash; the hypothesis the handle-induction proof of ' +
+        '&sect;2&rsquo;s convergence theorem actually needs). (Here, following Weiss, \\(m\\) and \\(n\\) denote ' +
+        'manifold <em>dimensions</em> &mdash; ' +
         'not the excisive/Taylor degree that \\(n\\) denotes elsewhere in this module; degree is \\(k\\), fixed below.) ' +
         'Weiss (Geom. Topol. 3, 1999) defines \\(F\\) to be <strong>polynomial of degree ' +
         '\\(\\leq k\\)</strong> if for every \\(V\\) and pairwise disjoint closed subsets \\(A_0, \\dots, A_k \\subseteq V\\), ' +
