@@ -1010,20 +1010,22 @@
         '<ul>' +
           '<li><strong>The tower produces invariants, and they are finite-type ' +
           '(Budney&ndash;Conant&ndash;Koytcheff&ndash;Sinha, 2017).</strong> The evaluation map ' +
-          '\\(\\mathrm{ev}_n : \\pi_0 \\mathcal{K}_3 \\to \\pi_0 T_n \\mathcal{K}_3\\) (here \\(n\\) indexes the ' +
-          'manifold-calculus stage \\(T_n\\), exactly as \\(k\\) does in &sect;1 above &mdash; unrelated to the ' +
+          '\\(\\mathrm{ev}_k : \\pi_0 \\mathcal{K}_3 \\to \\pi_0 T_k \\mathcal{K}_3\\) (here \\(k\\) indexes the ' +
+          'manifold-calculus stage \\(T_k\\), the same \\(k\\) as in &sect;1 above &mdash; Budney&ndash;Conant&ndash;' +
+          'Koytcheff&ndash;Sinha themselves write \\(n\\) for this stage, but it is renamed \\(k\\) here to avoid ' +
+          'colliding with \\(m, n\\) for manifold dimensions, and it is also unrelated to the ' +
           'join-indexed, homotopy-calculus \\(T_n\\) of the <em>Taylor Tower</em> sub-tab) is a monoid homomorphism for ' +
-          'connected sum and is invariant under degree-\\(n\\) <span class="kl-term" title="Clasper / grope surgery: geometric refinements of crossing changes; invariance under degree-n clasper surgery characterizes finite-type invariants of degree ≤ n−1 (Habiro, Goussarov).">clasper surgery</span> ' +
-          '&mdash; hence finite-type of degree \\(\\leq n-1\\). The first case, \\(T_3\\mathcal{K}_3\\), recovers the ' +
+          'connected sum and is invariant under degree-\\(k\\) <span class="kl-term" title="Clasper / grope surgery: geometric refinements of crossing changes; invariance under degree-k clasper surgery characterizes finite-type invariants of degree ≤ k−1 (Habiro, Goussarov).">clasper surgery</span> ' +
+          '&mdash; hence finite-type of degree \\(\\leq k-1\\). The first case, \\(T_3\\mathcal{K}_3\\), recovers the ' +
           'type-\\(2\\) invariant \\(c_2\\) (the \\(z^2\\)-coefficient of the Conway polynomial) purely from homotopy ' +
           'theory, by counting <span class="kl-term" title="Quadrisecant: a straight line meeting the knot in four distinct points. BCSS express the Casson knot invariant c₂ via counts of quadrisecants and related configuration-space integrals.">quadrisecants</span>, with no diagram combinatorics input ' +
           '(Budney&ndash;Conant&ndash;Scannell&ndash;Sinha, 2005).</li>' +
           '<li><strong>Universality: a ladder of theorems and one conjecture.</strong> ' +
-          'Conjecturally \\(\\mathrm{ev}_{n+1}\\) is the <em>universal additive</em> type-\\(n\\) invariant over ' +
+          'Conjecturally \\(\\mathrm{ev}_{k+1}\\) is the <em>universal additive</em> type-\\(k\\) invariant over ' +
           '\\(\\mathbb{Z}\\) (&ldquo;additive&rdquo; here means a homomorphism for connected sum &mdash; not the ' +
           '\\(1\\)-excisive, &ldquo;wedge-to-product&rdquo; sense of <em>Cubes &amp; Excision</em> Ex. 3(b)). Known so ' +
           'far: universal over \\(\\mathbb{R}\\) (Voli&cacute;, 2006), \\(p\\)-locally universal in a range via Galois ' +
-          'symmetries of profinite little-disks operads (Boavida de Brito&ndash;Horel, 2021), and \\(\\mathrm{ev}_n\\) ' +
+          'symmetries of profinite little-disks operads (Boavida de Brito&ndash;Horel, 2021), and \\(\\mathrm{ev}_k\\) ' +
           'is surjective, with values computed by grope cobordism (Kosanovi&cacute;, 2024) &mdash; suggestive of, but ' +
           'not by itself establishing, the full conjecture. Over \\(\\mathbb{Z}\\), where the tower could see torsion ' +
           'the Kontsevich integral misses, it remains open.</li>' +
