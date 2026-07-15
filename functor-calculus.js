@@ -1253,6 +1253,10 @@
           '<li>A. Dold and D. Puppe, <em>Homologie nicht-additiver Funktoren. Anwendungen</em>, Ann. Inst. Fourier ' +
           '11 (1961), 201&ndash;312.</li>' +
           '<li>S. Eilenberg and S. Mac Lane, <em>On the groups H(&Pi;,n) II</em>, Ann. of Math. 60 (1954), 49&ndash;139.</li>' +
+          '<li>B. Johnson and R. McCarthy, <em>Deriving calculus with cotriples</em>, Trans. Amer. Math. Soc. ' +
+          '356 (2004).</li>' +
+          '<li>K. Bauer, B. Johnson, and R. McCarthy, <em>Cross effects and calculus in an unbased setting</em>, ' +
+          'Trans. Amer. Math. Soc. 367 (2015).</li>' +
         '</ul>' +
       '</div>' +
 
