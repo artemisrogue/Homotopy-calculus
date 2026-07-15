@@ -955,6 +955,17 @@ body.admin-revert-pick * { cursor: crosshair !important; }
   border-bottom-color: #b08a00;
 }
 
+/* Cross-tab reference links: jump to another sub-tab via its #hash. */
+.fk-xref {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 2px;
+}
+.fk-xref:hover {
+  text-decoration-style: solid;
+}
+
 /* ═════════════════════════════════════════════════════════════════════════
    Pedagogical collapsible boxes (native <details>/<summary>).
    Usage:

@@ -27,6 +27,19 @@
     'Further Reading'
   ];
 
+  // Hash slugs for deep-linking, one per SUB_TABS entry, same order.
+  var TAB_SLUGS = [
+    'overview',
+    'cubes-excision',
+    'taylor-tower',
+    'sheafification',
+    'derivatives-layers',
+    'worked-examples',
+    'knots-embedding-calculus',
+    'other-calculi',
+    'further-reading'
+  ];
+
   // ───────────────────────────────────────────────────────────────────
   //  Small helpers
   // ───────────────────────────────────────────────────────────────────
@@ -202,21 +215,21 @@
       '<div class="expo-panel">' +
         '<h3>How to read this module</h3>' +
         '<ul>' +
-          '<li><strong>Cubes &amp; Excision</strong> &mdash; cubical diagrams, cartesian and cocartesian squares, ' +
+          '<li><a href="#cubes-excision" class="fk-xref"><strong>Cubes &amp; Excision</strong></a> &mdash; cubical diagrams, cartesian and cocartesian squares, ' +
           'the definition of \\(n\\)-excision, Blakers&ndash;Massey. Interactive gallery of squares.</li>' +
-          '<li><strong>Taylor Tower</strong> &mdash; the \\(T_n\\) and \\(P_n\\) constructions, universal property, convergence ' +
+          '<li><a href="#taylor-tower" class="fk-xref"><strong>Taylor Tower</strong></a> &mdash; the \\(T_n\\) and \\(P_n\\) constructions, universal property, convergence ' +
           'and analyticity. Interactive classical-Taylor-series comparison.</li>' +
-          '<li><strong>Sheafification</strong> &mdash; \\(P_n\\) as a localization; the theorem that manifold-calculus ' +
+          '<li><a href="#sheafification" class="fk-xref"><strong>Sheafification</strong></a> &mdash; \\(P_n\\) as a localization; the theorem that manifold-calculus ' +
           'approximation <em>is</em> homotopy sheafification.</li>' +
-          '<li><strong>Derivatives &amp; Layers</strong> &mdash; cross effects, homogeneous functors, the classification ' +
+          '<li><a href="#derivatives-layers" class="fk-xref"><strong>Derivatives &amp; Layers</strong></a> &mdash; cross effects, homogeneous functors, the classification ' +
           'theorem, derivatives as spectra, and the Arone&ndash;Ching chain rule. Interactive cross-effect calculator.</li>' +
-          '<li><strong>Worked Examples</strong> &mdash; the identity functor, \\(\\Sigma^\\infty\\Omega^\\infty\\), and ' +
+          '<li><a href="#worked-examples" class="fk-xref"><strong>Worked Examples</strong></a> &mdash; the identity functor, \\(\\Sigma^\\infty\\Omega^\\infty\\), and ' +
           'algebraic \\(K\\)-theory.</li>' +
-          '<li><strong>Knots &amp; Embedding Calculus</strong> &mdash; the Goodwillie&ndash;Weiss tower for spaces of knots ' +
+          '<li><a href="#knots-embedding-calculus" class="fk-xref"><strong>Knots &amp; Embedding Calculus</strong></a> &mdash; the Goodwillie&ndash;Weiss tower for spaces of knots ' +
           'and finite-type invariants.</li>' +
-          '<li><strong>Other Calculi</strong> &mdash; orthogonal calculus, discrete/abelian calculus, tangent ' +
+          '<li><a href="#other-calculi" class="fk-xref"><strong>Other Calculi</strong></a> &mdash; orthogonal calculus, discrete/abelian calculus, tangent ' +
           '\\(\\infty\\)-categories.</li>' +
-          '<li><strong>Further Reading</strong> &mdash; annotated bibliography and a 14-week course plan.</li>' +
+          '<li><a href="#further-reading" class="fk-xref"><strong>Further Reading</strong></a> &mdash; annotated bibliography and a 14-week course plan.</li>' +
         '</ul>' +
         '<p style="font-size:0.95em;color:#555">Prerequisites: homotopy (co)limits, basic stable homotopy theory ' +
         '(spectra, smash products), and comfort with homotopy fibers/cofibers. The <em>Homological Invariants</em> ' +
@@ -1366,16 +1379,16 @@
             '<th style="padding:6px 10px;text-align:left">KnotLab sub-tab</th>' +
           '</tr></thead>' +
           '<tbody>' +
-            '<tr><td style="padding:4px 10px">1&ndash;2</td><td style="padding:4px 10px">homotopy (co)limits, cubes, total (co)fibers</td><td style="padding:4px 10px">Munson&ndash;Voli&cacute; ch. 3, 5</td><td style="padding:4px 10px">Cubes &amp; Excision &sect;1 (tfib terminology: Derivatives &amp; Layers &sect;1)</td></tr>' +
-            '<tr><td style="padding:4px 10px">3</td><td style="padding:4px 10px">Blakers&ndash;Massey; Freudenthal</td><td style="padding:4px 10px">Munson&ndash;Voli&cacute; ch. 4, 6</td><td style="padding:4px 10px">Cubes &amp; Excision &sect;4</td></tr>' +
-            '<tr><td style="padding:4px 10px">4&ndash;5</td><td style="padding:4px 10px">\\(n\\)-excision; \\(T_n\\), \\(P_n\\), the tower; Rezk&rsquo;s proof</td><td style="padding:4px 10px">Calc III &sect;1; Rezk 2013; Arone&ndash;Ching 2020, &sect;&sect;1&ndash;3</td><td style="padding:4px 10px">Cubes &amp; Excision &sect;2; Taylor Tower</td></tr>' +
-            '<tr><td style="padding:4px 10px">6</td><td style="padding:4px 10px">localization view; manifold calculus as sheafification</td><td style="padding:4px 10px">Boavida de Brito&ndash;Weiss 2013; Lurie HA &sect;6.1.1</td><td style="padding:4px 10px">Sheafification</td></tr>' +
-            '<tr><td style="padding:4px 10px">7&ndash;8</td><td style="padding:4px 10px">cross effects; homogeneous classification; derivatives</td><td style="padding:4px 10px">Calc III &sect;&sect;2&ndash;5</td><td style="padding:4px 10px">Derivatives &amp; Layers</td></tr>' +
-            '<tr><td style="padding:4px 10px">9</td><td style="padding:4px 10px">convergence, analyticity; identity functor</td><td style="padding:4px 10px">Calc II; Kuhn overview; Johnson 1995, Arone&ndash;Mahowald 1999 (advanced/optional)</td><td style="padding:4px 10px">Worked Examples &sect;1</td></tr>' +
-            '<tr><td style="padding:4px 10px">10</td><td style="padding:4px 10px">\\(\\Sigma^\\infty\\Omega^\\infty\\); \\(K\\)-theory and \\(\\mathrm{TC}\\)</td><td style="padding:4px 10px">Kuhn overview; DGM book (skim)</td><td style="padding:4px 10px">Worked Examples &sect;&sect;2&ndash;3</td></tr>' +
-            '<tr><td style="padding:4px 10px">11&ndash;12</td><td style="padding:4px 10px">manifold calculus; \\(\\operatorname{Emb}\\); convergence</td><td style="padding:4px 10px">Weiss 1999; Munson survey; Goodwillie&ndash;Weiss 1999; Goodwillie&ndash;Klein 2015 (optional)</td><td style="padding:4px 10px">Knots &amp; Embedding Calculus &sect;&sect;1&ndash;3</td></tr>' +
-            '<tr><td style="padding:4px 10px">13</td><td style="padding:4px 10px">long knots; finite-type invariants from the tower</td><td style="padding:4px 10px">Sinha 2009; BCSS 2005; BCKS 2017</td><td style="padding:4px 10px">Knots &amp; Embedding Calculus &sect;&sect;4&ndash;6</td></tr>' +
-            '<tr><td style="padding:4px 10px">14</td><td style="padding:4px 10px">outlook: chain rules, orthogonal calculus, tangent categories</td><td style="padding:4px 10px">Arone&ndash;Ching 2011 (statements); Heuts 2021a&ndash;b</td><td style="padding:4px 10px">Other Calculi</td></tr>' +
+            '<tr><td style="padding:4px 10px">1&ndash;2</td><td style="padding:4px 10px">homotopy (co)limits, cubes, total (co)fibers</td><td style="padding:4px 10px">Munson&ndash;Voli&cacute; ch. 3, 5</td><td style="padding:4px 10px"><a href="#cubes-excision" class="fk-xref">Cubes &amp; Excision</a> &sect;1 (tfib terminology: <a href="#derivatives-layers" class="fk-xref">Derivatives &amp; Layers</a> &sect;1)</td></tr>' +
+            '<tr><td style="padding:4px 10px">3</td><td style="padding:4px 10px">Blakers&ndash;Massey; Freudenthal</td><td style="padding:4px 10px">Munson&ndash;Voli&cacute; ch. 4, 6</td><td style="padding:4px 10px"><a href="#cubes-excision" class="fk-xref">Cubes &amp; Excision</a> &sect;4</td></tr>' +
+            '<tr><td style="padding:4px 10px">4&ndash;5</td><td style="padding:4px 10px">\\(n\\)-excision; \\(T_n\\), \\(P_n\\), the tower; Rezk&rsquo;s proof</td><td style="padding:4px 10px">Calc III &sect;1; Rezk 2013; Arone&ndash;Ching 2020, &sect;&sect;1&ndash;3</td><td style="padding:4px 10px"><a href="#cubes-excision" class="fk-xref">Cubes &amp; Excision</a> &sect;2; <a href="#taylor-tower" class="fk-xref">Taylor Tower</a></td></tr>' +
+            '<tr><td style="padding:4px 10px">6</td><td style="padding:4px 10px">localization view; manifold calculus as sheafification</td><td style="padding:4px 10px">Boavida de Brito&ndash;Weiss 2013; Lurie HA &sect;6.1.1</td><td style="padding:4px 10px"><a href="#sheafification" class="fk-xref">Sheafification</a></td></tr>' +
+            '<tr><td style="padding:4px 10px">7&ndash;8</td><td style="padding:4px 10px">cross effects; homogeneous classification; derivatives</td><td style="padding:4px 10px">Calc III &sect;&sect;2&ndash;5</td><td style="padding:4px 10px"><a href="#derivatives-layers" class="fk-xref">Derivatives &amp; Layers</a></td></tr>' +
+            '<tr><td style="padding:4px 10px">9</td><td style="padding:4px 10px">convergence, analyticity; identity functor</td><td style="padding:4px 10px">Calc II; Kuhn overview; Johnson 1995, Arone&ndash;Mahowald 1999 (advanced/optional)</td><td style="padding:4px 10px"><a href="#worked-examples" class="fk-xref">Worked Examples</a> &sect;1</td></tr>' +
+            '<tr><td style="padding:4px 10px">10</td><td style="padding:4px 10px">\\(\\Sigma^\\infty\\Omega^\\infty\\); \\(K\\)-theory and \\(\\mathrm{TC}\\)</td><td style="padding:4px 10px">Kuhn overview; DGM book (skim)</td><td style="padding:4px 10px"><a href="#worked-examples" class="fk-xref">Worked Examples</a> &sect;&sect;2&ndash;3</td></tr>' +
+            '<tr><td style="padding:4px 10px">11&ndash;12</td><td style="padding:4px 10px">manifold calculus; \\(\\operatorname{Emb}\\); convergence</td><td style="padding:4px 10px">Weiss 1999; Munson survey; Goodwillie&ndash;Weiss 1999; Goodwillie&ndash;Klein 2015 (optional)</td><td style="padding:4px 10px"><a href="#knots-embedding-calculus" class="fk-xref">Knots &amp; Embedding Calculus</a> &sect;&sect;1&ndash;3</td></tr>' +
+            '<tr><td style="padding:4px 10px">13</td><td style="padding:4px 10px">long knots; finite-type invariants from the tower</td><td style="padding:4px 10px">Sinha 2009; BCSS 2005; BCKS 2017</td><td style="padding:4px 10px"><a href="#knots-embedding-calculus" class="fk-xref">Knots &amp; Embedding Calculus</a> &sect;&sect;4&ndash;6</td></tr>' +
+            '<tr><td style="padding:4px 10px">14</td><td style="padding:4px 10px">outlook: chain rules, orthogonal calculus, tangent categories</td><td style="padding:4px 10px">Arone&ndash;Ching 2011 (statements); Heuts 2021a&ndash;b</td><td style="padding:4px 10px"><a href="#other-calculi" class="fk-xref">Other Calculi</a></td></tr>' +
           '</tbody>' +
         '</table>' +
         '<p style="margin-top:0.9em;font-size:0.95em;color:#555">Assessment suggestion: the practice exercises in each ' +
@@ -1786,6 +1799,12 @@
     null
   ];
 
+  function tabIndexFromHash() {
+    var slug = (window.location.hash || '').replace(/^#/, '');
+    var idx = TAB_SLUGS.indexOf(slug);
+    return idx === -1 ? 0 : idx;
+  }
+
   window.renderFunctorCalculus = function (containerEl) {
     var activeTab = 0;
     containerEl.innerHTML = '';
@@ -1816,6 +1835,9 @@
       tabBtns[idx].scrollIntoView({ block: 'nearest', inline: 'center', behavior: 'smooth' });
       renderTab(idx);
       subtabs.scrollIntoView({ block: 'nearest' });
+      if (window.location.hash.replace(/^#/, '') !== TAB_SLUGS[idx]) {
+        window.location.hash = TAB_SLUGS[idx];
+      }
     }
 
     function renderTab(idx) {
@@ -1826,6 +1848,11 @@
       }
     }
 
-    switchTab(0);
+    window.addEventListener('hashchange', function () {
+      var idx = tabIndexFromHash();
+      if (idx !== activeTab) switchTab(idx);
+    });
+
+    switchTab(tabIndexFromHash());
   };
 })();
