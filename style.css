@@ -240,32 +240,63 @@ header p { font-size: 0.9rem; opacity: 0.85; }
   margin: 0;
 }
 
-/* ── Secondary tab bar (modules) ── */
+/* ── Secondary tab bar (modules): compact menu button + dropdown ── */
 .fk-subtabs {
-  display: flex;
-  gap: 0;
-  background: #1a4a7a;
-  padding: 0 2rem;
-  flex-wrap: wrap;
   position: sticky;
   top: 0;
   z-index: 20;
+  background: #1a4a7a;
+}
+
+.fk-menu-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+  width: 100%;
+  padding: 0.85rem 2rem;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.fk-menu-toggle:hover { background: rgba(255,255,255,0.08); }
+
+.fk-menu-current { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.fk-menu-caret { flex: none; font-size: 0.7em; transition: transform 0.15s; }
+.fk-menu-toggle[aria-expanded="true"] .fk-menu-caret { transform: rotate(180deg); }
+
+.fk-menu-dropdown {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: #1a4a7a;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.28);
+  max-height: 70vh;
+  overflow-y: auto;
 }
 
 .fk-subtab {
-  padding: 0.8rem 1.6rem;
+  display: block;
+  width: 100%;
+  padding: 0.7rem 2rem;
   background: transparent;
   border: none;
-  color: rgba(255,255,255,0.65);
-  font-size: 0.95rem;
+  border-left: 3px solid transparent;
+  color: rgba(255,255,255,0.75);
+  font-size: 0.9rem;
   font-weight: 600;
+  text-align: left;
   cursor: pointer;
-  border-bottom: 3px solid transparent;
-  transition: all 0.2s;
+  transition: all 0.15s;
 }
 
 .fk-subtab:hover { color: #fff; background: rgba(255,255,255,0.08); }
-.fk-subtab.active { color: #fff; border-bottom-color: #fff; background: rgba(255,255,255,0.1); }
+.fk-subtab.active { color: #fff; border-left-color: #fff; background: rgba(255,255,255,0.12); }
 
 .fk-sidebar {
   display: flex;
@@ -439,20 +470,8 @@ header p { font-size: 0.9rem; opacity: 0.85; }
   .home-container { padding: 1rem; }
   .module-cards { grid-template-columns: 1fr; }
 
-  .fk-subtabs {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    padding: 0 0.5rem;
-    background:
-      linear-gradient(to right, #1a4a7a 30%, rgba(26,74,122,0)),
-      linear-gradient(to left, #1a4a7a 30%, rgba(26,74,122,0)) right,
-      #1a4a7a;
-    background-repeat: no-repeat;
-    background-size: 20px 100%, 20px 100%, 100% 100%;
-    background-attachment: local, local, scroll;
-  }
-  .fk-subtab { padding: 0.65rem 1rem; font-size: 0.85rem; white-space: nowrap; }
+  .fk-menu-toggle { padding: 0.75rem 1rem; font-size: 0.9rem; }
+  .fk-subtab { padding: 0.65rem 1rem; font-size: 0.85rem; }
 
   .formula-box { padding: 0.6rem 0.5rem; }
   .formula-box .katex-display { margin: 0; }

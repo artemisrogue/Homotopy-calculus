@@ -208,7 +208,7 @@
           '<li><a href="#derivatives-layers" class="fk-xref"><strong>Derivatives &amp; Layers</strong></a> &mdash; cross effects, homogeneous functors, the classification ' +
           'theorem, derivatives as spectra, and the Arone&ndash;Ching chain rule. Interactive cross-effect calculator.</li>' +
           '<li><a href="#worked-examples" class="fk-xref"><strong>Worked Examples</strong></a> &mdash; the identity functor, \\(\\Sigma^\\infty\\Omega^\\infty\\), and ' +
-          'algebraic \\(K\\)-theory.</li>' +
+          'algebraic \\(K\\)-theory, plus the classical-algebra origins of the vocabulary (cross effects, Eilenberg&ndash;MacLane, Dold&ndash;Puppe).</li>' +
           '<li><a href="#knots-embedding-calculus" class="fk-xref"><strong>Knots &amp; Embedding Calculus</strong></a> &mdash; the Goodwillie&ndash;Weiss tower for spaces of knots ' +
           'and finite-type invariants.</li>' +
           '<li><a href="#other-calculi" class="fk-xref"><strong>Other Calculi</strong></a> &mdash; orthogonal calculus, discrete/abelian calculus, tangent ' +
@@ -562,7 +562,7 @@
         'self-contained; see the <em>Knots &amp; Embedding Calculus</em> sub-tab &sect;1 for the same setup developed ' +
         'further, in the knot-theory application. Let \\(M\\) be a smooth \\(m\\)-manifold and \\(\\mathcal{O}(M)\\) its poset of open ' +
         'subsets, and consider presheaves \\(F : \\mathcal{O}(M)^{\\mathrm{op}} \\to \\mathcal{S}\\) taking isotopy ' +
-        'equivalences to equivalences (e.g. \\(V \\mapsto \\operatorname{Emb}(V, N)\\)). Define the ' +
+        'equivalences to equivalences (e.g. \\(V \\mapsto \\operatorname{Emb}(V, N)\\) for a target manifold \\(N\\)). Define the ' +
         '<strong>Weiss topology</strong> \\(\\mathcal{J}_k\\) &mdash; a <em>covering topology</em> on \\(\\mathcal{O}(M)\\), ' +
         'unrelated to the calligraphic \\(\\mathcal{J}\\) of <em>Other Calculi</em> &sect;1 (Overview &sect;3 table), which ' +
         'names the <em>input category</em> of finite-dimensional inner-product spaces for orthogonal calculus: a family ' +
@@ -1818,15 +1818,35 @@
     var subtabs = document.createElement('div');
     subtabs.className = 'fk-subtabs';
 
+    var menuToggle = document.createElement('button');
+    menuToggle.className = 'fk-menu-toggle';
+    menuToggle.type = 'button';
+    menuToggle.setAttribute('aria-haspopup', 'true');
+    menuToggle.setAttribute('aria-expanded', 'false');
+    menuToggle.innerHTML =
+      '<span class="fk-menu-current"></span>' +
+      '<span class="fk-menu-caret" aria-hidden="true">&#9662;</span>';
+    var menuCurrent = menuToggle.querySelector('.fk-menu-current');
+    subtabs.appendChild(menuToggle);
+
+    var dropdown = document.createElement('div');
+    dropdown.className = 'fk-menu-dropdown';
+    dropdown.hidden = true;
+
     var tabBtns = [];
     SUB_TABS.forEach(function (name, i) {
       var btn = document.createElement('button');
+      btn.type = 'button';
       btn.className = 'fk-subtab' + (i === 0 ? ' active' : '');
       btn.innerHTML = name;
-      btn.addEventListener('click', function () { switchTab(i); });
-      subtabs.appendChild(btn);
+      btn.addEventListener('click', function () {
+        switchTab(i);
+        closeMenu();
+      });
+      dropdown.appendChild(btn);
       tabBtns.push(btn);
     });
+    subtabs.appendChild(dropdown);
     // subtabs is appended directly to containerEl (not a snug wrapper) so its
     // sticky containing block spans the full tab height, not just its own.
     containerEl.appendChild(subtabs);
@@ -1835,10 +1855,37 @@
     content.className = 'fk-content';
     containerEl.appendChild(content);
 
+    function openMenu() {
+      dropdown.hidden = false;
+      menuToggle.setAttribute('aria-expanded', 'true');
+      document.addEventListener('click', onDocClick);
+      document.addEventListener('keydown', onKeyDown);
+    }
+
+    function closeMenu() {
+      dropdown.hidden = true;
+      menuToggle.setAttribute('aria-expanded', 'false');
+      document.removeEventListener('click', onDocClick);
+      document.removeEventListener('keydown', onKeyDown);
+    }
+
+    function onDocClick(e) {
+      if (!subtabs.contains(e.target)) closeMenu();
+    }
+
+    function onKeyDown(e) {
+      if (e.key === 'Escape') { closeMenu(); menuToggle.focus(); }
+    }
+
+    menuToggle.addEventListener('click', function (e) {
+      e.stopPropagation();
+      if (dropdown.hidden) openMenu(); else closeMenu();
+    });
+
     function switchTab(idx) {
       activeTab = idx;
       tabBtns.forEach(function (b, i) { b.classList.toggle('active', i === idx); });
-      tabBtns[idx].scrollIntoView({ block: 'nearest', inline: 'center', behavior: 'smooth' });
+      menuCurrent.textContent = SUB_TABS[idx];
       renderTab(idx);
       subtabs.scrollIntoView({ block: 'nearest' });
       if (window.location.hash.replace(/^#/, '') !== TAB_SLUGS[idx]) {
