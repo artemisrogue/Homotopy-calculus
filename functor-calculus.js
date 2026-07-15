@@ -1,5 +1,5 @@
 /**
- * functor-calculus.js — Calculus of Homotopy Functors module for KnotLab
+ * functor-calculus.js — The Calculus of Homotopy Functors, a standalone teaching app
  * Exposes window.renderFunctorCalculus(containerEl)
  *
  * Graduate-level introduction to Goodwillie calculus: cubical diagrams and
@@ -165,22 +165,6 @@
       '</div>' +
 
       '<div class="expo-panel">' +
-        '<h3>Why this module lives in KnotLab</h3>' +
-        '<p>Applying manifold calculus to the embedding functor of the interval yields the ' +
-        '<strong>Goodwillie&ndash;Weiss tower</strong> for the space of <em>long knots</em> ' +
-        '\\(\\mathcal{K}_3 = \\operatorname{Emb}_c(\\mathbb{R}, \\mathbb{R}^3)\\). Its stages \\(T_k \\mathcal{K}_3\\) ' +
-        '(Goodwillie&ndash;Weiss&rsquo; notation for \\(P_n\\)) produce ' +
-        '<strong>finite-type (Vassiliev)</strong> knot invariants &mdash; the same invariants that appear in the ' +
-        '<em>Polynomial Invariants</em> tab as coefficients of the Conway polynomial and of the expansions of the ' +
-        'Jones and HOMFLY-PT polynomials after the substitution \\(q = e^h\\) (Birman&ndash;Lin, 1993). The conjecture ' +
-        'that the tower is a <em>universal additive</em> finite-type invariant (general finite-type invariants are ' +
-        'polynomials in the additive ones) remains open in general &mdash; surjectivity and ' +
-        '\\(p\\)-local universality are known, and point that way, but the full statement is not a theorem &mdash; and ' +
-        'settling it is among the deepest links to abstract homotopy theory. See <em>Knots &amp; Embedding Calculus</em> ' +
-        '&sect;4 for the precise status.</p>' +
-      '</div>' +
-
-      '<div class="expo-panel">' +
         '<h3>Historical origins</h3>' +
         '<p>The motivating problem was concrete: compute <span class="kl-term" title="Pseudoisotopy space P(M): the space of diffeomorphisms of M × [0,1] fixing M × {0} and ∂M × [0,1]. Controls the difference between isotopy and concordance of diffeomorphisms.">pseudoisotopy spaces</span> ' +
         'and, through them, <span class="kl-term" title="Waldhausen A-theory A(X): the algebraic K-theory of the category of finite retractive spaces over X; equivalently K(Σ∞₊ΩX). Splits off Whitehead spectra controlling h-cobordism and pseudoisotopy.">Waldhausen&rsquo;s algebraic ' +
@@ -207,7 +191,7 @@
             '<tr><td style="padding:3px 10px"><strong>2005</strong></td><td style="padding:3px 10px">Ching: operad structure on \\(\\partial_* \\mathrm{Id}\\); Budney&ndash;Conant&ndash;Scannell&ndash;Sinha (BCSS): the tower discovers the Casson knot invariant</td></tr>' +
             '<tr><td style="padding:3px 10px"><strong>2010&ndash;13</strong></td><td style="padding:3px 10px">Lambrechts&ndash;Turchin&ndash;Voli&cacute;: rational homology of knot spaces; Arone&ndash;Ching: chain rules; Boavida de Brito&ndash;Weiss: manifold calculus = homotopy sheafification; Dundas&ndash;Goodwillie&ndash;McCarthy book</td></tr>' +
             '<tr><td style="padding:3px 10px"><strong>2015&ndash;18</strong></td><td style="padding:3px 10px">Goodwillie&ndash;Klein: multiple disjunction; Munson&ndash;Voli&cacute; textbook; Budney&ndash;Conant&ndash;Koytcheff&ndash;Sinha (BCKS): tower invariants are finite-type; Lurie, <em>Higher Algebra</em> ch. 6; Anel&ndash;Biedermann&ndash;Finster&ndash;Joyal (ABFJ): calculus meets higher topos theory</td></tr>' +
-            '<tr><td style="padding:3px 10px"><strong>2021&ndash;24</strong></td><td style="padding:3px 10px">Heuts: Goodwillie approximations to higher categories; Boavida de Brito&ndash;Horel: Galois symmetries of knot spaces; Bauer&ndash;Burke&ndash;Ching: tangent \\(\\infty\\)-categories; Kosanovi&cacute;: surjectivity of the knot-tower evaluation map (a step toward, but not a proof of, rational universality)</td></tr>' +
+            '<tr><td style="padding:3px 10px"><strong>2021&ndash;24</strong></td><td style="padding:3px 10px">Heuts: Goodwillie approximations to higher categories; Boavida de Brito&ndash;Horel: Galois symmetries of knot spaces; Bauer&ndash;Burke&ndash;Ching: tangent \\(\\infty\\)-categories; Kosanovi&cacute;: surjectivity of the knot-tower evaluation map (a step toward, but not a proof of, integral universality)</td></tr>' +
           '</tbody>' +
         '</table>' +
       '</div>' +
@@ -232,8 +216,8 @@
           '<li><a href="#further-reading" class="fk-xref"><strong>Further Reading</strong></a> &mdash; annotated bibliography and a 14-week course plan.</li>' +
         '</ul>' +
         '<p style="font-size:0.95em;color:#555">Prerequisites: homotopy (co)limits, basic stable homotopy theory ' +
-        '(spectra, smash products), and comfort with homotopy fibers/cofibers. The <em>Homological Invariants</em> ' +
-        'tab&rsquo;s introduction to spectra-level thinking is helpful but not required.</p>' +
+        '(spectra, smash products), and comfort with homotopy fibers/cofibers &mdash; any standard introduction to ' +
+        'spectra-level thinking is helpful but not required.</p>' +
       '</div>';
   }
 
@@ -655,6 +639,13 @@
         'argument uses that sets have no higher homotopy, and explain why \\(P_n\\) needs ' +
         '\\(\\operatorname{hocolim}_k T_n^k\\) rather than \\(T_n^2\\).</p>' +
         '</details>' +
+        '<details class="kl-practice"><summary>Exercise 4: why &ldquo;not topological&rdquo;</summary>' +
+        '<p>Section 4&rsquo;s warning box observes that \\(P_n\\) on <em>spaces</em> is not itself the sheafification ' +
+        'for a Grothendieck topology&rsquo;s descent condition. Sketch why: identify which axiom (stability under ' +
+        'pullback along monomorphisms, or the covering condition itself) fails to be witnessed by \\(\\mathcal{J}_n\\)-covers ' +
+        'once objects are spaces rather than sets, and explain how this is consistent with Boavida de ' +
+        'Brito&ndash;Weiss still proving \\(P_n \\simeq\\) sheafification in the manifold-calculus setting.</p>' +
+        '</details>' +
       '</div>';
   }
 
@@ -736,7 +727,7 @@
           '</tr></thead>' +
           '<tbody>' +
             '<tr><td style="padding:4px 10px">\\(\\Omega^\\infty(E \\wedge -)\\), \\(E\\) a spectrum</td><td style="padding:4px 10px">\\(\\partial_1 = E\\), rest trivial</td><td style="padding:4px 10px">only \\(D_1 = \\Omega^\\infty(E \\wedge X)\\)</td></tr>' +
-            '<tr><td style="padding:4px 10px">\\(\\Sigma^\\infty \\Omega^\\infty\\) (on spectra)</td><td style="padding:4px 10px">\\(\\partial_n = \\mathbb{S}\\), trivial action, all \\(n\\)</td><td style="padding:4px 10px">\\(D_n(E) = (E^{\\wedge n})_{h\\Sigma_n}\\)</td></tr>' +
+            '<tr><td style="padding:4px 10px">\\(\\Sigma^\\infty \\Omega^\\infty\\) (on spectra)</td><td style="padding:4px 10px">\\(\\partial_n = \\mathbb{S}\\), trivial action, all \\(n\\)</td><td style="padding:4px 10px">\\(D_n(E) = (E^{\\wedge n})_{h\\Sigma_n}\\); see <em>Worked Examples</em></td></tr>' +
             '<tr><td style="padding:4px 10px">identity on based spaces</td><td style="padding:4px 10px">\\(\\partial_n \\mathrm{Id} \\simeq\\) dual of the partition complex; \\(\\bigvee_{(n-1)!} S^{1-n}\\) non-equivariantly</td><td style="padding:4px 10px">see <em>Worked Examples</em></td></tr>' +
             '<tr><td style="padding:4px 10px">\\(X \\mapsto \\Omega^\\infty(E \\wedge X^{\\wedge k})\\)</td><td style="padding:4px 10px">\\(\\partial_k = \\Sigma_k{}_+ \\wedge E\\) (induced action), rest trivial</td><td style="padding:4px 10px">pure \\(k\\)-homogeneous</td></tr>' +
           '</tbody>' +
@@ -832,7 +823,7 @@
         '</ul>' +
         '<details class="kl-example"><summary>Worked warm-up: the first two layers of \\(\\mathrm{Id}\\)</summary>' +
         '<p>\\(D_1 \\mathrm{Id}(X) = QX = \\Omega^\\infty \\Sigma^\\infty X\\), with \\(\\partial_1 \\mathrm{Id} = \\mathbb{S}\\). ' +
-        'For \\(n = 2\\): \\(\\partial_2 \\mathrm{Id} \\simeq S^{-1}\\) with trivial \\(\\Sigma_2\\)-action, so</p>' +
+        'For \\(n = 2\\): \\(\\partial_2 \\mathrm{Id} \\simeq S^{-1}\\) with the sign (nontrivial) \\(\\Sigma_2\\)-action &mdash; the transposition acts by the degree \\(-1\\) map on \\(S^{-1}\\) &mdash; so</p>' +
         '<div class="formula-box">$$D_2 \\mathrm{Id}(X) \\;\\simeq\\; \\Omega^\\infty \\bigl( \\Sigma^{-1} (X \\wedge X)_{h\\Sigma_2} \\bigr).$$</div>' +
         '<p>On \\(X = S^n\\), \\(\\pi_*\\) of this layer is the stable homotopy of a stunted projective ' +
         'space &mdash; the same quadratic construction \\(D_2(S^n)\\) that appears in the EHP sequence and in ' +
@@ -849,7 +840,7 @@
         '<ul>' +
           '<li><strong>Snaith splitting.</strong> For \\(E = \\Sigma^\\infty X\\) (any well-pointed \\(X\\)), the tower splits: ' +
           '\\(\\Sigma^\\infty Q X \\simeq \\bigvee_n \\Sigma^\\infty (X^{\\wedge n})_{h\\Sigma_n}\\) &mdash; the classical stable ' +
-          'splitting of \\(QX\\) (Snaith 1974, Kahn), recovered as a split Taylor tower (the tower interpretation is ' +
+          'splitting of \\(QX\\) (Snaith 1974; cf. Kahn&ndash;Priddy 1972), recovered as a split Taylor tower (the tower interpretation is ' +
           'worked out in Arone, Trans. AMS 351, 1999). Splitting is the exception, not the rule: in general the ' +
           'tower has nontrivial \\(k\\)-invariants &mdash; precisely what makes it a spectral-sequence-grade ' +
           'computational tool.</li>' +
@@ -949,7 +940,9 @@
         'theory, one admitting a finite handle decomposition &mdash; the hypothesis the handle-induction proof of ' +
         '&sect;2&rsquo;s convergence theorem actually needs). (Here, following Weiss, \\(m\\) and \\(n\\) denote ' +
         'manifold <em>dimensions</em> &mdash; ' +
-        'not the excisive/Taylor degree that \\(n\\) denotes elsewhere in this module; degree is \\(k\\), fixed below.) ' +
+        'not the excisive/Taylor degree that both \\(m\\) and \\(n\\) denote elsewhere in this module (see Cubes &amp; ' +
+        'Excision&rsquo;s &ldquo;\\(F\\) is \\(m\\)-excisive and \\(G\\) is \\(n\\)-excisive&rdquo; example and Exercise 4); ' +
+        'degree here is \\(k\\), fixed below.) ' +
         'Weiss (Geom. Topol. 3, 1999) defines \\(F\\) to be <strong>polynomial of degree ' +
         '\\(\\leq k\\)</strong> if for every \\(V\\) and pairwise disjoint closed subsets \\(A_0, \\dots, A_k \\subseteq V\\), ' +
         'the \\((k{+}1)\\)-cube</p>' +
@@ -1018,37 +1011,31 @@
 
       '<div class="expo-panel">' +
         '<h3>4. The tower computes finite-type invariants</h3>' +
-        '<p>Recall from the <em>Polynomial Invariants</em> tab that a knot ' +
-        'invariant is <strong>finite-type (Vassiliev) of degree \\(\\leq d\\)</strong> if its extension to singular knots ' +
-        'via \\(v(L_\\times) = v(L_+) - v(L_-)\\) vanishes on knots with \\(d{+}1\\) double points.</p>' +
+        '<p>A knot invariant is <strong>finite-type (Vassiliev) of degree \\(\\leq d\\)</strong> if its extension to ' +
+        'singular knots via \\(v(L_\\times) = v(L_+) - v(L_-)\\) vanishes on knots with \\(d{+}1\\) double points ' +
+        '&mdash; the topological analogue of a polynomial of degree \\(\\leq d\\).</p>' +
         '<ul>' +
-          '<li><strong>The first invariant in the tower (Budney&ndash;Conant&ndash;Scannell&ndash;Sinha, ' +
-          '<em>New perspectives on self-linking</em>, Adv. Math. 191, 2005).</strong> The third stage ' +
-          '\\(T_3 \\mathcal{K}_3\\) carries an integer-valued invariant which BCSS identify with the unique type-\\(2\\) ' +
-          'invariant \\(c_2\\) &mdash; the coefficient of \\(z^2\\) in the Conway polynomial &mdash; realized ' +
-          'geometrically by counting <span class="kl-term" title="Quadrisecant: a straight line meeting the knot in four distinct points. BCSS express the Casson knot invariant c₂ via counts of quadrisecants and related configuration-space integrals.">quadrisecants</span>. ' +
-          'The tower <em>discovers</em> \\(c_2\\) from pure homotopy theory, with no diagram combinatorics input.</li>' +
-          '<li><strong>All tower invariants are finite-type (Budney&ndash;Conant&ndash;Koytcheff&ndash;Sinha, ' +
-          '<em>Embedding calculus knot invariants are of finite type</em>, Algebr. Geom. Topol. 17, 2017).</strong> ' +
-          '\\(\\pi_0 T_n \\mathcal{K}_3\\) is an abelian group ' +
-          '(here \\(n\\) indexes the manifold-calculus stage \\(T_n\\), exactly as \\(k\\) does in &sect;1 above ' +
-          '&mdash; unrelated to the join-indexed, homotopy-calculus \\(T_n\\) flagged in &sect;1&rsquo;s notational-trap ' +
-          'remark and defined in the <em>Taylor Tower</em> sub-tab), the evaluation map ' +
-          '\\(\\mathrm{ev}_n : \\pi_0 \\mathcal{K}_3 \\to \\pi_0 T_n \\mathcal{K}_3\\) is a monoid homomorphism for connected ' +
-          'sum, and it is invariant under degree-\\(n\\) <span class="kl-term" title="Clasper / grope surgery: geometric refinements of crossing changes; invariance under degree-n clasper surgery characterizes finite-type invariants of degree ≤ n−1 (Habiro, Goussarov).">clasper surgery</span> ' +
-          '&mdash; hence a finite-type invariant of degree \\(\\leq n-1\\).</li>' +
+          '<li><strong>The tower produces invariants, and they are finite-type ' +
+          '(Budney&ndash;Conant&ndash;Koytcheff&ndash;Sinha, 2017).</strong> The evaluation map ' +
+          '\\(\\mathrm{ev}_k : \\pi_0 \\mathcal{K}_3 \\to \\pi_0 T_k \\mathcal{K}_3\\) (here \\(k\\) indexes the ' +
+          'manifold-calculus stage \\(T_k\\), the same \\(k\\) as in &sect;1 above &mdash; Budney&ndash;Conant&ndash;' +
+          'Koytcheff&ndash;Sinha themselves write \\(n\\) for this stage, but it is renamed \\(k\\) here to avoid ' +
+          'colliding with \\(m, n\\) for manifold dimensions, and it is also unrelated to the ' +
+          'join-indexed, homotopy-calculus \\(T_n\\) of the <em>Taylor Tower</em> sub-tab) is a monoid homomorphism for ' +
+          'connected sum and is invariant under degree-\\(k\\) <span class="kl-term" title="Clasper / grope surgery: geometric refinements of crossing changes; invariance under degree-k clasper surgery characterizes finite-type invariants of degree ≤ k−1 (Habiro, Goussarov).">clasper surgery</span> ' +
+          '&mdash; hence finite-type of degree \\(\\leq k-1\\). The first case, \\(T_3\\mathcal{K}_3\\), recovers the ' +
+          'type-\\(2\\) invariant \\(c_2\\) (the \\(z^2\\)-coefficient of the Conway polynomial) purely from homotopy ' +
+          'theory, by counting <span class="kl-term" title="Quadrisecant: a straight line meeting the knot in four distinct points. BCSS express the Casson knot invariant c₂ via counts of quadrisecants and related configuration-space integrals.">quadrisecants</span>, with no diagram combinatorics input ' +
+          '(Budney&ndash;Conant&ndash;Scannell&ndash;Sinha, 2005).</li>' +
           '<li><strong>Universality: a ladder of theorems and one conjecture.</strong> ' +
-          'BCKS conjecture that \\(\\mathrm{ev}_{n+1}\\) is the <em>universal additive</em> type-\\(n\\) invariant ' +
-          '(&ldquo;additive&rdquo; here means a homomorphism for connected sum &mdash; not the \\(1\\)-excisive, ' +
-          '&ldquo;wedge-to-product&rdquo; sense of <em>Cubes &amp; Excision</em> Ex. 3(b)) over ' +
-          '\\(\\mathbb{Z}\\). Current status: over \\(\\mathbb{R}\\), every type-\\(n\\) invariant factors through the ' +
-          'stage \\(T_{2n}\\) (Voli&cacute;, Compos. Math. 142, 2006); \\(p\\)-locally, \\(\\mathrm{ev}_{n+1}\\) is universal ' +
-          'for degrees \\(n \\leq p + 1\\) via Galois symmetries of profinite little-disks operads ' +
-          '(Boavida de Brito&ndash;Horel, Compos. Math. 157, 2021); and \\(\\mathrm{ev}_n\\) is <em>surjective</em>, with ' +
-          'values computed by grope cobordism (Kosanovi&cacute;, Adv. Math. 451, 2024) &mdash; suggestive of, but not by ' +
-          'itself establishing, rational universality of \\(\\mathrm{ev}_{n+1}\\) (a bridging argument beyond surjectivity ' +
-          'and Boavida de Brito&ndash;Horel&rsquo;s \\(p\\)-local range would be needed). Over \\(\\mathbb{Z}\\) &mdash; where the tower ' +
-          'could see torsion the Kontsevich integral misses &mdash; the full conjecture remains open.</li>' +
+          'Conjecturally \\(\\mathrm{ev}_{k+1}\\) is the <em>universal additive</em> type-\\(k\\) invariant over ' +
+          '\\(\\mathbb{Z}\\) (&ldquo;additive&rdquo; here means a homomorphism for connected sum &mdash; not the ' +
+          '\\(1\\)-excisive, &ldquo;wedge-to-product&rdquo; sense of <em>Cubes &amp; Excision</em> Ex. 3(b)). Known so ' +
+          'far: universal over \\(\\mathbb{R}\\) (Voli&cacute;, 2006), \\(p\\)-locally universal in a range via Galois ' +
+          'symmetries of profinite little-disks operads (Boavida de Brito&ndash;Horel, 2021), and \\(\\mathrm{ev}_k\\) ' +
+          'is surjective, with values computed by grope cobordism (Kosanovi&cacute;, 2024) &mdash; suggestive of, but ' +
+          'not by itself establishing, the full conjecture. Over \\(\\mathbb{Z}\\), where the tower could see torsion ' +
+          'the Kontsevich integral misses, it remains open.</li>' +
         '</ul>' +
       '</div>' +
 
@@ -1068,41 +1055,13 @@
           '<li><strong>Spectral Lie / hairy graph descriptions.</strong> Arone&ndash;Turchin identified the layers of ' +
           'the embedding tower with derived spaces of maps between modules over the little-disks operads ' +
           '(&ldquo;infinitesimal bimodules&rdquo;), leading to hairy-graph-complex computations of ' +
-          '\\(\\pi_*(\\mathcal{K}_n)\\) (Arone&ndash;Turchin 2014&ndash;15; Fresse&ndash;Turchin&ndash;Willwacher).</li>' +
+          '\\(\\pi_*(\\mathcal{K}_n)\\) (Arone&ndash;Turchin 2014&ndash;15; Fresse&ndash;Turchin&ndash;Willwacher, ' +
+          'full citations in <em>Further Reading</em>).</li>' +
         '</ul>' +
       '</div>' +
 
       '<div class="expo-panel">' +
-        '<h3>6. Dimensions of finite-type invariants</h3>' +
-        '<p>The dimensions of the graded pieces of the space of rational finite-type invariants ' +
-        '(Bar-Natan, Topology 34, 1995, computed through degree \\(9\\); Kneissler through \\(12\\)):</p>' +
-        '<table class="dict-table" style="border-collapse:collapse">' +
-          '<thead><tr style="border-bottom:1.5px solid #333">' +
-            '<th style="padding:5px 12px;text-align:left">degree \\(d\\)</th>' +
-            '<th style="padding:5px 12px">0</th><th style="padding:5px 12px">1</th><th style="padding:5px 12px">2</th>' +
-            '<th style="padding:5px 12px">3</th><th style="padding:5px 12px">4</th><th style="padding:5px 12px">5</th>' +
-            '<th style="padding:5px 12px">6</th><th style="padding:5px 12px">7</th><th style="padding:5px 12px">8</th>' +
-            '<th style="padding:5px 12px">9</th>' +
-          '</tr></thead>' +
-          '<tbody><tr>' +
-            '<td style="padding:5px 12px">\\(\\dim \\mathcal{V}_d / \\mathcal{V}_{d-1}\\)</td>' +
-            '<td style="padding:5px 12px;text-align:center">1</td><td style="padding:5px 12px;text-align:center">0</td>' +
-            '<td style="padding:5px 12px;text-align:center">1</td><td style="padding:5px 12px;text-align:center">1</td>' +
-            '<td style="padding:5px 12px;text-align:center">3</td><td style="padding:5px 12px;text-align:center">4</td>' +
-            '<td style="padding:5px 12px;text-align:center">9</td><td style="padding:5px 12px;text-align:center">14</td>' +
-            '<td style="padding:5px 12px;text-align:center">27</td><td style="padding:5px 12px;text-align:center">44</td>' +
-          '</tr></tbody>' +
-        '</table>' +
-        '<p style="margin-top:0.9em">The universality conjecture concerns ' +
-        '<em>additive</em> (primitive) invariants, so under it the successive stages add rank equal to the dimensions ' +
-        'of the spaces of degree-\\(d\\) primitives, of which the table above is the polynomial-algebra closure ' +
-        '(a general finite-type invariant is a polynomial in additive ones). Compare the ' +
-        '<em>Polynomial Invariants</em> tab (Vassiliev sub-tab), where the same numbers arise from chord diagrams ' +
-        'modulo the 4T relation.</p>' +
-      '</div>' +
-
-      '<div class="expo-panel">' +
-        '<h3>7. Practice</h3>' +
+        '<h3>6. Practice</h3>' +
         '<details class="kl-practice"><summary>Exercise 1: the linear stage for long knots</summary>' +
         '<p>Using Smale&ndash;Hirsch, show \\(\\operatorname{Imm}_c(\\mathbb{R}, \\mathbb{R}^3) \\simeq \\Omega S^2\\). ' +
         'Conclude that \\(T_1\\) sees only the winding data of the unit tangent vector &mdash; no ' +
@@ -1116,10 +1075,11 @@
         '(two middle arcs \\(\\rightsquigarrow\\) \\(2\\) points).</p>' +
         '</details>' +
         '<details class="kl-practice"><summary>Exercise 3: \\(c_2\\) two ways</summary>' +
-        '<p>Compute \\(c_2\\) for the trefoil and figure-eight from ' +
-        'the <em>Polynomial Invariants</em> tab (\\(c_2(3_1) = 1\\), \\(c_2(4_1) = -1\\)), then read the BCSS paper&rsquo;s ' +
-        'quadrisecant formula and verify the trefoil count qualitatively on a standard diagram. Two definitions, one ' +
-        'invariant &mdash; that coincidence <em>is</em> the content of the tower being finite-type.</p>' +
+        '<p>The trefoil and figure-eight knot have \\(c_2(3_1) = 1\\) and \\(c_2(4_1) = -1\\) (the ' +
+        '\\(z^2\\)-coefficient of the Conway polynomial, computed via the skein relation directly from a diagram). ' +
+        'Read the BCSS paper&rsquo;s quadrisecant formula and verify the trefoil count qualitatively on a standard ' +
+        'diagram. Two definitions, one invariant &mdash; that coincidence <em>is</em> the content of the tower being ' +
+        'finite-type.</p>' +
         '</details>' +
         '<details class="kl-practice"><summary>Exercise 4: why codimension 2 is hard</summary>' +
         '<p>Trace through the connectivity estimate \\(\\bigl(k(n-m-2)+1-m\\bigr)\\) for \\(m=1\\): for \\(n = 4\\) the tower ' +
@@ -1217,6 +1177,10 @@
 
       '<div class="expo-panel">' +
         '<h3>4. The calculi at a glance</h3>' +
+        '<p style="margin-top:0;color:#555">The <strong>input</strong> and <strong>polynomial</strong> rows recap ' +
+        '<em>Overview</em> &sect;3 for the first three columns; the new content there is the ' +
+        '<strong>discrete/abelian</strong> column, plus the layer-coefficients, sheafification-status, and ' +
+        'signature-application rows below.</p>' +
         '<table class="dict-table" style="width:100%;border-collapse:collapse">' +
           '<thead><tr style="border-bottom:1.5px solid #333">' +
             '<th style="padding:6px 10px;text-align:left"></th>' +
@@ -1242,7 +1206,10 @@
         '\\(O(n)\\)-action instead. Trace this back to what is being permuted versus rotated: in ' +
         '\\(D_nF(X) \\simeq \\Omega^\\infty\\bigl((\\partial_nF \\wedge X^{\\wedge n})_{h\\Sigma_n}\\bigr)\\), \\(\\Sigma_n\\) acts by ' +
         'permuting the \\(n\\) smash factors of \\(X\\); in the orthogonal analogue, the layer is built from ' +
-        '\\(S^{nV}\\) for \\(V\\) an \\(n\\)-dimensional summand, and \\(O(n)\\) acts by rotating that summand. Explain why ' +
+        '\\(S^{nV}\\), where \\(nV = V \\oplus \\cdots \\oplus V\\) is \\(n\\) copies of the actual argument \\(V\\) ' +
+        '(of whatever dimension &mdash; \\(n\\) is the fixed tower degree, not the dimension of \\(V\\)), and ' +
+        '\\(O(n)\\) acts by rotating those \\(n\\) copies (the \\(\\mathbb{R}^n\\) multiplicity factor in ' +
+        '\\(nV \\cong V \\otimes \\mathbb{R}^n\\)). Explain why ' +
         'this difference in what varies (a based space raised to a power, vs. a vector space of growing dimension) ' +
         'forces the different group.</p>' +
         '</details>' +
@@ -1299,6 +1266,43 @@
           '<li>G. Heuts, <em>Goodwillie approximations to higher categories</em>, Mem. Amer. Math. Soc. 272 (2021) ' +
           '&mdash; cited as &ldquo;Heuts 2021a&rdquo; below; categorifies the Taylor tower itself. Distinct from the ' +
           'companion book below (&ldquo;Heuts 2021b&rdquo;), which supplies the Lie-algebra-models material.</li>' +
+          '<li>M. Behrens, <em>The Goodwillie tower and the EHP sequence</em>, Mem. Amer. Math. Soc. 218 (2012).</li>' +
+          '<li>A. Dold and D. Puppe, <em>Homologie nicht-additiver Funktoren. Anwendungen</em>, Ann. Inst. Fourier ' +
+          '11 (1961), 201&ndash;312.</li>' +
+          '<li>S. Eilenberg and S. Mac Lane, <em>On the groups H(&Pi;,n) II</em>, Ann. of Math. 60 (1954), 49&ndash;139.</li>' +
+          '<li>B. Johnson and R. McCarthy, <em>Deriving calculus with cotriples</em>, Trans. Amer. Math. Soc. ' +
+          '356 (2004).</li>' +
+          '<li>K. Bauer, B. Johnson, and R. McCarthy, <em>Cross effects and calculus in an unbased setting</em>, ' +
+          'Trans. Amer. Math. Soc. 367 (2015).</li>' +
+          '<li>G. Arone, <em>A generalization of Snaith-type filtration</em>, Trans. Amer. Math. Soc. 351 (1999), ' +
+          '1123&ndash;1150 &mdash; the tower-theoretic reinterpretation of the Snaith splitting.</li>' +
+          '<li>V. P. Snaith, <em>A stable decomposition of \\(\\Omega^n\\Sigma^n X\\)</em>, J. London Math. Soc. (2) ' +
+          '7 (1974), 577&ndash;583.</li>' +
+          '<li>D. S. Kahn and S. B. Priddy, <em>Applications of the transfer to stable homotopy theory</em>, ' +
+          'Bull. Amer. Math. Soc. 78 (1972), 981&ndash;987.</li>' +
+          '<li>J. Klein and J. Rognes, <em>A chain rule in the calculus of homotopy functors</em>, Geom. Topol. ' +
+          '6 (2002), 853&ndash;887 &mdash; the one-derivative chain rule, paired with Arone&ndash;Ching 2011 above.</li>' +
+          '<li>R. McCarthy, <em>Relative algebraic K-theory and topological cyclic homology</em>, Acta Math. ' +
+          '179 (1997), 197&ndash;222 &mdash; cited as &ldquo;McCarthy 1997&rdquo; above.</li>' +
+          '<li>B. Dundas, <em>Relative K-theory and topological cyclic homology</em>, Acta Math. 179 (1997), ' +
+          '223&ndash;242 &mdash; cited as &ldquo;Dundas 1997&rdquo; above; the companion paper to McCarthy 1997 in the ' +
+          'same issue.</li>' +
+          '<li>G. Arone, P. Lambrechts, and I. Voli&cacute;, <em>Calculus of functors, operad formality, and ' +
+          'rational homology of embedding spaces</em>, Acta Math. 199 (2007), 153&ndash;198 &mdash; distinct from ' +
+          'the Lambrechts&ndash;Turchin&ndash;Voli&cacute; 2010 entry in the knot-theory thread below.</li>' +
+          '<li>D. Ayala and J. Francis, <em>Factorization homology of topological manifolds</em>, J. Topol. 8 ' +
+          '(2015), 1045&ndash;1084 (arXiv:1206.5522).</li>' +
+          '<li>G. Arone and V. Turchin, <em>On the rational homology of high-dimensional analogues of spaces of ' +
+          'long knots</em>, Geom. Topol. 18 (2014), 1261&ndash;1322.</li>' +
+          '<li>G. Arone and V. Turchin, <em>Graph-complexes computing the rational homotopy of high dimensional ' +
+          'analogues of spaces of long knots</em>, Ann. Inst. Fourier 65 (2015), 1&ndash;62.</li>' +
+          '<li>B. Fresse, V. Turchin, and T. Willwacher, <em>The rational homotopy of mapping spaces of ' +
+          '\\(E_n\\) operads</em>, arXiv:1703.06123.</li>' +
+          '<li>K. Bauer, J. Burke, and M. Ching, <em>Tangent \\(\\infty\\)-categories and Goodwillie calculus</em>, ' +
+          'arXiv preprint (2021&ndash;) &mdash; still unpublished as of mid-2026; cite as an arXiv preprint, not a ' +
+          'journal article.</li>' +
+          '<li>M. Krannich and O. Randal-Williams, <em>Diffeomorphisms of discs and the second Weiss derivative ' +
+          'of \\(B\\mathrm{Top}(-)\\)</em>, Invent. Math. (arXiv:2109.03500, 2021).</li>' +
         '</ul>' +
       '</div>' +
 
@@ -1315,6 +1319,9 @@
           'is not covered).</li>' +
           '<li>N. Kuhn, <em>Goodwillie towers and chromatic homotopy: an overview</em>, Geom. Topol. Monogr. 10 ' +
           '(2007), 245&ndash;279 (arXiv:math/0410342).</li>' +
+          '<li>N. Kuhn, <em>Tate cohomology and periodic localization of polynomial functors</em>, Invent. Math. 157 ' +
+          '(2004), 345&ndash;370 (arXiv:math/0307173) &mdash; the periodic-splitting theorem cited in ' +
+          '<em>Worked Examples</em> &sect;2.</li>' +
           '<li>B. Munson, <em>Introduction to the manifold calculus of Goodwillie&ndash;Weiss</em>, ' +
           'Morfismos 14 (2010) (arXiv:1005.1698) &mdash; gentle entry to the embedding side.</li>' +
           '<li>J. Lurie, <em>Higher Algebra</em>, Chapter 6 &mdash; the \\(\\infty\\)-categorical foundation.</li>' +
@@ -1350,8 +1357,7 @@
           'Adv. Math. 451 (2024).</li>' +
           '<li>Lambrechts&ndash;Turchin&ndash;Voli&cacute;, <em>The rational homology of spaces of long knots in ' +
           'codimension \\(&gt; 2\\)</em>, Geom. Topol. 14 (2010), 2151&ndash;2187.</li>' +
-          '<li>See the <em>Knots &amp; Embedding Calculus</em> sub-tab for how these fit together, and the ' +
-          '<em>Polynomial Invariants</em> tab for the Vassiliev-invariant background.</li>' +
+          '<li>See the <em>Knots &amp; Embedding Calculus</em> sub-tab for how these fit together.</li>' +
         '</ul>' +
       '</div>' +
 
@@ -1376,7 +1382,7 @@
             '<th style="padding:6px 10px;text-align:left">Weeks</th>' +
             '<th style="padding:6px 10px;text-align:left">Topic</th>' +
             '<th style="padding:6px 10px;text-align:left">Reading</th>' +
-            '<th style="padding:6px 10px;text-align:left">KnotLab sub-tab</th>' +
+            '<th style="padding:6px 10px;text-align:left">Sub-tab</th>' +
           '</tr></thead>' +
           '<tbody>' +
             '<tr><td style="padding:4px 10px">1&ndash;2</td><td style="padding:4px 10px">homotopy (co)limits, cubes, total (co)fibers</td><td style="padding:4px 10px">Munson&ndash;Voli&cacute; ch. 3, 5</td><td style="padding:4px 10px"><a href="#cubes-excision" class="fk-xref">Cubes &amp; Excision</a> &sect;1 (tfib terminology: <a href="#derivatives-layers" class="fk-xref">Derivatives &amp; Layers</a> &sect;1)</td></tr>' +
@@ -1387,7 +1393,7 @@
             '<tr><td style="padding:4px 10px">9</td><td style="padding:4px 10px">convergence, analyticity; identity functor</td><td style="padding:4px 10px">Calc II; Kuhn overview; Johnson 1995, Arone&ndash;Mahowald 1999 (advanced/optional)</td><td style="padding:4px 10px"><a href="#worked-examples" class="fk-xref">Worked Examples</a> &sect;1</td></tr>' +
             '<tr><td style="padding:4px 10px">10</td><td style="padding:4px 10px">\\(\\Sigma^\\infty\\Omega^\\infty\\); \\(K\\)-theory and \\(\\mathrm{TC}\\)</td><td style="padding:4px 10px">Kuhn overview; DGM book (skim)</td><td style="padding:4px 10px"><a href="#worked-examples" class="fk-xref">Worked Examples</a> &sect;&sect;2&ndash;3</td></tr>' +
             '<tr><td style="padding:4px 10px">11&ndash;12</td><td style="padding:4px 10px">manifold calculus; \\(\\operatorname{Emb}\\); convergence</td><td style="padding:4px 10px">Weiss 1999; Munson survey; Goodwillie&ndash;Weiss 1999; Goodwillie&ndash;Klein 2015 (optional)</td><td style="padding:4px 10px"><a href="#knots-embedding-calculus" class="fk-xref">Knots &amp; Embedding Calculus</a> &sect;&sect;1&ndash;3</td></tr>' +
-            '<tr><td style="padding:4px 10px">13</td><td style="padding:4px 10px">long knots; finite-type invariants from the tower</td><td style="padding:4px 10px">Sinha 2009; BCSS 2005; BCKS 2017</td><td style="padding:4px 10px"><a href="#knots-embedding-calculus" class="fk-xref">Knots &amp; Embedding Calculus</a> &sect;&sect;4&ndash;6</td></tr>' +
+            '<tr><td style="padding:4px 10px">13</td><td style="padding:4px 10px">long knots; finite-type invariants from the tower</td><td style="padding:4px 10px">Sinha 2009; BCSS 2005; BCKS 2017</td><td style="padding:4px 10px"><a href="#knots-embedding-calculus" class="fk-xref">Knots &amp; Embedding Calculus</a> &sect;&sect;4&ndash;5</td></tr>' +
             '<tr><td style="padding:4px 10px">14</td><td style="padding:4px 10px">outlook: chain rules, orthogonal calculus, tangent categories</td><td style="padding:4px 10px">Arone&ndash;Ching 2011 (statements); Heuts 2021a&ndash;b</td><td style="padding:4px 10px"><a href="#other-calculi" class="fk-xref">Other Calculi</a></td></tr>' +
           '</tbody>' +
         '</table>' +
@@ -1540,7 +1546,7 @@
         { type: 'scatter', mode: 'lines', x: xs, y: ys,
           line: { color: '#2171b5', width: 2.5 }, name: 'f(x)' },
         { type: 'scatter', mode: 'lines', x: xs, y: ts,
-          line: { color: '#d6604d', width: 2, dash: 'solid' }, name: 'Tₙf(x)' }
+          line: { color: '#d6604d', width: 2, dash: 'solid' }, name: 'Pₙf(x)' }
       ];
 
       var shapes = [];
@@ -1573,12 +1579,12 @@
             '\\(D_{' + n + '}F = \\operatorname{hofib}(P_{' + n + '}F \\to P_{' + (n - 1) + '}F)\\); '
           : 'the constant term corresponds to \\(P_0 F \\simeq F(*)\\), the bottom of the tower; ';
         readout.innerHTML =
-          '<div class="formula-box">$$T_{' + n + '}f(x) = ' + taylorPolyLatex(fn, n) + '$$</div>' +
+          '<div class="formula-box">$$P_{' + n + '}f(x) = ' + taylorPolyLatex(fn, n) + '$$</div>' +
           '<p>' + radiusNote + '</p>' +
           '<p style="color:#555;font-size:0.93em"><strong>Dictionary.</strong> The degree-\\(' + n + '\\) polynomial ' +
-          '\\(T_{' + n + '}f\\) corresponds to the \\(' + n + '\\)-excisive approximation \\(P_{' + n + '}F\\); ' +
+          '\\(P_{' + n + '}f\\) corresponds to the \\(' + n + '\\)-excisive approximation \\(P_{' + n + '}F\\); ' +
           layerClause +
-          'the radius of convergence corresponds to \\(\\rho\\)-analyticity: for a \\(\\rho\\)-analytic ' +
+          'the radius of convergence corresponds to \\(\\rho\\)-analyticity (&sect;4 below): for a \\(\\rho\\)-analytic ' +
           'functor the tower converges on \\(\\rho\\)-connected spaces.</p>';
         mathRender(readout);
       }
