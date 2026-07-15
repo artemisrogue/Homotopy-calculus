@@ -804,9 +804,9 @@
           'Steinberg-summand spectra \\(L(j)\\). This computation ties the \\(p^j\\)-th layer to ' +
           '<span class="kl-term" title="vₙ-periodicity: the chromatic filtration of stable homotopy detected by Morava K-theories; vₙ-periodic families are systematic infinite families in the stable stems.">\\(v_j\\)-periodic</span> ' +
           'phenomena in \\(\\pi_*(S^{2k+1})\\).</li>' +
-          '<li><strong>The operad structure (Ching 2005).</strong> \\(\\partial_* \\mathrm{Id}\\) is an operad in spectra ' +
-          '(the spectral Lie operad), Koszul dual to the commutative operad; its algebras behave like ' +
-          'topological Lie algebras. Heuts (2021b, full citation in <em>Further Reading</em>) used this to build Lie-algebra models for ' +
+          '<li><strong>The operad structure (Ching 2005).</strong> As in <em>Derivatives &amp; Layers</em> &sect;5, ' +
+          '\\(\\partial_* \\mathrm{Id}\\) is the spectral Lie operad, whose algebras behave like topological Lie ' +
+          'algebras; Heuts (2021b, full citation in <em>Further Reading</em>) used this to build Lie-algebra models for ' +
           '\\(v_n\\)-periodic unstable homotopy theory.</li>' +
           '<li><strong>EHP and Whitehead (Behrens 2012; Kuhn).</strong> The Goodwillie tower of the identity on spheres ' +
           'interacts with the EHP sequence (Behrens, <em>The Goodwillie tower and the EHP sequence</em>, Mem. AMS 218, ' +
