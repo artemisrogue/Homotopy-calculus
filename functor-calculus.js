@@ -208,7 +208,7 @@
           '<li><a href="#derivatives-layers" class="fk-xref"><strong>Derivatives &amp; Layers</strong></a> &mdash; cross effects, homogeneous functors, the classification ' +
           'theorem, derivatives as spectra, and the Arone&ndash;Ching chain rule. Interactive cross-effect calculator.</li>' +
           '<li><a href="#worked-examples" class="fk-xref"><strong>Worked Examples</strong></a> &mdash; the identity functor, \\(\\Sigma^\\infty\\Omega^\\infty\\), and ' +
-          'algebraic \\(K\\)-theory.</li>' +
+          'algebraic \\(K\\)-theory, plus the classical-algebra origins of the vocabulary (cross effects, Eilenberg&ndash;MacLane, Dold&ndash;Puppe).</li>' +
           '<li><a href="#knots-embedding-calculus" class="fk-xref"><strong>Knots &amp; Embedding Calculus</strong></a> &mdash; the Goodwillie&ndash;Weiss tower for spaces of knots ' +
           'and finite-type invariants.</li>' +
           '<li><a href="#other-calculi" class="fk-xref"><strong>Other Calculi</strong></a> &mdash; orthogonal calculus, discrete/abelian calculus, tangent ' +
