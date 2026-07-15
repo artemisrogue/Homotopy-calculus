@@ -1,5 +1,5 @@
 /**
- * functor-calculus.js — Calculus of Homotopy Functors module for KnotLab
+ * functor-calculus.js — The Calculus of Homotopy Functors, a standalone teaching app
  * Exposes window.renderFunctorCalculus(containerEl)
  *
  * Graduate-level introduction to Goodwillie calculus: cubical diagrams and
@@ -165,22 +165,6 @@
       '</div>' +
 
       '<div class="expo-panel">' +
-        '<h3>Why this module lives in KnotLab</h3>' +
-        '<p>Applying manifold calculus to the embedding functor of the interval yields the ' +
-        '<strong>Goodwillie&ndash;Weiss tower</strong> for the space of <em>long knots</em> ' +
-        '\\(\\mathcal{K}_3 = \\operatorname{Emb}_c(\\mathbb{R}, \\mathbb{R}^3)\\). Its stages \\(T_k \\mathcal{K}_3\\) ' +
-        '(Goodwillie&ndash;Weiss&rsquo; notation for \\(P_n\\)) produce ' +
-        '<strong>finite-type (Vassiliev)</strong> knot invariants &mdash; the same invariants that appear in the ' +
-        '<em>Polynomial Invariants</em> tab as coefficients of the Conway polynomial and of the expansions of the ' +
-        'Jones and HOMFLY-PT polynomials after the substitution \\(q = e^h\\) (Birman&ndash;Lin, 1993). The conjecture ' +
-        'that the tower is a <em>universal additive</em> finite-type invariant (general finite-type invariants are ' +
-        'polynomials in the additive ones) remains open in general &mdash; surjectivity and ' +
-        '\\(p\\)-local universality are known, and point that way, but the full statement is not a theorem &mdash; and ' +
-        'settling it is among the deepest links to abstract homotopy theory. See <em>Knots &amp; Embedding Calculus</em> ' +
-        '&sect;4 for the precise status.</p>' +
-      '</div>' +
-
-      '<div class="expo-panel">' +
         '<h3>Historical origins</h3>' +
         '<p>The motivating problem was concrete: compute <span class="kl-term" title="Pseudoisotopy space P(M): the space of diffeomorphisms of M × [0,1] fixing M × {0} and ∂M × [0,1]. Controls the difference between isotopy and concordance of diffeomorphisms.">pseudoisotopy spaces</span> ' +
         'and, through them, <span class="kl-term" title="Waldhausen A-theory A(X): the algebraic K-theory of the category of finite retractive spaces over X; equivalently K(Σ∞₊ΩX). Splits off Whitehead spectra controlling h-cobordism and pseudoisotopy.">Waldhausen&rsquo;s algebraic ' +
@@ -232,8 +216,8 @@
           '<li><a href="#further-reading" class="fk-xref"><strong>Further Reading</strong></a> &mdash; annotated bibliography and a 14-week course plan.</li>' +
         '</ul>' +
         '<p style="font-size:0.95em;color:#555">Prerequisites: homotopy (co)limits, basic stable homotopy theory ' +
-        '(spectra, smash products), and comfort with homotopy fibers/cofibers. The <em>Homological Invariants</em> ' +
-        'tab&rsquo;s introduction to spectra-level thinking is helpful but not required.</p>' +
+        '(spectra, smash products), and comfort with homotopy fibers/cofibers &mdash; any standard introduction to ' +
+        'spectra-level thinking is helpful but not required.</p>' +
       '</div>';
   }
 
