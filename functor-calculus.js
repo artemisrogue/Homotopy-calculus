@@ -1206,7 +1206,10 @@
         '\\(O(n)\\)-action instead. Trace this back to what is being permuted versus rotated: in ' +
         '\\(D_nF(X) \\simeq \\Omega^\\infty\\bigl((\\partial_nF \\wedge X^{\\wedge n})_{h\\Sigma_n}\\bigr)\\), \\(\\Sigma_n\\) acts by ' +
         'permuting the \\(n\\) smash factors of \\(X\\); in the orthogonal analogue, the layer is built from ' +
-        '\\(S^{nV}\\) for \\(V\\) an \\(n\\)-dimensional summand, and \\(O(n)\\) acts by rotating that summand. Explain why ' +
+        '\\(S^{nV}\\), where \\(nV = V \\oplus \\cdots \\oplus V\\) is \\(n\\) copies of the actual argument \\(V\\) ' +
+        '(of whatever dimension &mdash; \\(n\\) is the fixed tower degree, not the dimension of \\(V\\)), and ' +
+        '\\(O(n)\\) acts by rotating those \\(n\\) copies (the \\(\\mathbb{R}^n\\) multiplicity factor in ' +
+        '\\(nV \\cong V \\otimes \\mathbb{R}^n\\)). Explain why ' +
         'this difference in what varies (a based space raised to a power, vs. a vector space of growing dimension) ' +
         'forces the different group.</p>' +
         '</details>' +
