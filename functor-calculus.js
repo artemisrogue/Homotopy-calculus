@@ -1532,7 +1532,7 @@
           : 'This series converges everywhere: \\(f\\) is <em>entire</em>, the analogue of a functor with unlimited analyticity.';
         var layerClause = (n >= 1)
           ? 'the difference between consecutive stages corresponds to the homogeneous layer ' +
-            '\\(D_{' + n + '}F = \\operatorname{fib}(P_{' + n + '}F \\to P_{' + (n - 1) + '}F)\\); '
+            '\\(D_{' + n + '}F = \\operatorname{hofib}(P_{' + n + '}F \\to P_{' + (n - 1) + '}F)\\); '
           : 'the constant term corresponds to \\(P_0 F \\simeq F(*)\\), the bottom of the tower; ';
         readout.innerHTML =
           '<div class="formula-box">$$T_{' + n + '}f(x) = ' + taylorPolyLatex(fn, n) + '$$</div>' +
