@@ -155,7 +155,7 @@
         '<h3>Why this module lives in KnotLab</h3>' +
         '<p>Applying manifold calculus to the embedding functor of the interval yields the ' +
         '<strong>Goodwillie&ndash;Weiss tower</strong> for the space of <em>long knots</em> ' +
-        '\\(\\mathcal{K} = \\operatorname{Emb}_c(\\mathbb{R}, \\mathbb{R}^3)\\). Its stages \\(T_k \\mathcal{K}\\) ' +
+        '\\(\\mathcal{K}_3 = \\operatorname{Emb}_c(\\mathbb{R}, \\mathbb{R}^3)\\). Its stages \\(T_k \\mathcal{K}_3\\) ' +
         '(Goodwillie&ndash;Weiss&rsquo; notation for \\(P_n\\)) produce ' +
         '<strong>finite-type (Vassiliev)</strong> knot invariants &mdash; the same invariants that appear in the ' +
         '<em>Polynomial Invariants</em> tab as coefficients of the Conway polynomial and of the expansions of the ' +
