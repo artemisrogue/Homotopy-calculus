@@ -949,7 +949,9 @@
         'theory, one admitting a finite handle decomposition &mdash; the hypothesis the handle-induction proof of ' +
         '&sect;2&rsquo;s convergence theorem actually needs). (Here, following Weiss, \\(m\\) and \\(n\\) denote ' +
         'manifold <em>dimensions</em> &mdash; ' +
-        'not the excisive/Taylor degree that \\(n\\) denotes elsewhere in this module; degree is \\(k\\), fixed below.) ' +
+        'not the excisive/Taylor degree that both \\(m\\) and \\(n\\) denote elsewhere in this module (see Cubes &amp; ' +
+        'Excision&rsquo;s &ldquo;\\(F\\) is \\(m\\)-excisive and \\(G\\) is \\(n\\)-excisive&rdquo; example and Exercise 4); ' +
+        'degree here is \\(k\\), fixed below.) ' +
         'Weiss (Geom. Topol. 3, 1999) defines \\(F\\) to be <strong>polynomial of degree ' +
         '\\(\\leq k\\)</strong> if for every \\(V\\) and pairwise disjoint closed subsets \\(A_0, \\dots, A_k \\subseteq V\\), ' +
         'the \\((k{+}1)\\)-cube</p>' +
