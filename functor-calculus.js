@@ -254,7 +254,7 @@
           '<li>\\(0\\)-excisive = homotopy constant: \\(F(X) \\simeq F(*)\\) for all \\(X\\).</li>' +
           '<li>\\(1\\)-excisive = sends homotopy pushouts to homotopy pullbacks. The name comes from the ' +
           '<span class="kl-term" title="Eilenberg–Steenrod excision axiom: H(X) can be computed from a cover; equivalently the Mayer–Vietoris square of a CW pair maps to a long exact sequence. Homology is the shadow of a 1-excisive functor.">excision axiom</span>: ' +
-          'for a reduced, <span class="kl-term" title="Finitary functor: commutes with filtered/sequential homotopy colimits, i.e. is determined by its values on finite complexes.">finitary</span> \\(1\\)-excisive \\(F\\) valued in spaces, the sequence \\(\\pi_* F(X)\\) is a generalized homology theory, and in fact ' +
+          'for a <span class="kl-term" title="Reduced functor: F(*) ≃ * — the value at the basepoint (or zero object) is contractible; the based analogue of f(0) = 0 for an ordinary function.">reduced</span>, <span class="kl-term" title="Finitary functor: commutes with filtered/sequential homotopy colimits, i.e. is determined by its values on finite complexes.">finitary</span> \\(1\\)-excisive \\(F\\) valued in spaces, the sequence \\(\\pi_* F(X)\\) is a generalized homology theory, and in fact ' +
           '\\(F(X) \\simeq \\Omega^\\infty(E \\wedge X)\\) for a spectrum \\(E\\) (spectrum-valued \\(F\\) instead satisfies \\(F(X) \\simeq E \\wedge X\\), with no \\(\\Omega^\\infty\\)).</li>' +
           '<li>\\(n\\)-excisive functors form a category \\(\\operatorname{Exc}_n\\); every \\(n\\)-excisive functor is ' +
           '\\((n{+}1)\\)-excisive, mirroring \\(\\deg \\leq n \\Rightarrow \\deg \\leq n{+}1\\).</li>' +
