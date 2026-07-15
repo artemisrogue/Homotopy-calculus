@@ -1,0 +1,32 @@
+name: Check
+
+on:
+  push:
+    branches: ['**']
+  pull_request:
+    branches: ['**']
+
+jobs:
+  syntax-and-house-rule:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Syntax check functor-calculus.js
+        run: node --check functor-calculus.js
+
+      - name: Guard against bare ASCII apostrophes in functor-calculus.js
+        run: |
+          # House rule (see file header comment): HTML is built with single-quoted
+          # concatenated strings, and a raw ASCII apostrophe inside one silently
+          # breaks (or corrupts) the JS. Use &rsquo; / &lsquo; / Unicode primes instead.
+          # This is a heuristic scan for letter-apostrophe-letter contractions
+          # ("don't", "it's", "student's", ...), excluding lines that already use
+          # the correct HTML entities.
+          MATCHES=$(grep -noE "[a-zA-Z]'[a-zA-Z]" functor-calculus.js | grep -v '&rsquo;\|&lsquo;' || true)
+          if [ -n "$MATCHES" ]; then
+            echo "Found possible bare ASCII apostrophes (use &rsquo; / &lsquo; / Unicode primes instead):"
+            echo "$MATCHES"
+            exit 1
+          fi
+          echo "No bare ASCII apostrophes found."
