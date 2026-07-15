@@ -1315,6 +1315,9 @@
           'is not covered).</li>' +
           '<li>N. Kuhn, <em>Goodwillie towers and chromatic homotopy: an overview</em>, Geom. Topol. Monogr. 10 ' +
           '(2007), 245&ndash;279 (arXiv:math/0410342).</li>' +
+          '<li>N. Kuhn, <em>Tate cohomology and periodic localization of polynomial functors</em>, Invent. Math. 157 ' +
+          '(2004), 345&ndash;370 (arXiv:math/0307173) &mdash; the periodic-splitting theorem cited in ' +
+          '<em>Worked Examples</em> &sect;2.</li>' +
           '<li>B. Munson, <em>Introduction to the manifold calculus of Goodwillie&ndash;Weiss</em>, ' +
           'Morfismos 14 (2010) (arXiv:1005.1698) &mdash; gentle entry to the embedding side.</li>' +
           '<li>J. Lurie, <em>Higher Algebra</em>, Chapter 6 &mdash; the \\(\\infty\\)-categorical foundation.</li>' +
