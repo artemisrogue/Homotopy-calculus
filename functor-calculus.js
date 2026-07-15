@@ -833,7 +833,7 @@
         '<ul>' +
           '<li><strong>Snaith splitting.</strong> For \\(E = \\Sigma^\\infty X\\) (any well-pointed \\(X\\)), the tower splits: ' +
           '\\(\\Sigma^\\infty Q X \\simeq \\bigvee_n \\Sigma^\\infty (X^{\\wedge n})_{h\\Sigma_n}\\) &mdash; the classical stable ' +
-          'splitting of \\(QX\\) (Snaith 1974, Kahn), recovered as a split Taylor tower (the tower interpretation is ' +
+          'splitting of \\(QX\\) (Snaith 1974; cf. Kahn&ndash;Priddy 1972), recovered as a split Taylor tower (the tower interpretation is ' +
           'worked out in Arone, Trans. AMS 351, 1999). Splitting is the exception, not the rule: in general the ' +
           'tower has nontrivial \\(k\\)-invariants &mdash; precisely what makes it a spectral-sequence-grade ' +
           'computational tool.</li>' +
@@ -1259,6 +1259,10 @@
           'Trans. Amer. Math. Soc. 367 (2015).</li>' +
           '<li>G. Arone, <em>A generalization of Snaith-type filtration</em>, Trans. Amer. Math. Soc. 351 (1999), ' +
           '1123&ndash;1150 &mdash; the tower-theoretic reinterpretation of the Snaith splitting.</li>' +
+          '<li>V. P. Snaith, <em>A stable decomposition of \\(\\Omega^n\\Sigma^n X\\)</em>, J. London Math. Soc. (2) ' +
+          '7 (1974), 577&ndash;583.</li>' +
+          '<li>D. S. Kahn and S. B. Priddy, <em>Applications of the transfer to stable homotopy theory</em>, ' +
+          'Bull. Amer. Math. Soc. 78 (1972), 981&ndash;987.</li>' +
           '<li>J. Klein and J. Rognes, <em>A chain rule in the calculus of homotopy functors</em>, Geom. Topol. ' +
           '6 (2002), 853&ndash;887 &mdash; the one-derivative chain rule, paired with Arone&ndash;Ching 2011 above.</li>' +
           '<li>G. Arone, P. Lambrechts, and I. Voli&cacute;, <em>Calculus of functors, operad formality, and ' +
