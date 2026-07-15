@@ -1168,6 +1168,10 @@
 
       '<div class="expo-panel">' +
         '<h3>4. The calculi at a glance</h3>' +
+        '<p style="margin-top:0;color:#555">The <strong>input</strong> and <strong>polynomial</strong> rows recap ' +
+        '<em>Overview</em> &sect;3 for the first three columns; the new content there is the ' +
+        '<strong>discrete/abelian</strong> column, plus the layer-coefficients, sheafification-status, and ' +
+        'signature-application rows below.</p>' +
         '<table class="dict-table" style="width:100%;border-collapse:collapse">' +
           '<thead><tr style="border-bottom:1.5px solid #333">' +
             '<th style="padding:6px 10px;text-align:left"></th>' +
